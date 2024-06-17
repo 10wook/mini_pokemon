@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+        <meta name="author" content="포켓몬 스토어 온라인" />
+        <meta name="description" content="포켓몬코리아 공식 쇼핑몰" />
+        <meta name="keywords" content="포켓몬스터,포켓몬,스토어,포켓몬센터,공식,오피셜,센터,피카츄,포켓몬굿즈,fit,공식스토어,포켓몬고,포켓몬go,포켓몬센터,포켓몬팝업스토어" />
+
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="포켓몬 스토어 온라인" />
+        <!--배너관리에 사용중인 스킨의 노출중인 로고 url-->
+        <!--*현재 로고이미지를 쇼핑몰 대표 이미지로 별도 저장하고 있어 로고이미지 변경 시 쇼핑몰 대표 이미지도 변경처리되며 추후 쇼핑몰 대표 이미지 항목 추가 시 해당 항목으로 마이그레이션 예정-->
+        <meta property="og:image" content="/assets/img/og_logo.png" />
+        <meta property="og:url" content="https://pokemonstore.co.kr/" />
+        <!--*추후 쇼핑몰 설명 항목으로 대체-->
+        <meta property="og:description" content="포켓몬코리아 공식 쇼핑몰" />
+
+        <meta property="og:image:width" content="width" />
+        <meta property="og:image:height" content="height" />
+
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:title" content="포켓몬 스토어 온라인" />
+        <!--*추후 쇼핑몰 설명 항목으로 대체-->
+        <meta name="twitter:description" content="포켓몬코리아 공식 쇼핑몰" />
+        <meta name="twitter:image" content="/assets/img/og_logo.png" />
+
+        <link rel="shortcut icon" href="http://www.pokemonstore.co.kr/favicon.ico" />
+        <link type="text/css" rel="stylesheet" href="index.css" />
+        <script src="http://www.pokemonstore.co.kr/js/pages/ie-support-end/browser.js"></script>
+        <script src="http://www.pokemonstore.co.kr/lib/jquery/jquery-3.5.1.min.js"></script>
+        <script src="http://www.pokemonstore.co.kr/lib/handlebar/handlebars.min-v4.7.6.js"></script>
+        <script src="http://www.pokemonstore.co.kr/lib/slick/slick.min.js"></script>
+        <script src="http://www.pokemonstore.co.kr/lib/dayjs/dayjs.min-v1.10.5.js"></script>
+        <script src="https://fe-sdk.cdn-nhncommerce.com/another-skin/shopby-shop-sdk.js"></script>
+        <script type="text/javascript" src="https://wcs.naver.net/wcslog.js"></script>
+        <script src="http://www.pokemonstore.co.kr/js/core/shopby.js"></script>
+        <title>포켓몬 스토어 온라인</title> <!-- title changed after loading -->
+
+        <!-- ADN Tracker[공통] start -->
+        <script src="http://fin.rainbownine.net/js/across_adn_2.0.1.js" type="text/javascript"></script>
+        <!-- ADN Tracker[공통] end -->
+
+    </head>
+    <body>
+        <header id="header" class="kd-header-main"></header>
+        <div id="contents" class="kd-contents-main">
+            <main id="promotionBanner" class="main">
+                <!-- 메인 슬라이드 배너 -->
+                {{#if BANNER01}}
+                <div class="kd-bnmain-wrap invisible">
+                    <div class="kd-contents slider-wrap slider-banner" id="banner-BANNER01">
+                        {{#each BANNER01.bannerImages}}
+                        <li>
+                            <a href="http://www.pokemonstore.co.kr/{{landingUrl}}" target="{{#ifEq openLocationType 'NEW'}}_blank{{/ifEq}}">
+                                {{img imageUrl '' '' '슬라이드 배너' '' 'max-width:100%'}}
+                            </a>
+                        </li>
+                        {{/each}}
+                    </div>
+                </div>
+                {{/if}}<!-- // 메인 슬라이드 배너 -->
+                <!-- 메인분류 01 -->
+                <div class="kd-new-wrap kd-contents kd-mt-120">
+                    <div class="kd-main-title kd-clear">
+                        <h2 class="kd-fleft"><span class="kd-pt-color">N</span>EW ARRIVAL</h2>
+                        <p class="kd-fleft">새로운 상품들을 만나보세요!</p>
+                    </div>
+                    <div class="kd-prd-list" id="goodsList-SCPC0001" style="display: none;"></div>
+                </div><!-- // 메인분류 01 -->
+                
+                <div class="kd-store-wrap">
+                    <div class="kd-bn-track kd-bn-track01"></div>
+                    <div class="kd-contents kd-clear">
+                        {{#each BANNER02.bannerImages}}
+                        <div class="kd-bn-store kd-fleft"><a href="http://www.pokemonstore.co.kr/{{landingUrl}}" target="{{#ifEq openLocationType 'NEW'}}_blank{{/ifEq}}" id="banner-BANNER02">{{img imageUrl}}</a></div>{{/each}}
+                        <div class="kd-prd-store kd-fright">
+                            <div class="kd-main-title">
+                                <h2>POKÉMON <span class="kd-pt-color">STORE</span></h2>
+                                <p>
+                                    생활 속의 포켓몬<br />
+                                    홈 리빙 상품 기획전!
+                                </p>
+                            </div>
+                            <!-- 메인분류 02 -->
+                            <div class="kd-prd-list" id="goodsList-SCPC0002" style="display: none;"></div><!-- // 메인분류 02 -->
+                        </div>
+                    </div>
+                    <div class="kd-bn-track kd-bn-track02"></div>
+                </div>
+                <div class="kd-contents">
+                    <!-- 메인분류 03 -->
+                    <div class="kd-best-wrap">
+                        <div class="kd-main-title kd-clear">
+                            <h2 class="kd-fleft"><span class="kd-pt-color">B</span>EST ITEM</h2>
+                            <p class="kd-fleft">가장 많이 사랑받은 상품들</p>
+                        </div>
+                        <div class="kd-prd-list" id="goodsList-SCPC0003" style="display: none;"></div>
+                    </div><!-- // 메인분류 03 -->
+
+                    <!-- 기획전 배너, 메인분류 04 - 05 -->
+                    <div class="kd-exbibition-wrap kd-clear kd-mt-120">
+                        <ul class="kd-bn-exhibition kd-fleft">
+                            {{#if BANNER03.bannerImages}}{{#each BANNER03.bannerImages}}
+                            <li><a href="http://www.pokemonstore.co.kr/{{landingUrl}}" target="{{#ifEq openLocationType 'NEW'}}_blank{{/ifEq}}" id="banner-BANNER03">{{img imageUrl}}</a></li>
+                            {{/each}}{{/if}}
+                            {{#if BANNER04.bannerImages}}{{#each BANNER04.bannerImages}}
+                            <li><a href="http://www.pokemonstore.co.kr/{{landingUrl}}" target="{{#ifEq openLocationType 'NEW'}}_blank{{/ifEq}}" id="banner-BANNER04">{{img imageUrl}}</a></li>
+                            {{/each}}{{/if}}
+                        </ul>
+                        <div class="kd-prd-exhibition kd-fright">
+                            <div class="kd-prd-list" id="goodsList-SCPC0004" style="display: none;"></div>
+                            <div class="kd-prd-list" id="goodsList-SCPC0005" style="display: none;"></div>
+                        </div>
+                    </div><!-- // 기획전 배너, 메인분류 04 - 05 -->
+                </div>
+                <!-- 포켓몬 유튜브 슬라이드 -->
+                <div class="kd-youtube-wrap kd-mt-120">
+                    <div class="kd-bg-youtube"></div>
+                    <div class="kd-main-title">
+                        <h2>POKÉMON in <span class="kd-pt-color">YOUTUBE</span></h2>
+                        <p>유튜브에서 만나는 포켓몬</p>
+                    </div>
+                    <div class="kd-bn-youtube">
+                        {{#if BANNER05.bannerImages}}{{#each BANNER05.bannerImages}}
+                        <li><a href="http://www.pokemonstore.co.kr/{{landingUrl}}" target="{{#ifEq openLocationType 'NEW'}}_blank{{/ifEq}}" id="banner-BANNER05">{{img imageUrl}}</a></li>
+                        {{/each}}{{/if}}
+                        {{#if BANNER06.bannerImages}}{{#each BANNER06.bannerImages}}
+                        <li><a href="http://www.pokemonstore.co.kr/{{landingUrl}}" target="{{#ifEq openLocationType 'NEW'}}_blank{{/ifEq}}" id="banner-BANNER06">{{img imageUrl}}</a></li>
+                        {{/each}}{{/if}}
+                        {{#if BANNER07.bannerImages}}{{#each BANNER07.bannerImages}}
+                        <li><a href="http://www.pokemonstore.co.kr/{{landingUrl}}" target="{{#ifEq openLocationType 'NEW'}}_blank{{/ifEq}}" id="banner-BANNER07">{{img imageUrl}}</a></li>
+                        {{/each}}{{/if}}
+                        {{#if BANNER08.bannerImages}}{{#each BANNER08.bannerImages}}
+                        <li><a href="http://www.pokemonstore.co.kr/{{landingUrl}}" target="{{#ifEq openLocationType 'NEW'}}_blank{{/ifEq}}" id="banner-BANNER08">{{img imageUrl}}</a></li>
+                        {{/each}}{{/if}}
+                        {{#if BANNER09.bannerImages}}{{#each BANNER09.bannerImages}}
+                        <li><a href="http://www.pokemonstore.co.kr/{{landingUrl}}" target="{{#ifEq openLocationType 'NEW'}}_blank{{/ifEq}}" id="banner-BANNER09">{{img imageUrl}}</a></li>
+                        {{/each}}{{/if}}
+                        {{#if BANNER10.bannerImages}}{{#each BANNER10.bannerImages}}
+                        <li><a href="http://www.pokemonstore.co.kr/{{landingUrl}}" target="{{#ifEq openLocationType 'NEW'}}_blank{{/ifEq}}" id="banner-BANNER10">{{img imageUrl}}</a></li>
+                        {{/each}}{{/if}}
+                        {{#if BANNER11.bannerImages}}{{#each BANNER11.bannerImages}}
+                        <li><a href="http://www.pokemonstore.co.kr/{{landingUrl}}" target="{{#ifEq openLocationType 'NEW'}}_blank{{/ifEq}}" id="banner-BANNER11">{{img imageUrl}}</a></li>
+                        {{/each}}{{/if}}
+                        {{#if BANNER12.bannerImages}}{{#each BANNER12.bannerImages}}
+                        <li><a href="http://www.pokemonstore.co.kr/{{landingUrl}}" target="{{#ifEq openLocationType 'NEW'}}_blank{{/ifEq}}" id="banner-BANNER12">{{img imageUrl}}</a></li>
+                        {{/each}}{{/if}}
+                        {{#if BANNER13.bannerImages}}{{#each BANNER13.bannerImages}}
+                        <li><a href="http://www.pokemonstore.co.kr/{{landingUrl}}" target="{{#ifEq openLocationType 'NEW'}}_blank{{/ifEq}}" id="banner-BANNER13">{{img imageUrl}}</a></li>
+                        {{/each}}{{/if}}
+                        {{#if BANNER14.bannerImages}}{{#each BANNER14.bannerImages}}
+                        <li><a href="http://www.pokemonstore.co.kr/{{landingUrl}}" target="{{#ifEq openLocationType 'NEW'}}_blank{{/ifEq}}" id="banner-BANNER14">{{img imageUrl}}</a></li>
+                        {{/each}}{{/if}}
+                    </div>
+                </div>
+                <!-- // 포켓몬 유튜브 슬라이드 -->
+                <!-- 플러스 리뷰 위젯 -->
+                <div class="kd-review-wrap plus-review_widget kd-contents" id="plus-review-widget">
+                    <div id="kd_reviewTitle" class="kd-main-title kd-clear">
+                        <h2 class="kd-fleft"><span class="kd-pt-color">B</span>EST REVIEW</h2>
+                        <p class="kd-fleft">고객 리뷰</p>
+                    </div>
+                    <div class="main_goods_cont" id="all-review"></div>
+                    <div class="main_goods_cont" id="photo-review"></div>
+                    <div class="main_goods_cont" id="product-review"></div>
+                </div><!-- // 플러스 리뷰 위젯 -->
+                <!-- 인스타그램 위젯 -->
+                <div class="kd-instagram-wrap kd-contents kd-mt-120 instagram_widget" id="instagram-widget" style="display: none;"></div><!-- // 인스타그램 위젯 -->
+            </main>
+        </div>
+        <aside id="aside"></aside>
+        <footer id="footer"></footer>
+        <div id="popups-area"></div>
+
+        <!-- 1. 갤러리형 -->
+        <!-- 핸들바 기본 방식 -->
+        <script id="product-list-type-gallery" type="text/x-handlebars-template">
+            <div class="item_gallery_type">
+                <ul>
+                    {{#each productList}}
+                    <li data-product-no="{{productNo}}">
+                        <div class="item_photo_box">
+                            <a
+                                href="http://www.pokemonstore.co.kr/pages/product/view.html?productNo={{productNo}}"
+                                class="{{#if adult}}item_adult{{/if}}"
+                            >
+                                {{img listImageUrls '' '' productName 'middle'}} {{#if
+                                adult}}
+                                <strong
+                                    class="item_adult_bg"
+                                    style="background-image:url('only_adult_pc.png'); display:block;"
+                                >19금</strong
+                                >
+                                {{/if}} {{#if isSoldOut}}
+                                <strong
+                                    class="item_soldout_bg"
+                                    style="background-image:url('soldout.png'); display:block;"
+                                >SOLD OUT</strong
+                                >
+                                {{/if}} {{#ifEq saleStatusType 'READY'}}
+                                <div class="item_sell_ing"><span>판매임박</span></div>
+                                {{/ifEq}} {{#ifEq saleStatusType 'FINISHED'}}
+                                <div class="item_sell_ing"><span>판매종료</span></div>
+                                {{/ifEq}}
+                            </a>
+                            <a
+                                class="item_wish {{#if liked}}on{{/if}}"
+                                id="wishBtn"
+                                href="index.html.1.tmp.1.html#"
+                            ></a >
+                        </div>
+                        <div class="item_info_cont">
+                            <div class="item_tit_box">
+                                {{#if brandName}}
+                                <span class="item_brand">
+                                    <strong>{{brandName}}</strong>
+                                </span>
+                                {{else}}
+                                <span class="item_brand">
+                                    <strong>{{brandNameEn}}</strong>
+                                </span>
+                                {{/if}}
+                                <a href="http://www.pokemonstore.co.kr/pages/product/view.html?productNo={{productNo}}">
+                                    <strong class="item_name">{{safeString productName}}</strong>
+                                    {{#if promotionText}}
+                                    <span class="item_name_explain">{{promotionText}}</span>
+                                    {{/if}}
+                                </a>
+                            </div>
+                            <div class="item_money_box">
+                                {{#ifHasDiscount immediateDiscountAmt additionDiscountAmt}}
+                                <del>{{toCurrencyString salePrice}}원</del>
+                                {{/ifHasDiscount}}
+                                <strong class="item_price">
+                                    <b>{{toCurrencyString calculatedSalePrice}}</b>원
+                                </strong>
+                                {{#ifHasDiscount immediateDiscountAmt additionDiscountAmt}}
+                                <span class="kd-dc-rate">({{toCurrencyString calculatedSaleRate}}% ↓)</span>
+                                {{/ifHasDiscount}}
+                            </div>
+                            <div class="item_icon_box">
+                                {{#each stickerInfos}} {{#ifEq type 'TEXT'}}
+                                <span>{{label}}</span>
+                                {{else}} {{img label}} {{/ifEq}} {{/each}}
+                            </div>
+                        </div>
+                    </li>
+                    {{else}}
+                    <div class="goods_no_data"><strong>상품이 존재하지 않습니다.</strong></div>
+                    {{/each}}
+                </ul>
+            </div>
+        </script>
+
+        <!-- 2. 리스트형 -->
+        <script id="product-list-type-list" type="text/x-handlebars-template">
+            <div class="item_list_type">
+                <ul>
+                    {{#each productList}}
+                        <li data-product-no="{{productNo}}">
+                            <div class="item_photo_box">
+                                <a href="/pages/product/view.html?productNo={{productNo}}" {{#if adult}}class="item_adult"{{/if}}>
+                                {{img listImageUrls '' '' productName 'middle'}}
+                                {{#if adult}}
+                                    <strong class="item_adult_bg" style="background-image:url(http://www.pokemonstore.co.kr/`/assets/img/icon/goods_icon/only_adult_pc.png`); display:block;">19금</strong>
+                                {{/if}}
+                                {{#if isSoldOut}}
+                                    <strong
+                                            class="item_soldout_bg"
+                                            style="background-image:url('soldout.png'); display:block;"
+                                    >SOLD OUT</strong
+                                    >
+                                {{/if}}
+                                {{#ifEq saleStatusType 'READY'}}<div class="item_sell_ing"><span>판매임박</span></div>{{/ifEq}}
+                                {{#ifEq saleStatusType 'FINISHED'}}<div class="item_sell_ing"><span>판매종료</span></div>{{/ifEq}}
+                                </a>
+                            </div>
+                            <div class="item_info_cont">
+                                <div class="item_info_list">
+                                    <div class="item_tit_box">
+                                        {{#if brandName}}
+                                        <span class="item_brand"><strong>{{brandName}}</strong></span>
+                                        {{else}}
+                                        <span class="item_brand"><strong>{{brandNameEn}}</strong></span>
+                                        {{/if}}
+                                        <a href="http://www.pokemonstore.co.kr/pages/product/view.html?productNo={{productNo}}">
+                                            <strong class="item_name">{{safeString productName}}</strong>
+                                            {{#if promotionText}}
+                                                <span class="item_name_explain">{{promotionText}}</span>
+                                            {{/if}}
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="item_money_box">
+                                    <strong class="item_price">
+                                        <b>{{toCurrencyString calculatedSalePrice}}</b>원
+                                    </strong>
+                                    {{#ifHasDiscount immediateDiscountAmt additionDiscountAmt}}
+                                        <del>{{toCurrencyString salePrice}}원</del>
+                                    {{/ifHasDiscount}}
+                                </div>
+                                <div class="item_icon_box">
+                                    {{#each stickerInfos}}
+                                        {{#ifEq type 'TEXT'}}
+                                            <span>{{label}}</span>
+                                        {{else}}
+                                            {{img label}}
+                                        {{/ifEq}}
+                                    {{/each}}
+                                </div>
+                            </div>
+                            <div class="item_btn_box">
+                                <button class="btn_list_cart btn_add_cart" id="cartBtn" {{#if isUnablePurchasing}}disabled{{/if}}><span>장바구니</span></button><!-- 비활성화 시 button 에 disabled 추가 -->                                    <button class="btn_list_get btn_add_wish {{#if liked}}on{{/if}}" id="wishBtn"><span>찜하기</span></button><!-- 찜하기 선택 시 button 에 on 추가 -->
+                            </div>
+                        </li>
+                    {{else}}
+                        <div class="goods_no_data"><strong>상품이 존재하지 않습니다.</strong></div>
+                    {{/each}}
+                </ul>
+            </div>
+        </script>
+
+        <!-- 3. 장바구니 -->
+        <script id="product-list-type-basket" type="text/x-handlebars-template">
+            <div class="item_basket_type">
+                <ul>
+                    {{#each productList}}
+                        <li data-product-no="{{productNo}}">
+                            <div class="item_photo_box">
+                                <a href="/pages/product/view.html?productNo={{productNo}}" {{#if adult}}class="item_adult"{{/if}}>
+                                {{img listImageUrls '' '' productName 'middle'}}
+                                    {{#if adult}}
+                                    <strong class="item_adult_bg" style="background-image:url(http://www.pokemonstore.co.kr/`/assets/img/icon/goods_icon/only_adult_pc.png`); display:block;">19금</strong>
+                                {{/if}}
+                                {{#if isSoldOut}}
+                                    <strong
+                                            class="item_soldout_bg"
+                                            style="background-image:url('soldout.png'); display:block;"
+                                    >SOLD OUT</strong
+                                    >
+                                {{/if}}
+                                {{#ifEq saleStatusType 'READY'}}<div class="item_sell_ing"><span>판매임박</span></div>{{/ifEq}}
+                                {{#ifEq saleStatusType 'FINISHED'}}<div class="item_sell_ing"><span>판매종료</span></div>{{/ifEq}}
+                                </a>
+                                <div class="item_link">
+                                    <button type="button" class="btn_basket_get btn_add_wish {{#if liked}}on{{/if}}"  id="wishBtn"><span>찜하기</span></button>
+                                    <button type="button" class="btn_basket_cart btn_add_cart" id="cartBtn" {{#if isUnablePurchasing}}disabled{{/if}}><span>장바구니</span></button><!-- 비활성화 시 button 에 disabled 추가 -->                                    </div>
+                            </div>
+                            <div class="item_info_cont">
+                                <div class="item_tit_box">
+                                    {{#if brandName}}
+                                    <span class="item_brand">
+                                        <strong>{{brandName}}</strong>
+                                    </span>
+                                    {{else}}
+                                        <span class="item_brand">
+                                        <strong>{{brandNameEn}}</strong>
+                                    </span>
+                                    {{/if}}
+                                    <a href="http://www.pokemonstore.co.kr/pages/product/view.html?productNo={{productNo}}">
+                                    <strong class="item_name">{{safeString productName}}</strong>
+                                    {{#if promotionText}}
+                                        <span class="item_name_explain">{{promotionText}}</span>
+                                    {{/if}}
+                                    </a>
+                                </div>
+                                <div class="item_money_box">
+                                    {{#ifHasDiscount immediateDiscountAmt additionDiscountAmt}}
+                                        <del>{{toCurrencyString salePrice}}원</del>
+                                    {{/ifHasDiscount}}
+                                    <strong class="item_price">
+                                        <b>{{toCurrencyString calculatedSalePrice}}</b>원
+                                    </strong>
+                                </div>
+
+                                <div class="item_icon_box">
+                                    {{#each stickerInfos}}
+                                        {{#ifEq type 'TEXT'}}
+                                            <span>{{label}}</span>
+                                        {{else}}
+                                            {{img label}}
+                                        {{/ifEq}}
+                                    {{/each}}
+                                </div>
+                            </div>
+                        </li>
+                    {{else}}
+                        <div class="goods_no_data"><strong>{=__('상품이 존재하지 않습니다.')}</strong></div>
+                    {{/each}}
+                </ul>
+            </div>
+        </script>
+
+        <!-- 4. 심플이미지 -->
+        <script id="product-list-type-simple" type="text/x-handlebars-template">
+            <div class="item_simple_type">
+                <ul>
+                    {{#each productList}}
+                        <li data-product-no="{{productNo}}">
+                            <div class="item_photo_box">
+                                <a class="item_wish {{#if liked}}on{{/if}}" href="index.html.1.tmp.1.html#"  id="wishBtn"></a>
+                                <a href="/pages/product/view.html?productNo={{productNo}}" {{#if adult}}class="item_adult"{{/if}}>
+                                {{img listImageUrls '' '' productName 'middle'}}
+                                {{#if adult}}
+                                    <strong class="item_adult_bg" style="background-image:url(http://www.pokemonstore.co.kr/`/assets/img/icon/goods_icon/only_adult_pc.png`); display:block;">19금</strong>
+                                {{/if}}
+                                {{#if isSoldOut}}
+                                    <strong
+                                            class="item_soldout_bg"
+                                            style="background-image:url('soldout.png'); display:block;"
+                                    >SOLD OUT</strong
+                                    >
+                                {{/if}}
+                                {{#ifEq saleStatusType 'READY'}}<div class="item_sell_ing"><span>판매임박</span></div>{{/ifEq}}
+                                {{#ifEq saleStatusType 'FINISHED'}}<div class="item_sell_ing"><span>판매종료</span></div>{{/ifEq}}
+                                <div class="item_simple_over">
+                                    <div class="item_simple_info">
+                                        <div class="item_info_cont">
+                                            <div class="item_tit_box">
+                                                {{#if brandName}}
+                                                    <span class="item_brand">
+                                            <strong>{{brandName}}</strong>
+                                        </span>
+                                                {{else}}
+                                                    <span class="item_brand">
+                                                <strong>{{brandNameEn}}</strong>
+                                            </span>
+                                                {{/if}}
+                                                <strong class="item_name">{{safeString productName}}</strong>
+                                                {{#if promotionText}}
+                                                    <span class="item_name_explain">{{promotionText}}</span>
+                                                {{/if}}
+                                            </div>
+                                            <div class="item_money_box">
+                                                {{#ifHasDiscount immediateDiscountAmt additionDiscountAmt}}
+                                                    <del>{{toCurrencyString salePrice}}원</del>
+                                                {{/ifHasDiscount}}
+                                                <strong class="item_price">
+                                                    <b>{{toCurrencyString calculatedSalePrice}}</b>원
+                                                </strong>
+                                            </div>
+                                            <div class="item_icon_box">
+                                                {{#each stickerInfos}}
+                                                    {{#ifEq type 'TEXT'}}
+                                                        <span>{{label}}</span>
+                                                    {{else}}
+                                                        {{img label}}
+                                                    {{/ifEq}}
+                                                {{/each}}
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                </a>
+                            </div>
+                        </li>
+                    {{else}}
+                        <div class="goods_no_data"><strong>상품이 존재하지 않습니다.</strong></div>
+                    {{/each}}
+                </ul>
+            </div>
+        </script>
+
+        <!-- 5. 상품이동 -->
+        <script id="product-list-type-slide" type="text/x-handlebars-template">
+            <div class="item_slide_horizontal">
+                <ul class="slide_horizontal_1">
+                    {{#each productList}}
+                        <li data-product-no="{{productNo}}">
+                            <div class="item_photo_box">
+                                <a href="/pages/product/view.html?productNo={{productNo}}" {{#if adult}}class="item_adult"{{/if}}>
+                                {{img listImageUrls '' '' productName 'middle'}}
+                                {{#if adult}}
+                                    <strong class="item_adult_bg" style="background-image:url(http://www.pokemonstore.co.kr/`/assets/img/icon/goods_icon/only_adult_pc.png`); display:block;">19금</strong>
+                                {{/if}}
+                                {{#if isSoldOut}}
+                                    <strong
+                                            class="item_soldout_bg"
+                                            style="background-image:url('soldout.png'); display:block;"
+                                    >SOLD OUT</strong
+                                    >
+                                {{/if}}
+                                {{#ifEq saleStatusType 'READY'}}<div class="item_sell_ing"><span>판매임박</span></div>{{/ifEq}}
+                                {{#ifEq saleStatusType 'FINISHED'}}<div class="item_sell_ing"><span>판매종료</span></div>{{/ifEq}}
+
+                                </a>
+                                <a class="item_wish {{#if liked}}on{{/if}}" href="index.html.1.tmp.1.html#"  id="wishBtn"></a>
+                            </div>
+                            <div class="item_info_cont">
+                                <div class="item_tit_box">
+                                    {{#if brandName}}
+                                    <span class="item_brand">
+                                        <strong>{{brandName}}</strong>
+                                        </span>
+                                    {{else}}
+                                    <span class="item_brand">
+                                        <strong>{{brandNameEn}}</strong>
+                                    </span>
+                                    {{/if}}
+                                    <a href="http://www.pokemonstore.co.kr/pages/product/view.html?productNo={{productNo}}">
+                                    <strong class="item_name">{{safeString productName}}</strong>
+                                    {{#if promotionText}}
+                                        <span class="item_name_explain">{{promotionText}}</span>
+                                    {{/if}}
+                                    </a>
+                                </div>
+                                <div class="item_money_box">
+                                    {{#ifHasDiscount immediateDiscountAmt additionDiscountAmt}}
+                                        <del>{{toCurrencyString salePrice}}원</del>
+                                    {{/ifHasDiscount}}
+                                    <strong class="item_price">
+                                        <b>{{toCurrencyString calculatedSalePrice}}</b>원
+                                    </strong>
+                                </div>
+                                <div class="item_icon_box">
+                                    {{#each stickerInfos}}
+                                        {{#ifEq type 'TEXT'}}
+                                            <span>{{label}}</span>
+                                        {{else}}
+                                            {{img label}}
+                                        {{/ifEq}}
+                                    {{/each}}
+                                </div>
+                            </div>
+                        </li>
+                    {{else}}
+                        <div class="goods_no_data"><strong>상품이 존재하지 않습니다.</strong></div>
+                    {{/each}}
+                </ul>
+            </div>
+        </script>
+
+        <!-- 위젯(전체, 포토) -->
+        <script id="widget-list-allPhoto-template" type="text/x-handlebars-template">
+            <div class="widget-head">
+                <h3 class="widget-tit">{{#ifEq type 'ALL'}}상품후기{{else}}포토후기{{/ifEq}}</h3>
+                <a href="http://www.pokemonstore.co.kr/pages/board/product-reviews.html?boardType={{#ifEq type 'ALL'}}ALL{{else}}PHOTO{{/ifEq}}" class="widget-btn">
+                    {{#ifEq type 'ALL'}}전체 상품후기 보기{{else}}포토 상품후기 보기{{/ifEq}}
+                </a>
+            </div>
+            {{#if widgetList}}
+            <ul class="plusReviewList">
+                {{#each widgetList}}
+                <li>
+                    <div class="p-thumb">
+                        <a
+                        href="javascript:;"
+                        data-review-no="{{reviewNo}}"
+                        data-product-no="{{productInfo.no}}"
+                        data-type="{{#ifEq type 'ALL'}}ALL{{else}}PHOTO{{/ifEq}}"
+                        class="photo-display-popup-open"
+                        >
+                            <span class="img-frame img-frame--normal">
+                                {{#if images.length}}
+                                {{img images.[0] productInfo.name}}
+                                {{/if}} {{#if images.length}} {{#ifEq images.length 1}} {{else}}
+                                <span class="p-thumb__file-count">
+                                    {{images.length}}
+                                </span>
+                                {{/ifEq}} {{/if}}
+                            </span>
+                            <div class="p-thumb__desc">
+                                <p>
+                                    <span class="collapse-2">
+                                        {{#if isBestReview}}
+                                        <em class="tag">best</em>
+                                        {{/if}} {{content}}
+                                    </span>
+                                    <span class="p-thumb__auth">{{register.name}}</span>
+                                </p>
+                            </div>
+                        </a>
+                        <a href="http://www.pokemonstore.co.kr/pages/product/view.html?productNo={{productInfo.no}}" class="p-thumb__desc">
+                            <span class="img-frame">
+                                <img src="http://www.pokemonstore.co.kr/{{productInfo.thumbnailImage}}" alt="{{productInfo.name}}" />
+                            </span>
+                            <p>
+                                <span class="collapse-1">{{productInfo.name}}</span>
+                                <em class="p-thumb__comment-cnt"> 후기:<span>{{productInfo.totalReviewCount}}</span> </em>
+                            </p>
+                        </a>
+                    </div>
+                </li>
+                {{/each}}
+            </ul>
+            {{else}}
+            <p class="p-empty em">
+                <span class="p-empty-ico"></span>
+                게시글이 존재하지 않습니다.
+            </p>
+            {{/if}}
+        </script>
+
+        <!-- 위젯(상품 후기) -->
+        <script id="widget-list-reviewedProducts-template" type="text/x-handlebars-template">
+            <div class='main_goods_cont' id='plus-review-widget-container'>
+                <div class='widget-head'>
+                    <h3 class='widget-tit'>
+                        상품별 후기
+                    </h3>
+                    <a href='http://www.pokemonstore.co.kr/pages/board/product-reviews.html?boardType=REVIEWED_PRODUCTS' class='widget-btn'>
+                        전체 상품후기 보기
+                    </a>
+                </div>
+                {{#if widgetList}}
+                <ul class='plusReviewList'>
+                    {{#each widgetList}}
+                    <li>
+                        <div class='p-thumb'>
+                            <a href="http://www.pokemonstore.co.kr/pages/product/view.html?productNo={{productNo}}">
+                                <span class='img-frame img-frame--normal'>
+                                    {{#if mainImage}}
+                                    {{img mainImage productName}}
+                                    {{/if}}
+                                </span>
+                                <div class='p-thumb__desc'>
+                                    <p>
+                                        <span class='collapse-1'>
+                                            {{productName}}
+                                        </span>
+                                        <span class='p-thumb__price em'>
+                                            {{toCurrencyString salePrice}} 원 | 즉시 할인가 {{toCurrencyString appliedImmediateDiscountPrice}}원
+                                        </span>
+                                        <span class='p-thumb__comment'>
+                                            <em class='em'>
+                                                후기:
+                                                <span>
+                                                    {{totalReviewCount}}
+                                                </span>
+                                            </em>
+                                            <em class='em'>
+                                                평점:
+                                                <span>
+                                                    {{reviewRate}}
+                                                </span>
+                                            </em>
+                                        </span>
+                                    </p>
+                                </div>
+                            </a>
+                            {{#if reviews}}
+                                {{#each reviews}}
+                                <a
+                                        href="javascript:;"
+                                        data-review-no="{{reviewNo}}"
+                                        data-product-no="{{../productNo}}"
+                                        data-type="REVIEWED_PRODUCTS"
+                                        class="photo-display-popup-open"
+                                        >
+                                    <div class='p-thumb__desc'>
+
+                                            <span class='img-frame'>
+                                                {{#if attachedImage}}
+                                                {{img attachedImage content}}
+                                                {{/if}}
+                                            </span>
+                                            <p>
+                                                <span class='collapse-2'>
+                                                    {{#if isBestReview}}
+                                                        <em class='tag'>
+                                                            best
+                                                        </em>
+                                                    {{/if}}
+                                                    {{content}}
+                                                </span>
+                                            </p>
+
+                                    </div>
+                                </a>
+                                {{/each}}
+                            {{/if}}
+                        </div>
+                    </li>
+                    {{/each}}
+                </ul>
+                {{else}}
+                <p class='p-empty em'>
+                    <span class='p-empty-ico'></span>
+                    게시글이 존재하지 않습니다.
+                </p>
+                {{/if}}
+            </div>
+        </script>
+        <script type="text/javascript" src="http://www.pokemonstore.co.kr/js/pages/naver-inflow/naverInflow.js"></script>
+        <script src="http://www.pokemonstore.co.kr/js/pages/index.js"></script>
+        <!-- ADN 메인패널 설치 start -->
+        <script type="text/javascript">
+        var adn_pinad_param = adn_pinad_param || [];
+        adn_pinad_param.push([{
+        ui:'108221',	
+        ci:'1082210002',
+        gi:'113533'
+        }]);
+        </script>
+        <script type="text/javascript" async src="http://fin.rainbownine.net/js/across_adn_mainpanel_pc_ad_1.0.5.js"></script>
+        <!-- ADN 메인패널 설치 end -->
+    </body>
+</html>

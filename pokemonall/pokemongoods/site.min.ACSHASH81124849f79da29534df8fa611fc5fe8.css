@@ -1,0 +1,56 @@
+.s503-main-brand{width:100%;height:auto}
+.s503{position:relative;min-height:70vh;background-color:rgba(0,0,0,.3);overflow:hidden}
+.s503 .brand-title{font-size:23px;line-height:30px;color:#fff;padding:65px 100px 40px 0}
+.s503-brand-back-img{position:absolute;top:0;left:0;z-index:0;height:100%;width:100%;transform:translate(0,0);background-size:cover;background-position:center center;opacity:0}
+.s503-brand-back-img:before{content:"";position:absolute;top:0;left:0;z-index:0;height:100%;width:100%;background-color:rgba(0,0,0,.4)}
+.s503__inner{position:relative;color:#fff;padding:0 24px 90px}
+.s503 .brand-list .brand-item{min-height:57px;border:1px solid rgba(255,255,255,.45);border-radius:7px;margin-bottom:16px;padding:18px;position:relative}
+.s503 .brand-list .btns{position:relative;display:block;width:100%;height:40px;margin:-10px 0;text-align:left}
+.s503 .brand-list .btns:before,.s503 .brand-list .btns:after{content:"";position:absolute;top:50%;right:0;width:11px;height:1px;background:#fff}
+.s503 .brand-list .btns:after{transform:rotate(90deg)}
+.s503 .brand-list .btns span{display:block;width:153px;height:100%}
+.s503 .brand-list .btns span img{width:100%}
+.s503 .brand-list .brand-info{display:none}
+.s503 .brand-list .brand-item.is-active{position:relative;display:block}
+.s503 .brand-list .brand-item.is-active .brand-info{display:block}
+.s503 .brand-list .brand-item.is-active .btns:after{co.s503 .brand-list .brand-item:last-child .brand-infontent:none}
+.s503 .brand-list .brand-item .brand-info *{transition-property:transform,opacity,background-color,color;transition-duration:.35s;transition-timing-function:ease-out;transform:translateY(50px);opacity:0;transition-delay:0}
+.s503 .brand-list .brand-item.is-active .brand-info *:nth-child(1){transform:translateY(0);opacity:1;transition-delay:.05s}
+.s503 .brand-list .brand-item.is-active .brand-info *:nth-child(2){transform:translateY(0);opacity:1;transition-delay:.1s}
+.s503 .brand-list .brand-item.is-active .brand-info *:nth-child(3){transform:translateY(0);opacity:1;transition-delay:.2s}
+.s503 .brand-list .brand-info strong{display:block;font-size:16px;margin:32px 0 20px}
+.s503 .brand-list .brand-info .brand-exp{font-size:14px;line-height:24px;margin:20px 0 42px;letter-spacing:0}
+.s503 .brand-list .brand-info .btn-view{position:relative;display:inline-block;min-width:130px;height:44px;line-height:44px;font-size:14px;color:#fff;padding:0 40px 0 24px}
+.s503 .brand-list .brand-info .btn-view:before{content:"";position:absolute;top:calc(50% - 5px);right:14px;width:10px;height:10px;border-top:1px solid #fff;border-right:1px solid #fff}
+.s503 .brand-list .brand-info .btn-view:before{transform:rotate(45deg)}
+.s503 .brand-list .brand-info .btn-view:hover:before,.s503 .brand-list .brand-info .btn-view:active:before{border-color:#333 !important}
+@media all and (min-width:768px){.s503 .brand-title{padding:70px 0 60px 0}
+.s503__inner{padding:0 28px 20px}
+.s503 .brand-list{width:100%}
+}
+@media all and (min-width:1025px){.s503{height:810px;min-height:auto}
+.s503-main-brand{height:auto}
+.s503__inner{padding:0 20px}
+.s503 .brand-title{font-size:40px;padding:132px 0 65px}
+.s503 .brand-list{display:flex;justify-content:space-between}
+.s503 .brand-list .brand-item{border:0;border-radius:0;border-top:2px solid #fff;padding:0;margin:0 31px 0 0;opacity:1;flex:1}
+.s503 .brand-list .brand-item:first-child{margin-left:0}
+.s503 .brand-list .brand-item:last-child{margin-right:0}
+.s503 .brand-list .brand-item.is-none{opacity:.3}
+.s503 .brand-list .brand-item .brand-info{width:50vw;max-width:700px;position:absolute}
+.s503 .brand-list .brand-item:nth-child(4) .btns ~ .brand-info{width:460px}
+.s503 .brand-list .brand-item:nth-child(5) .btns ~ .brand-info{width:460px}
+.s503 .brand-list .brand-item:last-child .brand-info{position:absolute;right:0;text-align:right}
+.s503 .brand-list .brand-item:last-child .btn-view{text-align:left}
+.s503 .brand-list .btns{height:100px;padding:15px 0}
+.s503 .brand-list .btns span{width:100%;max-width:228px}
+.s503 .brand-list .btns span img{width:100%;transform-origin:0 center}
+.s503 .brand-list .brand-info strong{font-size:18px;margin:30px 0 35px;line-height:1.5}
+.s503 .brand-list .brand-info .brand-exp{font-size:16px;line-height:30px}
+.s503 .brand-list .brand-info .btn-view{min-width:120px;height:35px;line-height:35px;font-size:14px}
+.s503 .brand-list .brand-info .btn-view:before{top:calc(50% - 3px);right:20px;width:8px;height:8px}
+.s503 .brand-list .btns:before,.s503 .brand-list .btns:after{content:none}
+}
+@media all and (min-width:1440px){.s503__inner{max-width:1576px;margin:0 auto;padding:0 20px}
+.s503 .brand-list .btns span img{width:100%}
+}

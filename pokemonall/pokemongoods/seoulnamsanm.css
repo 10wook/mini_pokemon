@@ -1,0 +1,11 @@
+@font-face {
+	font-family: 'SeoulNamsanJungM';
+	src: url('https://vendor-cdn.imweb.me/fonts/seoulnamsanjungm.eot');
+	src: url('https://vendor-cdn.imweb.me/fonts/seoulnamsanjungm.eot?') format('embedded-opentype'),
+	url('https://vendor-cdn.imweb.me/fonts/seoulnamsanjungm.woff2') format('woff2'),
+	url('https://vendor-cdn.imweb.me/fonts/seoulnamsanjungm.woff') format('woff'),
+	url('https://vendor-cdn.imweb.me/fonts/seoulnamsanjungm.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}

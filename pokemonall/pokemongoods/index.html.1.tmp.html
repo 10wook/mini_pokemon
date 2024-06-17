@@ -1,0 +1,2032 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>포켓몬 카드 게임</title>
+ 	<link rel="stylesheet" href="bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+   <link rel="stylesheet" href="swiper.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/css/ion.rangeSlider.min.css"/>
+	    <link rel="stylesheet" href="https://pokemoncard.co.kr/v3/css/commoncard.css?t=1718601906">
+
+ 
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+                    <meta name="keywords" content="포켓몬">
+            <meta name="description" content="포켓몬 카드 게임 공식 사이트 입니다.">
+            <meta property="og:title" content="포켓몬 카드 게임"/>
+            <meta property="og:url" content="http://pokemoncard.co.kr"/>
+            <meta property="og:site_name" content="Pokémon Card Game"/>
+            <meta property="og:description" content="포켓몬 카드 게임의 한국 공식사이트, 신제품 소개 및 카드 정보, 포켓몬스쿨 일정, 대회 안내 제공">
+            <meta property="og:image"
+                  content="https://data1.pokemonkorea.co.kr/2016/06/2016-06-20_00-44-39-61799-1466351079.jpg"/>
+
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.2/js/swiper.min.js"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/js/ion.rangeSlider.min.js"></script>
+
+    <script src="https://pokemoncard.co.kr/v3/js/common.js"></script>
+         <script type="text/javascript" src="https://pokemoncard.co.kr/v2/js/jquery.magnific-popup.min.js"></script>
+        <script type="text/javascript" src="https://pokemoncard.co.kr/v2/js/jquery.scrollTo-min.js"></script>
+        <script type="text/javascript" src="https://pokemoncard.co.kr/v2/js/SmoothScroll.js"></script>
+        <script type="text/javascript" src="https://pokemoncard.co.kr/v2/js/wow.js"></script>
+        <script type="text/javascript" src="https://pokemoncard.co.kr/v2/js/custom.js"></script>
+        <script type="text/javascript" src="https://pokemoncard.co.kr/v2/js/plugins.js"></script>
+        <script type="text/javascript" src="https://pokemoncard.co.kr/v2/js/greensock.js"></script>
+        <script type="text/javascript" src="https://pokemoncard.co.kr/v2/js/layerslider.transitions.js"></script>
+        <script type="text/javascript" src="https://pokemoncard.co.kr/v2/js/layerslider.kreaturamedia.jquery.js"></script>
+        <script type="text/javascript" src="https://pokemoncard.co.kr/v2/js/jquery.sticky.js"></script>
+        <script type="text/javascript" src="https://pokemoncard.co.kr/v2/js/cat_list.js?78"></script>
+        <script type="text/javascript" src="https://pokemoncard.co.kr/v2/js/function.js"></script>
+        <script type="text/javascript" src="https://pokemoncard.co.kr/v2/js/formData.js"></script>
+       <script type="text/javascript"
+                src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.min.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function () {
+                $("#social_rt").sticky({topSpacing: 100});
+
+                var cwpc = $("#carousel-indicators-pc").width();
+                var cwmo = $("#carousel-indicators-mobile").width();
+
+                $("#carousel-indicators-pc").css("margin-left","-" + (cwpc / 2) +"px");
+                $("#carousel-indicators-mobile").css("margin-left","-" + (cwmo / 2) +"px");
+
+                var ch = $("#carousel-example-index").height();
+
+                $(".carousel-control-right").css("top",( (ch + 76) / 2 * -1 ) );
+                $(".carousel-control-left").css("top",( (ch + 76) / 2 * -1 ) );
+
+                var ww = $(document).width() - 24;
+                var calcH = (ww * 298) / 408;
+                $(".myinfo-box-mobile .tab-content .tab-pane").height(calcH);
+
+            });
+        </script>
+                 
+        <!-- Facebook Pixel Code -->
+
+        <script>
+
+            !function (f, b, e, v, n, t, s) {
+                if (f.fbq) return;
+                n = f.fbq = function () {
+                    n.callMethod ?
+
+                        n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+                };
+
+                if (!f._fbq) f._fbq = n;
+                n.push = n;
+                n.loaded = !0;
+                n.version = '2.0';
+
+                n.queue = [];
+                t = b.createElement(e);
+                t.async = !0;
+
+                t.src = v;
+                s = b.getElementsByTagName(e)[0];
+
+                s.parentNode.insertBefore(t, s)
+            }(window, document, 'script',
+
+                'https://connect.facebook.net/en_US/fbevents.js');
+
+            fbq('init', '2037312413208523');
+
+            fbq('track', 'PageView');
+
+        </script>
+
+        <noscript><img height="1" width="1" style="display:none"
+                       src="https://www.facebook.com/tr?id=2037312413208523&ev=PageView&noscript=1"/></noscript>
+
+        <!-- End Facebook Pixel Code -->
+
+        <meta name="google-site-verification" content="b-u0TiON-ceDw-l4NiwkleAGnrA0TGgRu-_YKJYliAY"/>
+        <meta name="naver-site-verification" content="3fb143ded9e75a67d2ed85842b89b35422496d58"/>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-142581117-1"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'UA-142581117-1');
+        </script>
+        <script type="text/javascript" charset="UTF-8" src="https://t1.daumcdn.net/kas/static/kp.js"></script>
+        <script type="text/javascript">kakaoPixel('327812162506475690').pageView();</script>
+        <!-- ADN Tracker[공통] start -->
+        <script src="https://fin.rainbownine.net/js/across_adn_2.0.1.js" type="text/javascript"></script>
+        <!-- ADN Tracker[공통] end -->
+
+</head>
+
+<body>
+   <!-- ADN Tracker[방문자] start -->
+    <script type="text/javascript">
+    window.addEventListener('load', function() {
+        var across_adn_contain = new fn_across_adn_contain();
+        var across_adn_param = [];
+        across_adn_param = {"ut":"Home","ui":"108221"};
+        across_adn_contain.init(across_adn_param);
+    });
+    </script>
+    <!-- ADN Tracker[방문자] end -->
+    
+<div id="wrap">
+	<!-- header -->
+
+
+	<header id="hd" class="page-pokemon page-card">
+		<h1>
+			<a href="index.html.1.tmp.html"><img src="https://pokemoncard.co.kr/v3/img/card_main_logo.png" alt="pokemon 포켓몬 카드 게임"></a>
+		</h1>
+		<div class="container flex-justify-space">
+			<button type="button" class="js-mn no-style" title="메뉴열기/닫기">
+				<span></span>
+				<span></span>
+				<span></span>
+			</button>
+			<nav id="gnb">
+				<ul class="gnb">
+
+
+					<li class="my-news d-lg-none d-block">
+											<div>
+							<a href="https://pokemoncard.co.kr/member/login?next=/main" class="badge badge-muted2 badge-round">로그인</a>
+						</div>
+                           
+
+					</li>
+
+
+
+					<li>
+						<a href="https://pokemoncard.co.kr/news"  >새소식</a>
+					</li>
+					<li>
+						<a href="https://pokemoncard.co.kr/card/category/info1" >제품정보</a>
+					</li>												 
+					<li>
+						<a href="https://pokemoncard.co.kr/card/play" >놀이방법</a>
+					</li>
+					<li>
+						<a href="https://pokemoncard.co.kr/card/category/event" >이벤트</a>
+					</li>
+					<li>
+						<a href="https://pokemoncard.co.kr/cards" >카드검색</a>
+					</li>
+					<li>
+						<a href="https://pokemoncard.co.kr/recipe" >덱레시피</a>
+					</li>
+					<li>
+						<a href="https://pokemoncard.co.kr/players" >플레이어즈</a>
+					</li>
+					<li>
+						<a href="https://pokemon-reservation.co.kr/home/selectReservStatusList.do">예약</a>
+					</li>
+
+					<li class="d-lg-none d-block">
+						<a href="https://www.pokemonkorea.co.kr/pokedex" target="_blank"><img src="https://pokemoncard.co.kr/v3/img/modal_alet.jpg" alt="" class="mr-2">포켓몬 공식 사이트</a>
+					</li>
+					<li class="d-lg-none d-block">
+						<a href="index.html.1.tmp.1.html" target="_blank"><img src="https://pokemoncard.co.kr/v3/img/icon/icon_poke.png" alt="" class="mr-2">포켓몬 스토어</a>
+					</li>
+
+
+				</ul>
+			</nav>
+
+			<ul id="acc">
+
+
+									<li>
+					<a href="https://pokemoncard.co.kr/member/login?next=/main"><i class="icon-login"></i>로그인</a>
+				</li>
+
+				
+				<li>
+					<button type="button" class="no-style collapsed" data-toggle="collapse" data-target="#search"><i class="icon-search"></i>카드검색</button>
+				</li>
+			</ul>
+ 
+ 
+		</div>
+		<div class="btn-store d-lg-flex d-none">
+			<a href="https://pokemonkorea.co.kr/" class="pokehome" target="_blank"><i class="icon-pokehome">포켓몬 공식 사이트</i></a>
+			<a href="index.html.1.tmp.1.html" class="pokestore" target="_blank"><i class="icon-pokestore">포켓몬 스토어</i></a>
+		</div>
+		<div id="search" class="collapse">
+		<form id="header-search-form" action="https://pokemoncard.co.kr/cards" method="get">
+			<div class="search-wrp">
+				<input type="text" id="header-search-input"   name="s" placeholder="카드검색 (포켓몬 이름 혹은 텍스트를 입력하세요)" value="">
+				<button type="button" id="header-search_text_submit" class="no-style btn-search"><p class="sr-only">카드검색</p></button>
+				<button tabindex="button" data-toggle="collapse" data-target="#search" class="no-style btn-close"><p class="sr-only">닫기</p></button>
+			</div>
+		</form>
+		</div>
+	</header>
+    <script>
+        jQuery(window).load(function () {
+            var ww = $(document).width();
+
+            if(ww < 640){
+                $("#header-search-input").attr("placeholder","포켓몬 이름 혹은 텍스트를 입력하세요.");
+                if($("#search_text").length > 0){
+                    $("#search_text").attr("placeholder","포켓몬 이름 혹은 텍스트를 입력하세요.");
+                }
+            }
+            $(document).on("click", "button#header-search_text_submit", function (e) {
+                $("#header-search-form").submit();
+            });
+
+            $(document).on("click", "button#button-top-menu", function (e) {
+                if($("#navbar-search-box").hasClass("in") ){
+
+                    $("#button-top-search").click();
+
+                }
+
+            });
+
+        });
+
+    </script>
+ 
+
+<div id="ct" class="sub-card">
+     <script type="text/javascript" src="https://pokemoncard.co.kr/v2/js/jquery.range-min.js"></script>
+    <script type="text/javascript" src="https://pokemoncard.co.kr/v2/js/select2.min.js"></script>
+    <script type="text/javascript" src="https://pokemoncard.co.kr/v2/js/jquery.mousewheel.min.js"></script>
+    <script type="text/javascript" src="https://pokemoncard.co.kr/v2/js/jquery.carousel-1.1.js?2"></script>
+    <script type="text/javascript" src="https://pokemoncard.co.kr/v2/js/main.js"></script>
+    <link href="https://pokemoncard.co.kr/v2/css/jquery.range.css" rel="stylesheet">
+    <link href="https://pokemoncard.co.kr/v2/css/select2.min.css" rel="stylesheet"/>
+    <link href="https://pokemoncard.co.kr/v2/css/main.css?v=10" rel="stylesheet">
+    <link href="https://pokemoncard.co.kr/v2/carousel/css/carousel.css?3" rel="stylesheet">
+  
+
+ 
+<div class="d-lg-block d-none">
+	<!-- ADN 메인패널 설치 start -->
+	<script type="text/javascript">
+	var adn_pinad_param = adn_pinad_param || [];
+	adn_pinad_param.push([{
+	ui:'108221',	
+	ci:'1082210002',
+	gi:'113533'
+	}]);
+	</script>
+	<script type="text/javascript" async src="https://fin.rainbownine.net/js/across_adn_mainpanel_pc_ad_1.0.5.js"></script>
+	<!-- ADN 메인패널 설치 end -->
+</div>
+
+ <div id="top">
+	<section class="sect-visual swiper-container bg-dark2">
+		<div class="swiper-wrapper">
+
+ 
+			<div class="swiper-slide">
+				 <a href="https://pokemoncard.co.kr/card/642" target="_blank"> 
+					<div class="tumb-wrp">
+						<img data-src="https://data1.pokemonkorea.co.kr/2024/06/2024-06-05_18-33-49-47403-1717580029.png?w=2000"
+				 src="https://data1.pokemonkorea.co.kr/2024/06/2024-06-05_18-33-49-47403-1717580029.png?w=2000" alt="" class="img-fluid">
+					</div>
+				</a>
+			</div>
+
+
+	 
+			<div class="swiper-slide">
+				 <a href="https://pokemoncard.co.kr/card/642" target="_blank"> 
+					<div class="tumb-wrp">
+						<img data-src="https://data1.pokemonkorea.co.kr/2024/06/2024-06-05_18-34-59-42904-1717580099.png?w=2000"
+				 src="https://data1.pokemonkorea.co.kr/2024/06/2024-06-05_18-34-59-42904-1717580099.png?w=2000" alt="" class="img-fluid">
+					</div>
+				</a>
+			</div>
+
+
+	 
+			<div class="swiper-slide">
+				 <a href="https://pokemoncard.co.kr/card/636" target="_blank"> 
+					<div class="tumb-wrp">
+						<img data-src="https://data1.pokemonkorea.co.kr/2024/05/2024-05-10_18-49-35-88818-1715334575.png?w=2000"
+				 src="https://data1.pokemonkorea.co.kr/2024/05/2024-05-10_18-49-35-88818-1715334575.png?w=2000" alt="" class="img-fluid">
+					</div>
+				</a>
+			</div>
+
+
+	 
+			<div class="swiper-slide">
+				 <a href="https://pokemoncard.co.kr/card/632" target="_blank"> 
+					<div class="tumb-wrp">
+						<img data-src="https://data1.pokemonkorea.co.kr/2024/04/2024-04-22_20-12-10-11210-1713784330.png?w=2000"
+				 src="https://data1.pokemonkorea.co.kr/2024/04/2024-04-22_20-12-10-11210-1713784330.png?w=2000" alt="" class="img-fluid">
+					</div>
+				</a>
+			</div>
+
+
+	 
+			<div class="swiper-slide">
+				 <a href="https://pokemoncard.co.kr/card/628" target="_blank"> 
+					<div class="tumb-wrp">
+						<img data-src="https://data1.pokemonkorea.co.kr/2024/04/2024-04-05_17-56-11-79454-1712307371.png?w=2000"
+				 src="https://data1.pokemonkorea.co.kr/2024/04/2024-04-05_17-56-11-79454-1712307371.png?w=2000" alt="" class="img-fluid">
+					</div>
+				</a>
+			</div>
+
+
+	 
+			<div class="swiper-slide">
+				 <a href="https://pokemoncard.co.kr/card/590" target="_blank"> 
+					<div class="tumb-wrp">
+						<img data-src="https://data1.pokemonkorea.co.kr/2023/12/2023-12-11_13-12-13-26624-1702267933.png?w=2000"
+				 src="https://data1.pokemonkorea.co.kr/2023/12/2023-12-11_13-12-13-26624-1702267933.png?w=2000" alt="" class="img-fluid">
+					</div>
+				</a>
+			</div>
+
+
+	 
+			<div class="swiper-slide">
+				 <a href="https://www.pokemonkorea.co.kr/2024card_shop_battle_league" target="_blank"> 
+					<div class="tumb-wrp">
+						<img data-src="https://data1.pokemonkorea.co.kr/2023/11/2023-11-01_21-18-20-64958-1698841100.jpg?w=2000"
+				 src="https://data1.pokemonkorea.co.kr/2023/11/2023-11-01_21-18-20-64958-1698841100.jpg?w=2000" alt="" class="img-fluid">
+					</div>
+				</a>
+			</div>
+
+
+	 
+			<div class="swiper-slide">
+				 <a href="https://pokemonkorea.co.kr/pokemonschool2023" target="_blank"> 
+					<div class="tumb-wrp">
+						<img data-src="https://data1.pokemonkorea.co.kr/2024/05/2024-05-17_18-43-22-20068-1715939002.jpg?w=2000"
+				 src="https://data1.pokemonkorea.co.kr/2024/05/2024-05-17_18-43-22-20068-1715939002.jpg?w=2000" alt="" class="img-fluid">
+					</div>
+				</a>
+			</div>
+
+
+	 
+			<div class="swiper-slide">
+				 <a href="https://pokemonkorea.co.kr/SV6_tournament" target="_blank"> 
+					<div class="tumb-wrp">
+						<img data-src="https://data1.pokemonkorea.co.kr/2024/06/2024-06-14_19-02-43-41279-1718359363.png?w=2000"
+				 src="https://data1.pokemonkorea.co.kr/2024/06/2024-06-14_19-02-43-41279-1718359363.png?w=2000" alt="" class="img-fluid">
+					</div>
+				</a>
+			</div>
+
+
+	
+ 
+ 
+
+
+
+ 
+		</div>
+		<div class="swiper-button-next"></div>
+		<div class="swiper-button-prev"></div>
+	</section>
+ 
+
+            <script src="https://pokemoncard.co.kr/v3/js/jquery.nice-select.min.js"></script>
+            <link rel="stylesheet" href="https://pokemoncard.co.kr/v3/css/nice-select.css">
+            <script>
+                $(document).ready(function () {
+                    $('select').niceSelect();
+                });
+            </script>
+            <style>
+                select.select-css{
+                    border: 0;
+                    color:#fff;
+                }
+                .nav-search .search-wrp input {
+                    position: relative;
+                    top: 0;
+                    left: 0;
+                    width: calc(100% - 160px);
+                    height: 30px;
+                    padding-left: 14px;
+                    border: 0;
+                    background: transparent;
+                    outline: none !important;
+                    border-left: 1px #ddd solid;
+                    margin-top: 12px;
+                }
+
+                .select-css {
+                    width: 140px !important;
+                }
+
+                @media (max-width: 991px) {
+                    .nav-search .search-wrp input {
+                        position: relative;
+                        top: 0;
+                        left: 0;
+                        width: calc(100% - 140px);
+                        padding-left: 10px;
+                        border: 0;
+                        background: transparent;
+                        outline: none !important;
+                        height: 20px;
+                        font-size: 15px;
+                        margin-top: 10px;
+                        border-left: 1px #ddd solid;
+                    }
+
+                    .select-css {
+                        width: 100px !important;
+                    }
+
+                    .nice-select {
+                        height: 40px;
+                        line-height: 40px;
+                        font-size: 14px;
+
+                        padding-left: 12px;
+                        padding-right: 20px;
+                    }
+
+                    .nice-select:after {
+                        right: 8px
+                    }
+
+                }
+            </style>
+
+ 
+	<div class="search-book bg-dark2">
+		<div class="container-lg">
+			<ul class="nav nav-tabs nav-srch">
+				<li class="nav-item">
+					<a class="nav-link active" id="card-tab" data-toggle="tab" href="index.html.1.tmp.html#card">카드 검색</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" id="qna-tab" data-toggle="tab" href="index.html.1.tmp.html#qna">Q&#38;A</a>
+				</li>
+			</ul>
+			<div class="tab-content">
+				<div class="tab-pane show active" id="card">
+					<div class="nav-search black">
+						<div class="search-wrp">
+                    <form id="main-search-form" action="https://pokemoncard.co.kr/cards" method="get">
+
+                             <select  name="search_params" id="search_params" class="select-css">
+                                <option value="all">전체</option>
+                                <option value="cardname">카드 이름</option>
+                                <option value="cardtext">카드 텍스트</option>
+                            </select>
+ 
+
+							<input type="text" class="js-place01"  name="s" placeholder="카드검색 (포켓몬 이름 혹은 텍스트를 입력하세요)" value="">
+							<button id="search_text_submit" type="button" class="no-style btn-search"><p class="sr-only">검색</p></button>
+                    </form>
+						</div>
+					</div>
+				</div>
+				<div class="tab-pane" id="qna">
+					<div class="nav-search black">
+						<div class="search-wrp">
+                    <form id="main-search-keyword-form" action="https://pokemoncard.co.kr/cards" method="get">
+							<input type="text"  name="q" placeholder="검색하고 싶은 키워드를 입력하세요">
+							<button type="button"  id="search_keyword_submit" class="no-style btn-search"><p class="sr-only">검색</p></button>
+                    </form>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="collapse" id="detailed">
+            <form id="detail_search_form" action="https://pokemoncard.co.kr/cards" method="post">
+                <input type="hidden" name="form_data" id="form_data">
+            </form>
+
+
+
+<script>
+var CardTypeNum = 1;
+        $(document).on("click", "button#search_text_submit", function (e) {
+            $("#main-search-form").submit();
+
+        });
+
+        $(document).on("click", "button#search_keyword_submit", function (e) {
+            $("#main-search-keyword-form").submit();
+
+        });
+
+
+function searchnav(nu){
+
+	CardTypeNum = nu + 1;
+	$(".searchnav").removeClass("active");
+	$(".searchnav").eq(nu).addClass("active");
+	$(".searchnavcont").hide();
+	$(".searchnavcont").eq(nu).show();
+
+}
+function searchformreset(){
+
+	document.msearchform.reset();
+
+}
+function selectall(bul,obj){
+
+	tbl = document.getElementById(obj);
+	input = tbl.getElementsByTagName("INPUT");
+	inputCount = input.length;
+	for(i=0;i<inputCount;i++){
+
+		input[i].checked=bul;
+	}
+
+}
+
+</script>
+
+				<form name="msearchform">
+					<div class="text-center">
+						<ul class="nav nav-muted v2 v3">
+							<li class="nav-item">
+								<a class="nav-link searchnav active" href="javascript:;" onclick="searchnav(0)">포켓몬</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link searchnav" href="javascript:;" onclick="searchnav(1)"  >트레이너스</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link searchnav" href="javascript:;" onclick="searchnav(2)"  >에너지</a>
+							</li>
+						</ul>
+					</div>
+<input name="limit" value="1" type="hidden">
+
+					<div class="searchnavcont">
+					<div class="form-wrp card-border-m">
+						<div class="row">
+							<div class="form-group col-lg-6 col-12 mb-0">
+								<p class="text-white">제품명</p>
+                            <select class="select" id="GoodsName" name="GoodsName" style="width: 100%;">
+                                <optgroup label="전체">
+                                    <option value="전체">전체</option>
+                                    <option value="썬&문전체">썬&문 전체</option>
+                                    <option value="XY BREAK전체">XY BREAK 전체</option>
+                                    <option value="XY전체">XY 전체</option>
+                                    <option value="BW전체">BW 전체</option>
+                                    <option value="프로모전체">프로모 카드 전체</option>
+                                    <option value="DP전체">DP 전체</option>
+                                                                    </optgroup>
+                                <optgroup label="썬&문 전체">
+                                    <option value="썬&문전체">썬&문 전체</option>
+                                    <option value="썬&문 하이클래스팩 「GX 울트라샤이니」">썬&문 하이클래스팩 「GX 울트라샤이니」</option><option value="썬&문 하이클래스팩 「TAG TEAM GX 태그올스타즈」">썬&문 하이클래스팩 「TAG TEAM GX 태그올스타즈」</option><option value="썬&문 강화 확장팩 「챔피언로드」">썬&문 강화 확장팩 「챔피언로드」</option><option value="썬&문 강화 확장팩 「GX 배틀부스트 REMASTER」">썬&문 강화 확장팩 「GX 배틀부스트 REMASTER」</option><option value="썬&문 강화 확장팩 「GX 배틀부스트」">썬&문 강화 확장팩 「GX 배틀부스트」</option><option value="썬&문 강화 확장팩 「썬&문」">썬&문 강화 확장팩 「썬&문」</option><option value="썬&문 강화 확장팩 「새로운 시련」">썬&문 강화 확장팩 「새로운 시련」</option><option value="썬&문 확장팩 「태그볼트」">썬&문 확장팩 「태그볼트」</option><option value="썬&문 확장팩 제12탄 「얼터제네시스」">썬&문 확장팩 제12탄 「얼터제네시스」</option><option value="썬&문 강화 확장팩 「드래곤스톰」">썬&문 강화 확장팩 「드래곤스톰」</option><option value="썬&문 확장팩 「더블블레이즈」">썬&문 확장팩 「더블블레이즈」</option><option value="썬&문 확장팩 제11탄 「미라클트윈」">썬&문 확장팩 제11탄 「미라클트윈」</option><option value="썬&문 확장팩 제7탄 「창공의 카리스마」">썬&문 확장팩 제7탄 「창공의 카리스마」</option><option value="썬&문 강화 확장팩 「나이트유니슨」">썬&문 강화 확장팩 「나이트유니슨」</option><option value="썬&문 확장팩 제8탄 「버스트임팩트」">썬&문 확장팩 제8탄 「버스트임팩트」</option><option value="썬&문 강화 확장팩 「울트라포스」">썬&문 강화 확장팩 「울트라포스」</option><option value="썬&문 확장팩 제6탄 「금단의 빛」">썬&문 확장팩 제6탄 「금단의 빛」</option><option value="썬&문 강화 확장팩 「다크오더」">썬&문 강화 확장팩 「다크오더」</option><option value="썬&문 강화 확장팩 「페어리라이즈」">썬&문 강화 확장팩 「페어리라이즈」</option><option value="썬&문 「랜덤30장덱」">썬&문 「랜덤30장덱」</option><option value="썬&문 강화 확장팩 「빛나는 전설」">썬&문 강화 확장팩 「빛나는 전설」</option><option value="썬&문 강화 확장팩 「리믹스바우트」">썬&문 강화 확장팩 「리믹스바우트」</option><option value="썬&문 확장팩 제5탄 「울트라썬」">썬&문 확장팩 제5탄 「울트라썬」</option><option value="썬&문 확장팩 제5탄 「울트라문」">썬&문 확장팩 제5탄 「울트라문」</option><option value="썬&문 강화 확장팩 「드림리그」">썬&문 강화 확장팩 「드림리그」</option><option value="썬&문 강화 확장팩 「플라스마 스파크」">썬&문 강화 확장팩 「플라스마 스파크」</option><option value="썬&문 확장팩 제1탄 「썬 컬렉션」">썬&문 확장팩 제1탄 「썬 컬렉션」</option><option value="썬&문 확장팩 제1탄 「문 컬렉션」">썬&문 확장팩 제1탄 「문 컬렉션」</option><option value="썬&문 강화 확장팩 「스카이레전드」">썬&문 강화 확장팩 「스카이레전드」</option><option value="썬&문 강화 확장팩 「풀메탈월」">썬&문 강화 확장팩 「풀메탈월」</option><option value="썬&문 강화 확장팩 「GG엔드」">썬&문 강화 확장팩 「GG엔드」</option><option value="썬&문 스타터세트">썬&문 스타터세트</option><option value="썬&문 확장팩 제3탄 「어둠을 밝힌 무지개」">썬&문 확장팩 제3탄 「어둠을 밝힌 무지개」</option><option value="썬&문 확장팩 제3탄 「빛을 삼킨 어둠」">썬&문 확장팩 제3탄 「빛을 삼킨 어둠」</option><option value="썬&문 확장팩 제2탄 「알로라의 달빛」">썬&문 확장팩 제2탄 「알로라의 달빛」</option><option value="썬&문 확장팩 제4탄 「초차원의 침략자」">썬&문 확장팩 제4탄 「초차원의 침략자」</option><option value="썬&문 확장팩 제4탄 「각성의 용사」">썬&문 확장팩 제4탄 「각성의 용사」</option><option value="썬&문 확장팩 제2탄 「알로라의 햇빛」">썬&문 확장팩 제2탄 「알로라의 햇빛」</option><option value="썬&문 영화 스페셜 팩 「명탐정 피카츄」">썬&문 영화 스페셜 팩 「명탐정 피카츄」</option><option value="썬&문 파워업덱 BOX 「TAG TEAM GX」">썬&문 파워업덱 BOX 「TAG TEAM GX」</option><option value="썬&문 30장 덱 대전 세트 「지우 VS 로켓단」">썬&문 30장 덱 대전 세트 「지우 VS 로켓단」</option><option value="썬&문 전력 배틀 스타터 세트 「루가루암 GX」">썬&문 전력 배틀 스타터 세트 「루가루암 GX」</option><option value="썬&문 개조 스타터 세트 「카푸브루루 GX」">썬&문 개조 스타터 세트 「카푸브루루 GX」</option><option value="썬&문 전격 스타터 세트 「라이코 GX」">썬&문 전격 스타터 세트 「라이코 GX」</option><option value="썬&문 전설 스타터 세트 「솔가레오 GX ･ 루나아라 GX」">썬&문 전설 스타터 세트 「솔가레오 GX ･ 루나아라 GX」</option><option value="썬&문 스타터 세트 격투 「롱스톤 GX」">썬&문 스타터 세트 격투 「롱스톤 GX」</option><option value="썬&문 스타터 세트 TAG TEAM GX 「에브이&테오키스 GX」">썬&문 스타터 세트 TAG TEAM GX 「에브이&테오키스 GX」</option><option value="썬&문 스타터 세트 「불꽃의 부스터 GX」">썬&문 스타터 세트 「불꽃의 부스터 GX」</option><option value="썬&문 프로모 카드 키스틱 포켓몬">썬&문 프로모 카드 키스틱 포켓몬</option><option value="썬&문 프로모 카드 포켓몬 카드 게임 프로모 팩 제3탄">썬&문 프로모 카드 포켓몬 카드 게임 프로모 팩 제3탄</option><option value="썬&문 프로모 카드 포켓몬 카드 게임 썬&문 프로모 팩 제2탄">썬&문 프로모 카드 포켓몬 카드 게임 썬&문 프로모 팩 제2탄</option><option value="썬&문 프로모 카드 홀로 에너지 팩">썬&문 프로모 카드 홀로 에너지 팩</option><option value="썬&문 프로모 카드 포켓몬 카드 게임 썬&문 프로모 팩 제1탄">썬&문 프로모 카드 포켓몬 카드 게임 썬&문 프로모 팩 제1탄</option><option value="썬&문 프로모팩 제9탄">썬&문 프로모팩 제9탄</option><option value="썬&문 프로모팩 제10탄">썬&문 프로모팩 제10탄</option><option value="썬&문 프로모 카드 컬렉터즈 프로모 팩 3">썬&문 프로모 카드 컬렉터즈 프로모 팩 3</option><option value="썬&문 프로모팩 6탄">썬&문 프로모팩 6탄</option><option value="썬&문 프로모팩 제7탄">썬&문 프로모팩 제7탄</option><option value="썬&문 프로모팩 5탄">썬&문 프로모팩 5탄</option><option value="썬&문 프로모 카드 컬렉터즈 프로모 팩 4">썬&문 프로모 카드 컬렉터즈 프로모 팩 4</option><option value="썬&문 프로모 카드 포켓몬 월드챔피언십2017 대한민국 대표 선발전 개최 기념 프로모 팩">썬&문 프로모 카드 포켓몬 월드챔피언십2017 대한민국 대표 선발전 개최 기념 프로모 팩</option><option value="썬&문 하이클래스팩 「GX 울트라샤이니 ULTIMATE」">썬&문 하이클래스팩 「GX 울트라샤이니 ULTIMATE」</option><option value="썬&문 프로모 카드 포켓몬 팝업스토어2016 구매 특전">썬&문 프로모 카드 포켓몬 팝업스토어2016 구매 특전</option><option value="썬&문 「TAG TEAM GX 태그올스타즈」 스페셜 키트">썬&문 「TAG TEAM GX 태그올스타즈」 스페셜 키트</option><option value="썬&문 프로모 카드 코리안리그2017-2018 BP경품">썬&문 프로모 카드 코리안리그2017-2018 BP경품</option><option value="썬&문 확장팩 세트 「멜메탈 GX」">썬&문 확장팩 세트 「멜메탈 GX」</option><option value="썬&문 프로모 카드 코리안리그2017-2018 상위 입상 경품">썬&문 프로모 카드 코리안리그2017-2018 상위 입상 경품</option><option value="썬&문 프로모 카드 포켓몬 월드챔피언십2017 대한민국 대표 선발전 카드 게임 부문 4강 진출자 선물">썬&문 프로모 카드 포켓몬 월드챔피언십2017 대한민국 대표 선발전 카드 게임 부문 4강 진출자 선물</option><option value="썬&문 프로모 카드 포켓몬 월드챔피언십2017 개최 기념 참가 프로모 카드">썬&문 프로모 카드 포켓몬 월드챔피언십2017 개최 기념 참가 프로모 카드</option><option value="썬&문 프로모 카드 2019-20 코리안리그 시즌 1 카드 게임 부문 참가상">썬&문 프로모 카드 2019-20 코리안리그 시즌 1 카드 게임 부문 참가상</option><option value="썬&문 프로모 카드 스페셜 점보카드 세트 「카푸꼬꼬꼭 GX」">썬&문 프로모 카드 스페셜 점보카드 세트 「카푸꼬꼬꼭 GX」</option><option value="썬&문 프로모 카드 코리안리그2017-2018 WINTER 개최 기념 플러스친구 회원 한정 프로모 카드">썬&문 프로모 카드 코리안리그2017-2018 WINTER 개최 기념 플러스친구 회원 한정 프로모 카드</option><option value="썬&문 프로모 카드 2019-20 코리안리그 시즌 1 카드 게임 부문 우승 경품">썬&문 프로모 카드 2019-20 코리안리그 시즌 1 카드 게임 부문 우승 경품</option><option value="썬&문 프로모 카드 코리안리그2017-2018 WINTER 카드 게임 부문 참가자 선물">썬&문 프로모 카드 코리안리그2017-2018 WINTER 카드 게임 부문 참가자 선물</option><option value="썬&문 프로모팩 제8탄">썬&문 프로모팩 제8탄</option><option value="썬&문 프로모 카드 2019-20 코리안리그 시즌 1 카드 게임 부문 준우승 경품">썬&문 프로모 카드 2019-20 코리안리그 시즌 1 카드 게임 부문 준우승 경품</option><option value="썬&문 프로모 카드 BOOK21 <상상초월 포켓몬 과학 연구소> 3권">썬&문 프로모 카드 BOOK21 <상상초월 포켓몬 과학 연구소> 3권</option><option value="썬&문 프로모 카드 2019-20 코리안리그 시즌 1 카드 게임 부문 4강 진출 경품">썬&문 프로모 카드 2019-20 코리안리그 시즌 1 카드 게임 부문 4강 진출 경품</option><option value="썬&문 프로모 카드 포켓몬 카드 게임 전국 최강 팀 배틀 시즌IV 4강진출팀 선물">썬&문 프로모 카드 포켓몬 카드 게임 전국 최강 팀 배틀 시즌IV 4강진출팀 선물</option><option value="썬&문 프로모 카드 포켓몬 카드 게임 전국 최강 팀 배틀 시즌IV 우승팀 선물">썬&문 프로모 카드 포켓몬 카드 게임 전국 최강 팀 배틀 시즌IV 우승팀 선물</option><option value="썬&문 프로모팩 제11탄">썬&문 프로모팩 제11탄</option><option value="썬&문 프로모 카드 「포켓몬스터썬」「포켓몬스터문」구매 특전">썬&문 프로모 카드 「포켓몬스터썬」「포켓몬스터문」구매 특전</option><option value="썬&문 프로모 카드 포켓몬 카드 게임 전국 최강 팀 배틀 시즌IV 준우승팀 선물">썬&문 프로모 카드 포켓몬 카드 게임 전국 최강 팀 배틀 시즌IV 준우승팀 선물</option><option value="썬&문 프로모팩 제12탄">썬&문 프로모팩 제12탄</option><option value="썬&문 스페셜 점보 카드 세트 「제라오라」">썬&문 스페셜 점보 카드 세트 「제라오라」</option><option value="썬&문 프로모 카드 스페셜 점보카드 세트 「칠색조 GX」">썬&문 프로모 카드 스페셜 점보카드 세트 「칠색조 GX」</option><option value="썬&문 프로모팩 제13탄">썬&문 프로모팩 제13탄</option><option value="썬&문 프로모 카드 처음 배우는 교실 30장 덱 「토게데마루 덱」">썬&문 프로모 카드 처음 배우는 교실 30장 덱 「토게데마루 덱」</option><option value="썬&문 프로모팩 제14탄">썬&문 프로모팩 제14탄</option><option value="썬&문 프로모 카드 처음 배우는 교실 30장 덱 「폭거북스 덱」">썬&문 프로모 카드 처음 배우는 교실 30장 덱 「폭거북스 덱」</option><option value="썬&문 프로모 카드 포켓몬 카드 게임 썬&문 카드 박스 세트 「잠만보 GX」">썬&문 프로모 카드 포켓몬 카드 게임 썬&문 카드 박스 세트 「잠만보 GX」</option><option value="썬&문 프로모 카드 코리안리그2016-2017 SPRING 카드 게임 부문 참가자 선물">썬&문 프로모 카드 코리안리그2016-2017 SPRING 카드 게임 부문 참가자 선물</option><option value="썬&문 프로모 카드 로열마스크 토너먼트 참가상">썬&문 프로모 카드 로열마스크 토너먼트 참가상</option><option value="썬&문 프로모 카드 로열마스크 토너먼트 우승 경품">썬&문 프로모 카드 로열마스크 토너먼트 우승 경품</option><option value="썬&문 프로모 카드 포켓몬 월드챔피언십2018 개최 기념 참가 프로모 카드">썬&문 프로모 카드 포켓몬 월드챔피언십2018 개최 기념 참가 프로모 카드</option><option value="썬&문 프로모 카드 포켓몬 월드챔피언십2017 대한민국 대표 선발전 카드 게임 부문 우승자 선물">썬&문 프로모 카드 포켓몬 월드챔피언십2017 대한민국 대표 선발전 카드 게임 부문 우승자 선물</option><option value="썬&문 프로모 카드 극장판 포켓몬스터: 너로 정했다! 관람객 선물">썬&문 프로모 카드 극장판 포켓몬스터: 너로 정했다! 관람객 선물</option><option value="썬&문 프로모 카드 포켓몬 월드챔피언십2017 대한민국 대표 선발전 카드 게임 부문 준우승자 선물">썬&문 프로모 카드 포켓몬 월드챔피언십2017 대한민국 대표 선발전 카드 게임 부문 준우승자 선물</option><option value="썬&문 프로모 카드 포켓몬 페스타 개최 기념 플러스친구 회원 한정 프로모 카드">썬&문 프로모 카드 포켓몬 페스타 개최 기념 플러스친구 회원 한정 프로모 카드</option><option value="썬&문 프로모 카드 포켓몬 월드챔피언십 2019 개최 기념 참가 프로모 카드">썬&문 프로모 카드 포켓몬 월드챔피언십 2019 개최 기념 참가 프로모 카드</option>                                </optgroup>
+                                <optgroup label="XY BREAK">
+                                    <option value="XY BREAK전체">XY BREAK 전체</option>
+                                    <option value="XY BREAK 확장팩 「프리미엄 챔피언팩」">XY BREAK 확장팩 「프리미엄 챔피언팩」</option><option value="XY BREAK 확장팩 BASE PACK 20th Anniversary">XY BREAK 확장팩 BASE PACK 20th Anniversary</option><option value="XY BREAK 확장팩 제9탄 「천공의 분노」">XY BREAK 확장팩 제9탄 「천공의 분노」</option><option value="XY BREAK 확장팩 제10탄 「초능력의 제왕」">XY BREAK 확장팩 제10탄 「초능력의 제왕」</option><option value="XY BREAK 확장팩 제8탄 「푸른 충격」">XY BREAK 확장팩 제8탄 「푸른 충격」</option><option value="XY BREAK 확장팩 제8탄 「붉은 섬광」">XY BREAK 확장팩 제8탄 「붉은 섬광」</option><option value="XY BREAK 확장팩 제11탄 「타오르는 투사」">XY BREAK 확장팩 제11탄 「타오르는 투사」</option><option value="XY BREAK 확장팩 제11탄 「냉혹한 반역자」">XY BREAK 확장팩 제11탄 「냉혹한 반역자」</option><option value="XY BREAK 확장팩 「환상 전설 드림 컬렉션」">XY BREAK 확장팩 「환상 전설 드림 컬렉션」</option><option value="XY BREAK 확장팩 「포켓심쿵 컬렉션」">XY BREAK 확장팩 「포켓심쿵 컬렉션」</option><option value="XY BREAK 메가 배틀 60장 덱 「M다부니 EX」">XY BREAK 메가 배틀 60장 덱 「M다부니 EX」</option><option value="XY BREAK 퍼펙트 배틀 60장 덱 「지가르데 EX」">XY BREAK 퍼펙트 배틀 60장 덱 「지가르데 EX」</option><option value="XY BREAK 30장 덱 「라이츄 BREAK」">XY BREAK 30장 덱 「라이츄 BREAK」</option><option value="XY BREAK 30장 덱 「음번 BREAK」">XY BREAK 30장 덱 「음번 BREAK」</option><option value="XY BREAK 콤보 60장 덱 「골덕 BREAK +펄기아 EX」">XY BREAK 콤보 60장 덱 「골덕 BREAK +펄기아 EX」</option>                                </optgroup>
+                                <optgroup label="XY">
+                                    <option value="XY전체">XY 전체</option>
+                                    <option value="하이클래스팩 「THE BEST OF XY」">하이클래스팩 「THE BEST OF XY」</option><option value="XY 프로모 카드">XY 프로모 카드</option><option value="XY 확장팩 제3탄 「라이징피스트」">XY 확장팩 제3탄 「라이징피스트」</option><option value="XY 확장팩 제4탄 「팬텀게이트」">XY 확장팩 제4탄 「팬텀게이트」</option><option value="XY 확장팩 제7탄 「밴디트링」">XY 확장팩 제7탄 「밴디트링」</option><option value="XY 확장팩 제6탄 「에메랄드 브레이크」">XY 확장팩 제6탄 「에메랄드 브레이크」</option><option value="XY 확장팩 제2탄 「와일드 블레이즈」">XY 확장팩 제2탄 「와일드 블레이즈」</option><option value="XY 확장팩 제5탄 「가이아 볼케이노」">XY 확장팩 제5탄 「가이아 볼케이노」</option><option value="XY 확장팩 제5탄 「타이달스톰」">XY 확장팩 제5탄 「타이달스톰」</option><option value="XY 확장팩 제1탄 「X컬렉션」">XY 확장팩 제1탄 「X컬렉션」</option><option value="XY 확장팩 제1탄 「Y컬렉션」">XY 확장팩 제1탄 「Y컬렉션」</option><option value="XY 확장팩 「마그마단vs아쿠아단 더블크라이시스」">XY 확장팩 「마그마단vs아쿠아단 더블크라이시스」</option><option value="XY 30장 덱 대전 세트 「염무왕 EX vs 토게키스 EX」">XY 30장 덱 대전 세트 「염무왕 EX vs 토게키스 EX」</option><option value="XY 확장팩 「레전드 컬렉션」">XY 확장팩 「레전드 컬렉션」</option><option value="XY 레전드 배틀 60장 덱 「제르네아스 EX+이벨타르 EX」">XY 레전드 배틀 60장 덱 「제르네아스 EX+이벨타르 EX」</option><option value="XY 메가 배틀 60장덱 「M리자몽 EX」">XY 메가 배틀 60장덱 「M리자몽 EX」</option><option value="XY 메가 배틀 60장 덱 「M레쿠쟈 EX」">XY 메가 배틀 60장 덱 「M레쿠쟈 EX」</option><option value="XY 하이퍼 메탈 체인 60장 덱 「디아루가 EX+킬가르도 EX」">XY 하이퍼 메탈 체인 60장 덱 「디아루가 EX+킬가르도 EX」</option><option value="XY 퍼스트세트 「도치마론의 진화」">XY 퍼스트세트 「도치마론의 진화」</option><option value="XY 퍼스트세트 「푸호꼬의 진화」">XY 퍼스트세트 「푸호꼬의 진화」</option><option value="XY 퍼스트세트 「개구마르의 진화」">XY 퍼스트세트 「개구마르의 진화」</option><option value="XY 「제르네아스 덱」">XY 「제르네아스 덱」</option><option value="XY 「이벨타르 덱」">XY 「이벨타르 덱」</option>                                </optgroup>
+                                <optgroup label="BW">
+                                    <option value="BW전체">BW 전체</option>
+                                    <option value="BW 확장팩 「EX 배틀 부스트」">BW 확장팩 「EX 배틀 부스트」</option><option value="BW 확장팩 제9탄 「메갈로캐논」">BW 확장팩 제9탄 「메갈로캐논」</option><option value="BW 확장팩 제7탄 「플라스마게일」">BW 확장팩 제7탄 「플라스마게일」</option><option value="BW 확장팩 제4탄 「다크러시」">BW 확장팩 제4탄 「다크러시」</option><option value="BW 확장팩 제2탄 「레드 컬렉션」">BW 확장팩 제2탄 「레드 컬렉션」</option><option value="BW 확장팩 제6탄 「프리즈볼트」">BW 확장팩 제6탄 「프리즈볼트」</option><option value="BW 확장팩 제6탄 「콜드플레어」">BW 확장팩 제6탄 「콜드플레어」</option><option value="BW 확장팩 제8탄 「스파이럴포스」">BW 확장팩 제8탄 「스파이럴포스」</option><option value="BW 확장팩 제8탄 「볼트너클」">BW 확장팩 제8탄 「볼트너클」</option><option value="BW 확장팩 제1탄 「블랙 컬렉션」">BW 확장팩 제1탄 「블랙 컬렉션」</option><option value="BW 확장팩 제1탄 「화이트 컬렉션」">BW 확장팩 제1탄 「화이트 컬렉션」</option><option value="BW 확장팩 제3탄 「헤일 블리자드」">BW 확장팩 제3탄 「헤일 블리자드」</option><option value="BW 확장팩 제3탄 「사이코 드라이브」">BW 확장팩 제3탄 「사이코 드라이브」</option><option value="BW 확장팩 제5탄 「드래곤 블레이드」">BW 확장팩 제5탄 「드래곤 블레이드」</option><option value="BW 확장팩 제5탄 「드래곤 블라스트」">BW 확장팩 제5탄 「드래곤 블라스트」</option><option value="BW 프로모 카드">BW 프로모 카드</option><option value="포켓몬 카드 게임 BW 「30장 덱 대전 set 뮤츠VS게노세크트」">포켓몬 카드 게임 BW 「30장 덱 대전 set 뮤츠VS게노세크트」</option><option value="BW 확장팩 「샤이니 컬렉션」">BW 확장팩 「샤이니 컬렉션」</option><option value="BW 「배틀 체인지덱 비크티니 덱」">BW 「배틀 체인지덱 비크티니 덱」</option><option value="BW 「배틀 강화 60장 덱 - 블랙큐레무 EX」">BW 「배틀 강화 60장 덱 - 블랙큐레무 EX」</option><option value="BW 「배틀 강화 60장 덱 - 화이트큐레무 EX」">BW 「배틀 강화 60장 덱 - 화이트큐레무 EX」</option><option value="BW 「배틀 강화 60장 덱 - 레시라무 EX」">BW 「배틀 강화 60장 덱 - 레시라무 EX」</option><option value="BW 「배틀 강화 60장 덱 - 제크로무 EX」">BW 「배틀 강화 60장 덱 - 제크로무 EX」</option><option value="BW 확장팩 「드래곤 컬렉션」">BW 확장팩 「드래곤 컬렉션」</option><option value="BW 「플라스마단 파워 덱」">BW 「플라스마단 파워 덱」</option><option value="BW 「케르디오 덱」">BW 「케르디오 덱」</option><option value="BW 「플라스마단 덱」">BW 「플라스마단 덱」</option><option value="BW 최강 폭류 60장 덱 「거북왕 + 큐레무 EX」">BW 최강 폭류 60장 덱 「거북왕 + 큐레무 EX」</option><option value="BW 「배틀 강화덱 - 비리디온 덱」">BW 「배틀 강화덱 - 비리디온 덱」</option><option value="BW 「배틀 강화덱 - 테라키온 덱」">BW 「배틀 강화덱 - 테라키온 덱」</option><option value="BW 「배틀 강화덱 - 코바르온 덱」">BW 「배틀 강화덱 - 코바르온 덱」</option><option value="BW 「토네로스 덱」">BW 「토네로스 덱」</option><option value="BW 「볼트로스 덱」">BW 「볼트로스 덱」</option><option value="BW 「퍼스트 세트 - 풀의 진화」">BW 「퍼스트 세트 - 풀의 진화」</option><option value="BW 「퍼스트 세트 - 불꽃의 진화」">BW 「퍼스트 세트 - 불꽃의 진화」</option><option value="BW 「퍼스트 세트 - 물의 진화」">BW 「퍼스트 세트 - 물의 진화」</option><option value="BW 「삼삼드래 덱」">BW 「삼삼드래 덱」</option><option value="BW 「한카리아스 덱」">BW 「한카리아스 덱」</option><option value="BW「퍼스트 세트 - 물의 진화」">BW「퍼스트 세트 - 물의 진화」</option><option value="BW「퍼스트 세트 - 불꽃의 진화」">BW「퍼스트 세트 - 불꽃의 진화」</option>                                </optgroup>
+                                <optgroup label="DP">
+                                    <option value="DP전체">DP 전체</option>
+                                    <option value="소드&실드 「스타트 덱 100」">소드&실드 「스타트 덱 100」</option><option value="스칼렛&바이올렛 하이클래스팩 「샤이니트레저 ex」">스칼렛&바이올렛 하이클래스팩 「샤이니트레저 ex」</option><option value="스칼렛&바이올렛 강화 확장팩 「포켓몬 카드 151」">스칼렛&바이올렛 강화 확장팩 「포켓몬 카드 151」</option><option value="소드&실드 하이클래스팩 「VSTAR 유니버스」">소드&실드 하이클래스팩 「VSTAR 유니버스」</option><option value="소드&실드 하이클래스팩 「샤이니스타 V」  ">소드&실드 하이클래스팩 「샤이니스타 V」  </option><option value="소드&실드 하이클래스팩 「VMAX 클라이맥스」">소드&실드 하이클래스팩 「VMAX 클라이맥스」</option><option value="스칼렛&바이올렛 ex 스타트 덱">스칼렛&바이올렛 ex 스타트 덱</option><option value="스칼렛&바이올렛 확장팩 「흑염의 지배자」">스칼렛&바이올렛 확장팩 「흑염의 지배자」</option><option value="소드&실드 강화 확장팩 「다크판타스마」">소드&실드 강화 확장팩 「다크판타스마」</option><option value="소드&실드 강화 확장팩 「백열의 아르카나」">소드&실드 강화 확장팩 「백열의 아르카나」</option><option value="소드&실드 강화 확장팩 「배틀리전」">소드&실드 강화 확장팩 「배틀리전」</option><option value="소드&실드 확장팩 「로스트어비스」">소드&실드 확장팩 「로스트어비스」</option><option value="소드&실드 확장팩 「스타버스」">소드&실드 확장팩 「스타버스」</option><option value="소드 & 실드   확장팩   「패러다임트리거」">소드 & 실드   확장팩   「패러다임트리거」</option><option value="소드&실드 확장팩 「퓨전아츠」">소드&실드 확장팩 「퓨전아츠」</option><option value="소드&실드 확장팩 「앙천의 볼트태클」">소드&실드 확장팩 「앙천의 볼트태클」</option><option value="소드&실드 확장팩 「무한존」">소드&실드 확장팩 「무한존」</option><option value="소드&실드 확장팩 「반역크래시」">소드&실드 확장팩 「반역크래시」</option><option value="포켓몬 카드 게임 스칼렛&바이올렛 확장팩 「스칼렛 ex」">포켓몬 카드 게임 스칼렛&바이올렛 확장팩 「스칼렛 ex」</option><option value="포켓몬 카드 게임 스칼렛&바이올렛 확장팩 「바이올렛 ex」">포켓몬 카드 게임 스칼렛&바이올렛 확장팩 「바이올렛 ex」</option><option value="스칼렛&바이올렛 확장팩 「변환의 가면」">스칼렛&바이올렛 확장팩 「변환의 가면」</option><option value="포켓몬 카드 게임 스칼렛&바이올렛 강화 확장팩 「트리플렛비트」">포켓몬 카드 게임 스칼렛&바이올렛 강화 확장팩 「트리플렛비트」</option><option value="스칼렛&바이올렛 「배틀 아카데미」">스칼렛&바이올렛 「배틀 아카데미」</option><option value="스칼렛&바이올렛 확장팩 「와일드포스」">스칼렛&바이올렛 확장팩 「와일드포스」</option><option value="스칼렛&바이올렛 확장팩 「사이버저지」">스칼렛&바이올렛 확장팩 「사이버저지」</option><option value="스칼렛&바이올렛 확장팩 「스노해저드」">스칼렛&바이올렛 확장팩 「스노해저드」</option><option value="스칼렛&바이올렛 확장팩 「클레이버스트」">스칼렛&바이올렛 확장팩 「클레이버스트」</option><option value="스칼렛&바이올렛 강화 확장팩 「크림슨헤이즈」">스칼렛&바이올렛 강화 확장팩 「크림슨헤이즈」</option><option value="스칼렛&바이올렛 확장팩 「미래의 일섬」">스칼렛&바이올렛 확장팩 「미래의 일섬」</option><option value="스칼렛&바이올렛 확장팩 「고대의 포효」">스칼렛&바이올렛 확장팩 「고대의 포효」</option><option value="스칼렛&바이올렛 강화 확장팩 「레이징서프」">스칼렛&바이올렛 강화 확장팩 「레이징서프」</option><option value="소드&실드 강화 확장팩 「Pokémon GO」">소드&실드 강화 확장팩 「Pokémon GO」</option><option value="소드&실드 강화 확장팩 「이브이 히어로즈」">소드&실드 강화 확장팩 「이브이 히어로즈」</option><option value="소드&실드 강화 확장팩 「전설의 고동」">소드&실드 강화 확장팩 「전설의 고동」</option><option value="소드&실드 확장팩 「백은의 랜스」">소드&실드 확장팩 「백은의 랜스」</option><option value="소드&실드 확장팩 「칠흑의 가이스트」">소드&실드 확장팩 「칠흑의 가이스트」</option><option value="소드&실드 확장팩 「연격마스터」">소드&실드 확장팩 「연격마스터」</option><option value="소드&실드 확장팩 「일격마스터」">소드&실드 확장팩 「일격마스터」</option><option value="소드&실드 확장팩 「마천퍼펙트」">소드&실드 확장팩 「마천퍼펙트」</option><option value="소드 & 실드   확장팩   「창공스트림」">소드 & 실드   확장팩   「창공스트림」</option><option value="소드&실드 확장팩 「타임게이저」">소드&실드 확장팩 「타임게이저」</option><option value="소드&실드 확장팩 「스페이스 저글러」        ">소드&실드 확장팩 「스페이스 저글러」        </option><option value="소드&실드 강화 확장팩 「폭염워커」">소드&실드 강화 확장팩 「폭염워커」</option><option value="소드&실드 강화 확장팩 「VMAX라이징」">소드&실드 강화 확장팩 「VMAX라이징」</option><option value="소드&실드 「패밀리 포켓몬 카드 게임」">소드&실드 「패밀리 포켓몬 카드 게임」</option><option value="소드&실드 강화 확장팩 「쌍벽의 파이터」">소드&실드 강화 확장팩 「쌍벽의 파이터」</option><option value="소드&실드 확장팩 「소드」">소드&실드 확장팩 「소드」</option><option value="소드&실드 확장팩 「실드」">소드&실드 확장팩 「실드」</option><option value=""></option><option value="스칼렛&바이올렛 스타터 덱&강화 세트 「고대의 코라이돈 ex」">스칼렛&바이올렛 스타터 덱&강화 세트 「고대의 코라이돈 ex」</option><option value="스칼렛&바이올렛 스타터 덱&강화 세트 「미래의 미라이돈 ex」">스칼렛&바이올렛 스타터 덱&강화 세트 「미래의 미라이돈 ex」</option><option value="DP 확장팩 시공의 격돌">DP 확장팩 시공의 격돌</option><option value="DP 확장팩 암흑의 초승달">DP 확장팩 암흑의 초승달</option><option value="DP 확장팩 모험의 시작">DP 확장팩 모험의 시작</option><option value="DP 랜덤 구축덱">DP 랜덤 구축덱</option><option value="스칼렛&바이올렛 스페셜 덱 세트 ex 「이상해꽃·리자몽·거북왕」">스칼렛&바이올렛 스페셜 덱 세트 ex 「이상해꽃·리자몽·거북왕」</option><option value="스칼렛&바이올렛 배틀 강화 BOX 「흑염의 지배자」">스칼렛&바이올렛 배틀 강화 BOX 「흑염의 지배자」</option><option value="DP 확장팩 또 다른 세계">DP 확장팩 또 다른 세계</option><option value="DP 확장팩 7개의 신비">DP 확장팩 7개의 신비</option><option value="DP 확장팩 보이지 않는 힘">DP 확장팩 보이지 않는 힘</option><option value="DP 확장팩 화려한 전설">DP 확장팩 화려한 전설</option><option value="DP 확장팩 호수의 기적">DP 확장팩 호수의 기적</option><option value="DP 확장팩 고대의 수호자">DP 확장팩 고대의 수호자</option><option value="DP 확장팩 불꽃 튀는 대결">DP 확장팩 불꽃 튀는 대결</option><option value="소드&실드 확장팩 「25th ANNIVERSARY COLLECTION」">소드&실드 확장팩 「25th ANNIVERSARY COLLECTION」</option><option value="포켓몬 카드 게임 스칼렛&바이올렛 프리미엄 트레이너 박스 ex">포켓몬 카드 게임 스칼렛&바이올렛 프리미엄 트레이너 박스 ex</option><option value="소드&실드 스페셜 덱 세트 「리자몽 VSTAR VS 레쿠쟈 VMAX」">소드&실드 스페셜 덱 세트 「리자몽 VSTAR VS 레쿠쟈 VMAX」</option><option value="소드&실드 스페셜 덱 세트 「자시안·자마젠타 VS 무한다이노」">소드&실드 스페셜 덱 세트 「자시안·자마젠타 VS 무한다이노」</option><option value="소드&실드 확장팩 세트 V">소드&실드 확장팩 세트 V</option><option value="스칼렛&바이올렛 스타터 세트 ex 「나오하&루카리오 ex」">스칼렛&바이올렛 스타터 세트 ex 「나오하&루카리오 ex」</option><option value="스칼렛&바이올렛 스타터 세트 ex 「꾸왁스&따라큐 ex」">스칼렛&바이올렛 스타터 세트 ex 「꾸왁스&따라큐 ex」</option><option value="스칼렛&바이올렛 스타터 세트 ex 「뜨아거&전룡 ex」">스칼렛&바이올렛 스타터 세트 ex 「뜨아거&전룡 ex」</option><option value="소드&실드 스타터 세트 V 격투">소드&실드 스타터 세트 V 격투</option><option value="포켓몬 카드 게임 스칼렛&바이올렛 스타터 세트 ex 피카츄 스페셜 세트">포켓몬 카드 게임 스칼렛&바이올렛 스타터 세트 ex 피카츄 스페셜 세트</option><option value="소드 & 실드   「스타트   덱  100  피카츄  V &  이브이  V 」">소드 & 실드   「스타트   덱  100  피카츄  V &  이브이  V 」</option><option value="소드&실드 스타터 세트 V 번개">소드&실드 스타터 세트 V 번개</option><option value="소드&실드 스타터 세트 V 풀">소드&실드 스타터 세트 V 풀</option><option value="소드&실드 스타터 세트 V 불꽃">소드&실드 스타터 세트 V 불꽃</option><option value="패밀리 포켓몬 카드 게임 「라이츄 GX 덱」">패밀리 포켓몬 카드 게임 「라이츄 GX 덱」</option><option value="소드&실드 스타터 세트 VMAX 리자몽">소드&실드 스타터 세트 VMAX 리자몽</option><option value="패밀리 포켓몬 카드 게임 「리자몽 GX 덱」">패밀리 포켓몬 카드 게임 「리자몽 GX 덱」</option><option value="패밀리 포켓몬 카드 게임 「뮤츠 GX 덱」">패밀리 포켓몬 카드 게임 「뮤츠 GX 덱」</option><option value="소드 & 실드   하이클래스   덱   「인텔리레온  VMAX 」">소드 & 실드   하이클래스   덱   「인텔리레온  VMAX 」</option><option value="스칼렛&바이올렛 스타터 세트 테라스탈 「뮤츠 ex」">스칼렛&바이올렛 스타터 세트 테라스탈 「뮤츠 ex」</option><option value="스칼렛&바이올렛 스타터 세트 테라스탈 「라우드본 ex」">스칼렛&바이올렛 스타터 세트 테라스탈 「라우드본 ex」</option><option value="소드&실드 스타터 세트 V 물">소드&실드 스타터 세트 V 물</option><option value="소드 & 실드   스타터   세트  VSTAR  「루카리오」">소드 & 실드   스타터   세트  VSTAR  「루카리오」</option><option value="포켓몬 카드 게임 카드샵 구입 특전">포켓몬 카드 게임 카드샵 구입 특전</option><option value="소드&실드 스타터 세트 VMAX 「이상해꽃」">소드&실드 스타터 세트 VMAX 「이상해꽃」</option><option value="소드&실드 VSTAR&VMAX 하이클래스 덱 「제라오라」 ">소드&실드 VSTAR&VMAX 하이클래스 덱 「제라오라」 </option><option value="소드&실드 VSTAR&VMAX 하이클래스 덱 「테오키스」 ">소드&실드 VSTAR&VMAX 하이클래스 덱 「테오키스」 </option><option value="소드&실드 스타터 세트 VMAX 오롱털">소드&실드 스타터 세트 VMAX 오롱털</option><option value="소드 & 실드   스타터   세트  VSTAR  「다크라이」">소드 & 실드   스타터   세트  VSTAR  「다크라이」</option><option value="소드&실드 스타터 세트 VMAX 「거북왕」">소드&실드 스타터 세트 VMAX 「거북왕」</option><option value="프리미엄   트레이너   박스   「소드 & 실드」">프리미엄   트레이너   박스   「소드 & 실드」</option><option value="소드 & 실드   하이클래스   덱   「팬텀  VMAX 」">소드 & 실드   하이클래스   덱   「팬텀  VMAX 」</option><option value="소드&실드 「25th ANNIVERSARY GOLDEN BOX」">소드&실드 「25th ANNIVERSARY GOLDEN BOX」</option><option value="DP 펄기아 덱">DP 펄기아 덱</option><option value="DP 디아루가 덱">DP 디아루가 덱</option><option value="DP 크레세리아덱">DP 크레세리아덱</option><option value="프리미엄 트레이너 박스 「소드&실드」">프리미엄 트레이너 박스 「소드&실드」</option><option value="DP 다크라이덱">DP 다크라이덱</option><option value="WCSK2018 32강 진출자 선물">WCSK2018 32강 진출자 선물</option><option value="2018-19 코리안리그 파이널 홀로 에너지 세트">2018-19 코리안리그 파이널 홀로 에너지 세트</option><option value="2018-19 코리안리그 홀로 에너지 팩">2018-19 코리안리그 홀로 에너지 팩</option><option value="소드&실드 「VMAX 스페셜 세트」">소드&실드 「VMAX 스페셜 세트」</option><option value="소드&실드 스페셜 카드 세트 「자시안 V-UNION」">소드&실드 스페셜 카드 세트 「자시안 V-UNION」</option><option value="소드&실드 「자시안+자마젠타 BOX」">소드&실드 「자시안+자마젠타 BOX」</option><option value="소드&실드 VMAX 스페셜 세트 「이브이 히어로즈」">소드&실드 VMAX 스페셜 세트 「이브이 히어로즈」</option><option value="스칼렛&바이올렛 「ex 스페셜 세트」">스칼렛&바이올렛 「ex 스페셜 세트」</option><option value="소드&실드 「백은의 랜스&칠흑의 가이스트」 BOX">소드&실드 「백은의 랜스&칠흑의 가이스트」 BOX</option><option value="소드&실드「VSTAR 스페셜 세트」">소드&실드「VSTAR 스페셜 세트」</option><option value="소드&실드 스페셜 카드 세트 「뮤츠 V-UNION」">소드&실드 스페셜 카드 세트 「뮤츠 V-UNION」</option><option value="소드&실드 「미스터리 박스」">소드&실드 「미스터리 박스」</option><option value="실드전 트리플렛비트 참가상">실드전 트리플렛비트 참가상</option><option value="포켓몬 카드 게임 스칼렛&바이올렛 「에너지 카드 세트」">포켓몬 카드 게임 스칼렛&바이올렛 「에너지 카드 세트」</option><option value="포켓몬 팝업스토어 in 스타필드 코엑스몰점 구입특전">포켓몬 팝업스토어 in 스타필드 코엑스몰점 구입특전</option><option value="소드&실드 컬렉션 세트 「샤이니스타 V」">소드&실드 컬렉션 세트 「샤이니스타 V」</option><option value="포켓몬 팝업스토어 in 현대백화점 판교점 증정">포켓몬 팝업스토어 in 현대백화점 판교점 증정</option><option value="소드 & 실드   확장팩   「퓨전아츠」">소드 & 실드   확장팩   「퓨전아츠」</option><option value="「극장판 포켓몬스터 : 정글의 아이">「극장판 포켓몬스터 : 정글의 아이</option><option value=" 코코」 극장선물"> 코코」 극장선물</option><option value="소드&실드 카드 박스 세트 「일격」">소드&실드 카드 박스 세트 「일격」</option><option value="소드&실드 스페셜 카드 세트 「얼음의 글레이시아 VSTAR」">소드&실드 스페셜 카드 세트 「얼음의 글레이시아 VSTAR」</option><option value="소드&실드 카드 박스 세트 「연격」">소드&실드 카드 박스 세트 「연격」</option><option value="제크로무 실드전 ">제크로무 실드전 </option><option value="극장판 포켓몬스터DP 「기라티나와 하늘의 꽃다발 쉐이미」극장 선물">극장판 포켓몬스터DP 「기라티나와 하늘의 꽃다발 쉐이미」극장 선물</option><option value="소드&실드 하이클레스 덱 더블 BOX 「팬텀 VMAX&인텔리레온 VMAX」">소드&실드 하이클레스 덱 더블 BOX 「팬텀 VMAX&인텔리레온 VMAX」</option><option value="극장판 포켓몬스터 「뮤츠의 역습 EVOLUTION」 극장선물">극장판 포켓몬스터 「뮤츠의 역습 EVOLUTION」 극장선물</option><option value="포켓몬 카드 게임 상품 구매 특전 ">포켓몬 카드 게임 상품 구매 특전 </option><option value="레이징서프 실드전 참가상">레이징서프 실드전 참가상</option><option value="소드&실드 스페셜 카드 세트 「풀의 리피아 VSTAR」">소드&실드 스페셜 카드 세트 「풀의 리피아 VSTAR」</option><option value="프레셔스 컬렉터 박스">프레셔스 컬렉터 박스</option><option value="코리안리그2017-18 SPRING 참가상">코리안리그2017-18 SPRING 참가상</option><option value="픽셀 포켓몬 2권 부록 ">픽셀 포켓몬 2권 부록 </option><option value="뮤츠 실드전 참가상">뮤츠 실드전 참가상</option><option value="팀배틀 시즌5 참가상">팀배틀 시즌5 참가상</option><option value="포켓몬 카드 게임 Let's Play">포켓몬 카드 게임 Let's Play</option><option value="뮤츠 실드전 SR 우승 경품">뮤츠 실드전 SR 우승 경품</option><option value="금단의 빛 발매 기념 이벤트">금단의 빛 발매 기념 이벤트</option><option value="포켓몬 카드 게임 온라인 공식 인증샵 구입특전">포켓몬 카드 게임 온라인 공식 인증샵 구입특전</option><option value="뮤츠 실드전 HR 우승 경품">뮤츠 실드전 HR 우승 경품</option><option value="SM 점보 카드 세트 「울트라썬」">SM 점보 카드 세트 「울트라썬」</option><option value="강화 확장팩 「리믹스바우트」 구매 특전">강화 확장팩 「리믹스바우트」 구매 특전</option><option value="포켓몬 카드 게임 Let's Play 2023">포켓몬 카드 게임 Let's Play 2023</option><option value="SM 점보 카드 세트 「울트라문」">SM 점보 카드 세트 「울트라문」</option><option value="스타트 덱 100 토너먼트 참가상">스타트 덱 100 토너먼트 참가상</option><option value="「플라스마 스파크」 2박스 구매 특전">「플라스마 스파크」 2박스 구매 특전</option><option value="극장판 포켓몬스터DP 「아르세우스 초극의 시공으로」극장 선물">극장판 포켓몬스터DP 「아르세우스 초극의 시공으로」극장 선물</option><option value="강화   확장팩  「 드림리그 」  구매   특전">강화   확장팩  「 드림리그 」  구매   특전</option><option value="WCSK2018 옐로아이디 선물">WCSK2018 옐로아이디 선물</option><option value="「돌아온 명탐정 피카츄」 조기 구입 특전">「돌아온 명탐정 피카츄」 조기 구입 특전</option><option value="켈로그 첵스초코 기획팩 구입특전">켈로그 첵스초코 기획팩 구입특전</option><option value="스타터   세트  VMAX  구입특전">스타터   세트  VMAX  구입특전</option><option value="강화 확장팩 「드래곤스톰」 발매 기념 토너먼트 참가상">강화 확장팩 「드래곤스톰」 발매 기념 토너먼트 참가상</option><option value="확장팩 「무한존」 2BOX 구입 특전">확장팩 「무한존」 2BOX 구입 특전</option><option value="「일격마스터」「연격마스터」2BOX 구입특전">「일격마스터」「연격마스터」2BOX 구입특전</option><option value="“Pokémon GO" 캠페인">“Pokémon GO" 캠페인</option><option value="2018-19 코리안리그 파이널 시즌 우승">2018-19 코리안리그 파이널 시즌 우승</option><option value="확장팩 「소드」「실드」 BOX 구입 특전">확장팩 「소드」「실드」 BOX 구입 특전</option><option value="2018-19 코리안리그 파이널 시즌 준우승">2018-19 코리안리그 파이널 시즌 준우승</option><option value="레이징서프 실드전 조 리그 1위">레이징서프 실드전 조 리그 1위</option><option value="소드&실드 「Pokémon GO 카드 앨범 세트」">소드&실드 「Pokémon GO 카드 앨범 세트」</option><option value="스타터 세트 V 카드 배틀 이벤트">스타터 세트 V 카드 배틀 이벤트</option><option value="강화 확장팩 「창공의 카리스마」 발매 기념 토너먼트 참가상">강화 확장팩 「창공의 카리스마」 발매 기념 토너먼트 참가상</option><option value="루카리오 HR 쟁탈전 참가상">루카리오 HR 쟁탈전 참가상</option><option value="스티커 컬러링 포켓몬스터 1">스티커 컬러링 포켓몬스터 1</option><option value="2 부록">2 부록</option><option value="2018-19 코리안리그 파이널 시즌 4강">2018-19 코리안리그 파이널 시즌 4강</option><option value="레이징서프 실드전 토너먼트 우승">레이징서프 실드전 토너먼트 우승</option><option value="「Pokémon GO 스페셜 점보카드세트」">「Pokémon GO 스페셜 점보카드세트」</option><option value="「반역크래시」 2BOX 구입 특전">「반역크래시」 2BOX 구입 특전</option><option value="루카리오 HR 쟁탈전 조 리그 1위">루카리오 HR 쟁탈전 조 리그 1위</option><option value="소드&실드 스페셜 점보 카드 세트 「일격마스터」">소드&실드 스페셜 점보 카드 세트 「일격마스터」</option><option value="상상초월 포켓몬 과학연구소 4권 부록">상상초월 포켓몬 과학연구소 4권 부록</option><option value="루카리오 HR 쟁탈전 토너먼트 우승">루카리오 HR 쟁탈전 토너먼트 우승</option><option value="소드 & 실드   강화   확장팩   「전설의   고동」">소드 & 실드   강화   확장팩   「전설의   고동」</option><option value="소드&실드 스페셜 점보 카드 세트 「연격마스터」">소드&실드 스페셜 점보 카드 세트 「연격마스터」</option><option value="울트라포스 동봉 쿠폰 교환">울트라포스 동봉 쿠폰 교환</option><option value="픽셀 포켓몬 1권 부록 ">픽셀 포켓몬 1권 부록 </option>                                </optgroup>
+                                <optgroup label="프로모">
+                                    <option value="프로모전체">프로모 카드 전체</option>
+                                    <option value="썬&문 프로모">썬&문 프로모 카드 전체</option>
+                                    <option value="DP 프로모 카드">DP 프로모 카드</option><option value="소드&실드 프로모팩 제4탄">소드&실드 프로모팩 제4탄</option><option value="스칼렛&바이올렛 스타터 세트 ex 프로모 카드   팩  ">스칼렛&바이올렛 스타터 세트 ex 프로모 카드   팩  </option><option value="카드샵 한정 프로모팩">카드샵 한정 프로모팩</option><option value="소드&실드 프로모팩 제2탄">소드&실드 프로모팩 제2탄</option><option value="소드&실드 프로모팩 제3탄">소드&실드 프로모팩 제3탄</option><option value="2023 코리안리그 파이널 시즌 입상 프로모">2023 코리안리그 파이널 시즌 입상 프로모</option><option value="소드&실드 프로모팩 제7탄">소드&실드 프로모팩 제7탄</option><option value="스칼렛&바이올렛 프로모 카드 팩 제5탄">스칼렛&바이올렛 프로모 카드 팩 제5탄</option><option value="스칼렛&바이올렛 프로모 카드 팩 제2탄">스칼렛&바이올렛 프로모 카드 팩 제2탄</option><option value="소드&실드 프로모팩 제8탄">소드&실드 프로모팩 제8탄</option><option value="소드&실드 프로모팩 제9탄">소드&실드 프로모팩 제9탄</option><option value="스칼렛&바이올렛 프로모 카드 팩 제1탄">스칼렛&바이올렛 프로모 카드 팩 제1탄</option><option value="스칼렛&바이올렛 프로모 카드 팩 제4탄">스칼렛&바이올렛 프로모 카드 팩 제4탄</option><option value="스칼렛&바이올렛 프로모 카드 팩 제3탄">스칼렛&바이올렛 프로모 카드 팩 제3탄</option><option value="소드&실드 프로모팩 제1탄">소드&실드 프로모팩 제1탄</option><option value="소드&실드 프로모팩 제10탄">소드&실드 프로모팩 제10탄</option><option value="소드&실드 프로모팩 제5탄">소드&실드 프로모팩 제5탄</option><option value="소드&실드 프로모팩 제11탄">소드&실드 프로모팩 제11탄</option><option value="소드&실드 프로모팩 제6탄">소드&실드 프로모팩 제6탄</option><option value="짐 프로모팩 4탄">짐 프로모팩 4탄</option><option value="소드&실드 프로모팩 제12탄">소드&실드 프로모팩 제12탄</option><option value="포켓몬 GO 프로모 카드 기프트 캠페인">포켓몬 GO 프로모 카드 기프트 캠페인</option><option value="2018-19 코리안리그 시즌1 프로모">2018-19 코리안리그 시즌1 프로모</option><option value="전설의 포켓몬을 찾자! 루기아GET챌린지 프로모 카드 팩">전설의 포켓몬을 찾자! 루기아GET챌린지 프로모 카드 팩</option><option value="컬렉터즈 프로모 팩 5">컬렉터즈 프로모 팩 5</option><option value="드래곤   포켓몬  V GET  챌린지   프로모   카드   팩">드래곤   포켓몬  V GET  챌린지   프로모   카드   팩</option><option value="금단의 빛 발매 기념 프로모 팩">금단의 빛 발매 기념 프로모 팩</option><option value="무한존 프로모션팩">무한존 프로모션팩</option><option value="강화 확장팩 「포켓몬 카드 151」 프로모 카드 팩">강화 확장팩 「포켓몬 카드 151」 프로모 카드 팩</option><option value="피카피카! 피카츄! 프로모팩">피카피카! 피카츄! 프로모팩</option><option value="2016 코리안리그 프로모">2016 코리안리그 프로모</option><option value="실드전 프로모 카드 팩">실드전 프로모 카드 팩</option><option value="2023 코리안리그 파이널 시즌 프로모">2023 코리안리그 파이널 시즌 프로모</option><option value="포켓몬 월드챔피언십2023 개최 기념 참가 프로모 카드">포켓몬 월드챔피언십2023 개최 기념 참가 프로모 카드</option><option value="2023 코리안리그 시즌1 준우승 프로모">2023 코리안리그 시즌1 준우승 프로모</option><option value="2023 코리안리그 시즌1 4강 프로모">2023 코리안리그 시즌1 4강 프로모</option><option value="2024 코리안리그 시즌3 프로모">2024 코리안리그 시즌3 프로모</option><option value="2023 코리안리그 시즌4 프로모">2023 코리안리그 시즌4 프로모</option><option value="2024 코리안리그 시즌3 우승 프로모">2024 코리안리그 시즌3 우승 프로모</option><option value="2023 코리안리그 시즌4 우승 프로모">2023 코리안리그 시즌4 우승 프로모</option><option value="2024 코리안리그 시즌1 프로모">2024 코리안리그 시즌1 프로모</option><option value="2024 코리안리그 시즌3 준우승 프로모">2024 코리안리그 시즌3 준우승 프로모</option><option value="2023 코리안리그 시즌2 프로모">2023 코리안리그 시즌2 프로모</option><option value="2023 코리안리그 시즌4 준우승 프로모">2023 코리안리그 시즌4 준우승 프로모</option><option value="포켓몬 카드샵 대표 선발전 프로모">포켓몬 카드샵 대표 선발전 프로모</option><option value="2024 코리안리그 시즌1 우승 프로모">2024 코리안리그 시즌1 우승 프로모</option><option value="2024 코리안리그 시즌3 4강 프로모">2024 코리안리그 시즌3 4강 프로모</option><option value="2023 코리안리그 시즌2 우승 프로모">2023 코리안리그 시즌2 우승 프로모</option><option value="2023 코리안리그 시즌4 4강 프로모">2023 코리안리그 시즌4 4강 프로모</option><option value="2024 코리안리그 시즌1 준우승 프로모">2024 코리안리그 시즌1 준우승 프로모</option><option value="2023 코리안리그 시즌2 준우승 프로모">2023 코리안리그 시즌2 준우승 프로모</option><option value="2024 코리안리그 시즌1 4강 프로모">2024 코리안리그 시즌1 4강 프로모</option><option value="포켓몬 월드챔피언십2022 개최 기념 참가 프로모 카드">포켓몬 월드챔피언십2022 개최 기념 참가 프로모 카드</option><option value="2023 코리안리그 시즌2 4강 프로모">2023 코리안리그 시즌2 4강 프로모</option><option value="「태그볼트」 「나이트유니슨」 각 1BOX 구매자 프로모 카드">「태그볼트」 「나이트유니슨」 각 1BOX 구매자 프로모 카드</option><option value="포켓몬스터 극장판 관람 프로모">포켓몬스터 극장판 관람 프로모</option><option value="스페셜 점보 카드 세트 명탐정 피카츄 「리자몽 GX ver.」 프로모 카드">스페셜 점보 카드 세트 명탐정 피카츄 「리자몽 GX ver.」 프로모 카드</option><option value="2024 코리안리그 시즌2 프로모">2024 코리안리그 시즌2 프로모</option><option value="스페셜 점보 카드 세트 명탐정 피카츄 「뮤츠 GX ver.」 프로모 카드">스페셜 점보 카드 세트 명탐정 피카츄 「뮤츠 GX ver.」 프로모 카드</option><option value="2024 코리안리그 시즌2 우승 프로모">2024 코리안리그 시즌2 우승 프로모</option><option value="「명탐정 피카츄」영화 프로모 카드">「명탐정 피카츄」영화 프로모 카드</option><option value="2023 코리안리그 시즌3 프로모">2023 코리안리그 시즌3 프로모</option><option value="2023 코리안리그 파이널 시즌 우승 프로모">2023 코리안리그 파이널 시즌 우승 프로모</option><option value="2024 코리안리그 시즌2 준우승 프로모">2024 코리안리그 시즌2 준우승 프로모</option><option value="2023 코리안리그 시즌3 우승 프로모">2023 코리안리그 시즌3 우승 프로모</option><option value="2023 코리안리그 파이널 시즌 준우승 프로모">2023 코리안리그 파이널 시즌 준우승 프로모</option><option value="2024 코리안리그 시즌2 4강 프로모">2024 코리안리그 시즌2 4강 프로모</option><option value="2023 코리안리그 시즌3 준우승 프로모">2023 코리안리그 시즌3 준우승 프로모</option><option value="2023 코리안리그 파이널 시즌 4강 프로모">2023 코리안리그 파이널 시즌 4강 프로모</option><option value="2023 코리안리그 시즌1 프로모">2023 코리안리그 시즌1 프로모</option><option value="2023 코리안리그 시즌3 4강 프로모">2023 코리안리그 시즌3 4강 프로모</option><option value="2023 코리안리그 시즌1 우승 프로모">2023 코리안리그 시즌1 우승 프로모</option><option value="처음 배우는 교실 프로모">처음 배우는 교실 프로모</option>
+                                </optgroup>
+                            </select>							</div>
+							<div class="form-group col-lg-6 col-12 mb-0">
+								<p class="text-white">정렬 옵션</p>
+                            <select class="form-control-card sm dark sort"   name="sort" id="sort" style="width: 100%;">
+                        <option value="1" data-orderby="order_num" data-order="DESC" selected>최신순</option>
+                        <option value="2" data-orderby="order_num" data-order="ASC">오래된순</option>
+                        <option value="3" data-orderby="CardNum" data-order="ASC">카드 번호</option>
+                        <option value="4" data-orderby="CardNum" data-order="DESC">카드 번호 - 역순</option>
+                        <option value="5" data-orderby="GoodsNum" data-order="ASC">패키지명</option>
+                        <option value="6" data-orderby="GoodsNum" data-order="DESC">패키지명 - 역순</option>
+                        <option value="7" data-orderby="HP" data-order="ASC">HP</option>
+                        <option value="8" data-orderby="HP" data-order="DESC">HP - 역순</option>
+                            </select>
+ 
+							</div>
+						</div>
+					</div>
+ 
+
+ 
+					<div class="form-wrp">
+						<div class="row">
+							<div class="col-lg-6 col-12">
+								<p class="text-white">카드종류</p>
+								<div class="custom-check-wrp" id="listsnum">
+ 															<label class="custom-checkbox-dark">
+										<input type="checkbox" name="CardType" value="기본"  class="sr-only">
+										<i></i> <span>기본</span>
+									</label>
+																<label class="custom-checkbox-dark">
+										<input type="checkbox" name="CardType" value="1진화"  class="sr-only">
+										<i></i> <span>1진화</span>
+									</label>
+																<label class="custom-checkbox-dark">
+										<input type="checkbox" name="CardType" value="2진화"  class="sr-only">
+										<i></i> <span>2진화</span>
+									</label>
+																<label class="custom-checkbox-dark">
+										<input type="checkbox" name="CardType" value="기본 포켓몬 ex"  class="sr-only">
+										<i></i> <span>포켓몬 ex</span>
+									</label>
+																<label class="custom-checkbox-dark">
+										<input type="checkbox" name="CardType" value="고대"  class="sr-only">
+										<i></i> <span>고대</span>
+									</label>
+																<label class="custom-checkbox-dark">
+										<input type="checkbox" name="CardType" value="미래"  class="sr-only">
+										<i></i> <span>미래</span>
+									</label>
+																<label class="custom-checkbox-dark">
+										<input type="checkbox" name="CardType" value="V"  class="sr-only">
+										<i></i> <span>포켓몬 V</span>
+									</label>
+																<label class="custom-checkbox-dark">
+										<input type="checkbox" name="CardType" value="포켓몬 GX"  class="sr-only">
+										<i></i> <span>포켓몬 GX</span>
+									</label>
+																<label class="custom-checkbox-dark">
+										<input type="checkbox" name="CardType" value="일격"  class="sr-only">
+										<i></i> <span>일격</span>
+									</label>
+																<label class="custom-checkbox-dark">
+										<input type="checkbox" name="CardType" value="연격"  class="sr-only">
+										<i></i> <span>연격</span>
+									</label>
+																<label class="custom-checkbox-dark">
+										<input type="checkbox" name="CardType" value="퓨전"  class="sr-only">
+										<i></i> <span>퓨전</span>
+									</label>
+																<label class="custom-checkbox-dark">
+										<input type="checkbox" name="CardType" value="프리즘스타"  class="sr-only">
+										<i></i> <span><img src="https://cards.image.pokemonkorea.co.kr/data/images/symbol/prism.png" style="width: 22px; height: auto;">프리즘스타</span>
+									</label>
+																<label class="custom-checkbox-dark">
+										<input type="checkbox" name="CardType" value="포켓몬 EX"  class="sr-only">
+										<i></i> <span>포켓몬 EX</span>
+									</label>
+																<label class="custom-checkbox-dark">
+										<input type="checkbox" name="CardType" value="M진화"  class="sr-only">
+										<i></i> <span>M진화</span>
+									</label>
+																<label class="custom-checkbox-dark">
+										<input type="checkbox" name="CardType" value="BREAK진화"  class="sr-only">
+										<i></i> <span>BREAK진화</span>
+									</label>
+																<label class="custom-checkbox-dark">
+										<input type="checkbox" name="CardType" value="복원"  class="sr-only">
+										<i></i> <span>복원</span>
+									</label>
+										<!-- 개발확인  									<label class="custom-checkbox-dark">
+										<input type="checkbox" name="CardType" value="기본"  class="sr-only">
+										<i></i> <span>기본</span>
+									</label>
+																<label class="custom-checkbox-dark">
+										<input type="checkbox" name="CardType" value="1진화"  class="sr-only">
+										<i></i> <span>1진화</span>
+									</label>
+																<label class="custom-checkbox-dark">
+										<input type="checkbox" name="CardType" value="2진화"  class="sr-only">
+										<i></i> <span>2진화</span>
+									</label>
+																<label class="custom-checkbox-dark">
+										<input type="checkbox" name="CardType" value="ex"  class="sr-only">
+										<i></i> <span>포켓몬 ex</span>
+									</label>
+																<label class="custom-checkbox-dark">
+										<input type="checkbox" name="CardType" value="V"  class="sr-only">
+										<i></i> <span>포켓몬 V</span>
+									</label>
+																<label class="custom-checkbox-dark">
+										<input type="checkbox" name="CardType" value="포켓몬 GX"  class="sr-only">
+										<i></i> <span>포켓몬 GX</span>
+									</label>
+																<label class="custom-checkbox-dark">
+										<input type="checkbox" name="CardType" value="일격"  class="sr-only">
+										<i></i> <span>일격</span>
+									</label>
+																<label class="custom-checkbox-dark">
+										<input type="checkbox" name="CardType" value="연격"  class="sr-only">
+										<i></i> <span>연격</span>
+									</label>
+																<label class="custom-checkbox-dark">
+										<input type="checkbox" name="CardType" value="퓨전"  class="sr-only">
+										<i></i> <span>퓨전</span>
+									</label>
+																<label class="custom-checkbox-dark">
+										<input type="checkbox" name="CardType" value="프리즘스타"  class="sr-only">
+										<i></i> <span><img src="https://cards.image.pokemonkorea.co.kr/data/images/symbol/prism.png" style="width: 22px; height: auto;">프리즘스타</span>
+									</label>
+																<label class="custom-checkbox-dark">
+										<input type="checkbox" name="CardType" value="포켓몬 EX"  class="sr-only">
+										<i></i> <span>포켓몬 EX</span>
+									</label>
+																<label class="custom-checkbox-dark">
+										<input type="checkbox" name="CardType" value="M진화"  class="sr-only">
+										<i></i> <span>M진화</span>
+									</label>
+																<label class="custom-checkbox-dark">
+										<input type="checkbox" name="CardType" value="BREAK진화"  class="sr-only">
+										<i></i> <span>BREAK진화</span>
+									</label>
+																<label class="custom-checkbox-dark">
+										<input type="checkbox" name="CardType" value="복원"  class="sr-only">
+										<i></i> <span>복원</span>
+									</label>
+							 -->
+									<label class="custom-checkbox-dark">
+										<input type="checkbox" name="CardType" value="all" class="sr-only" onclick="selectall(this.checked,'listsnum')">
+										<i></i> <span>모두 선택</span>
+									</label>
+								</div>
+							</div>
+							<div class="col-lg-6 col-12">
+								<p class="text-white">특성</p>
+								<div class="custom-check-wrp" id="listsnum2">
+									
+																<label class="custom-checkbox-dark">
+										<input type="checkbox" name="ability_label1" value="특성"  class="sr-only">
+										<i></i> <span>특성</span>
+									</label>
+																<label class="custom-checkbox-dark">
+										<input type="checkbox" name="ability_label1" value="고대능력"  class="sr-only">
+										<i></i> <span>고대능력</span>
+									</label>
+																<label class="custom-checkbox-dark">
+										<input type="checkbox" name="ability_label1" value="포켓파워"  class="sr-only">
+										<i></i> <span>포켓파워</span>
+									</label>
+																<label class="custom-checkbox-dark">
+										<input type="checkbox" name="ability_label1" value="포켓바디"  class="sr-only">
+										<i></i> <span>포켓바디</span>
+									</label>
+							
+									<label class="custom-checkbox-dark">
+										<input type="checkbox" name="ability_label1" value="all" class="sr-only" onclick="selectall(this.checked,'listsnum2')">
+										<i></i> <span>모두 선택</span>
+									</label>
+ 
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="card-border">
+						<div class="row">
+						<div class="col-lg-6 col-12">
+							<p class="text-white">카드 타입</p>
+							<div class="custom-check-wrp v2"  id="listsnum3">
+								<label class="custom-checkicon">
+									<input type="checkbox" name="CardMonType" value="all" class="sr-only" onclick="selectall(this.checked,'listsnum3')">
+									<i class="entire">전체</i>
+								</label>
+
+
+															<label class="custom-checkicon">
+										<input type="checkbox" name="CardMonType" value="풀"  class="sr-only">
+										<i><img src="https://pokemoncard.co.kr/v3/img/icon/icon_type01.png" alt=""></i>
+									</label>
+															<label class="custom-checkicon">
+										<input type="checkbox" name="CardMonType" value="불꽃"  class="sr-only">
+										<i><img src="https://pokemoncard.co.kr/v3/img/icon/icon_type02.png" alt=""></i>
+									</label>
+															<label class="custom-checkicon">
+										<input type="checkbox" name="CardMonType" value="물"  class="sr-only">
+										<i><img src="https://pokemoncard.co.kr/v3/img/icon/icon_type03.png" alt=""></i>
+									</label>
+															<label class="custom-checkicon">
+										<input type="checkbox" name="CardMonType" value="번개"  class="sr-only">
+										<i><img src="https://pokemoncard.co.kr/v3/img/icon/icon_type04.png" alt=""></i>
+									</label>
+															<label class="custom-checkicon">
+										<input type="checkbox" name="CardMonType" value="초"  class="sr-only">
+										<i><img src="https://pokemoncard.co.kr/v3/img/icon/icon_type05.png" alt=""></i>
+									</label>
+															<label class="custom-checkicon">
+										<input type="checkbox" name="CardMonType" value="격투"  class="sr-only">
+										<i><img src="https://pokemoncard.co.kr/v3/img/icon/icon_type06.png" alt=""></i>
+									</label>
+															<label class="custom-checkicon">
+										<input type="checkbox" name="CardMonType" value="악"  class="sr-only">
+										<i><img src="https://pokemoncard.co.kr/v3/img/icon/icon_type07.png" alt=""></i>
+									</label>
+															<label class="custom-checkicon">
+										<input type="checkbox" name="CardMonType" value="강철"  class="sr-only">
+										<i><img src="https://pokemoncard.co.kr/v3/img/icon/icon_type08.png" alt=""></i>
+									</label>
+															<label class="custom-checkicon">
+										<input type="checkbox" name="CardMonType" value="페어리"  class="sr-only">
+										<i><img src="https://pokemoncard.co.kr/v3/img/icon/icon_type09.png" alt=""></i>
+									</label>
+															<label class="custom-checkicon">
+										<input type="checkbox" name="CardMonType" value="드래곤"  class="sr-only">
+										<i><img src="https://pokemoncard.co.kr/v3/img/icon/icon_type10.png" alt=""></i>
+									</label>
+															<label class="custom-checkicon">
+										<input type="checkbox" name="CardMonType" value="무색"  class="sr-only">
+										<i><img src="https://pokemoncard.co.kr/v3/img/icon/icon_type11.png" alt=""></i>
+									</label>
+							 
+							</div>
+						</div>
+						<div class="col-lg-6 col-12">
+							<p class="text-white">약점</p>
+							<div class="custom-check-wrp v2" id="listsnum4">
+								<label class="custom-checkicon">
+									<input type="checkbox" name="Weakness" value="all" class="sr-only" onclick="selectall(this.checked,'listsnum4')">
+									<i class="entire">전체</i>
+								</label>
+
+
+															<label class="custom-checkicon">
+										<input type="checkbox" name="Weakness" value="풀"  class="sr-only">
+										<i><img src="https://pokemoncard.co.kr/v3/img/icon/icon_type01.png" alt=""></i>
+									</label>
+															<label class="custom-checkicon">
+										<input type="checkbox" name="Weakness" value="불꽃"  class="sr-only">
+										<i><img src="https://pokemoncard.co.kr/v3/img/icon/icon_type02.png" alt=""></i>
+									</label>
+															<label class="custom-checkicon">
+										<input type="checkbox" name="Weakness" value="물"  class="sr-only">
+										<i><img src="https://pokemoncard.co.kr/v3/img/icon/icon_type03.png" alt=""></i>
+									</label>
+															<label class="custom-checkicon">
+										<input type="checkbox" name="Weakness" value="번개"  class="sr-only">
+										<i><img src="https://pokemoncard.co.kr/v3/img/icon/icon_type04.png" alt=""></i>
+									</label>
+															<label class="custom-checkicon">
+										<input type="checkbox" name="Weakness" value="초"  class="sr-only">
+										<i><img src="https://pokemoncard.co.kr/v3/img/icon/icon_type05.png" alt=""></i>
+									</label>
+															<label class="custom-checkicon">
+										<input type="checkbox" name="Weakness" value="격투"  class="sr-only">
+										<i><img src="https://pokemoncard.co.kr/v3/img/icon/icon_type06.png" alt=""></i>
+									</label>
+															<label class="custom-checkicon">
+										<input type="checkbox" name="Weakness" value="악"  class="sr-only">
+										<i><img src="https://pokemoncard.co.kr/v3/img/icon/icon_type07.png" alt=""></i>
+									</label>
+															<label class="custom-checkicon">
+										<input type="checkbox" name="Weakness" value="강철"  class="sr-only">
+										<i><img src="https://pokemoncard.co.kr/v3/img/icon/icon_type08.png" alt=""></i>
+									</label>
+															<label class="custom-checkicon">
+										<input type="checkbox" name="Weakness" value="페어리"  class="sr-only">
+										<i><img src="https://pokemoncard.co.kr/v3/img/icon/icon_type09.png" alt=""></i>
+									</label>
+															<label class="custom-checkicon">
+										<input type="checkbox" name="Weakness" value="드래곤"  class="sr-only">
+										<i><img src="https://pokemoncard.co.kr/v3/img/icon/icon_type10.png" alt=""></i>
+									</label>
+															<label class="custom-checkicon">
+										<input type="checkbox" name="Weakness" value="무색"  class="sr-only">
+										<i><img src="https://pokemoncard.co.kr/v3/img/icon/icon_type11.png" alt=""></i>
+									</label>
+														</div>
+						</div>
+					</div>
+					</div>
+					<div class="form-wrp mt-0 pt-0">
+						<div class="row">
+							<div class="col-lg-6 col-12">
+								<p class="text-white">저항력</p>
+								<div class="custom-check-wrp v2"id="listsnum5">
+									<label class="custom-checkicon" >
+										<input type="checkbox" name="Resistance" value="all" class="sr-only" onclick="selectall(this.checked,'listsnum5')">
+										<i class="entire">전체</i>
+									</label>
+
+
+																	<label class="custom-checkicon">
+											<input type="checkbox" name="Resistance" value="풀"  class="sr-only">
+											<i><img src="https://pokemoncard.co.kr/v3/img/icon/icon_type01.png" alt=""></i>
+										</label>
+																	<label class="custom-checkicon">
+											<input type="checkbox" name="Resistance" value="불꽃"  class="sr-only">
+											<i><img src="https://pokemoncard.co.kr/v3/img/icon/icon_type02.png" alt=""></i>
+										</label>
+																	<label class="custom-checkicon">
+											<input type="checkbox" name="Resistance" value="물"  class="sr-only">
+											<i><img src="https://pokemoncard.co.kr/v3/img/icon/icon_type03.png" alt=""></i>
+										</label>
+																	<label class="custom-checkicon">
+											<input type="checkbox" name="Resistance" value="번개"  class="sr-only">
+											<i><img src="https://pokemoncard.co.kr/v3/img/icon/icon_type04.png" alt=""></i>
+										</label>
+																	<label class="custom-checkicon">
+											<input type="checkbox" name="Resistance" value="초"  class="sr-only">
+											<i><img src="https://pokemoncard.co.kr/v3/img/icon/icon_type05.png" alt=""></i>
+										</label>
+																	<label class="custom-checkicon">
+											<input type="checkbox" name="Resistance" value="격투"  class="sr-only">
+											<i><img src="https://pokemoncard.co.kr/v3/img/icon/icon_type06.png" alt=""></i>
+										</label>
+																	<label class="custom-checkicon">
+											<input type="checkbox" name="Resistance" value="악"  class="sr-only">
+											<i><img src="https://pokemoncard.co.kr/v3/img/icon/icon_type07.png" alt=""></i>
+										</label>
+																	<label class="custom-checkicon">
+											<input type="checkbox" name="Resistance" value="강철"  class="sr-only">
+											<i><img src="https://pokemoncard.co.kr/v3/img/icon/icon_type08.png" alt=""></i>
+										</label>
+																	<label class="custom-checkicon">
+											<input type="checkbox" name="Resistance" value="페어리"  class="sr-only">
+											<i><img src="https://pokemoncard.co.kr/v3/img/icon/icon_type09.png" alt=""></i>
+										</label>
+																	<label class="custom-checkicon">
+											<input type="checkbox" name="Resistance" value="드래곤"  class="sr-only">
+											<i><img src="https://pokemoncard.co.kr/v3/img/icon/icon_type10.png" alt=""></i>
+										</label>
+																	<label class="custom-checkicon">
+											<input type="checkbox" name="Resistance" value="무색"  class="sr-only">
+											<i><img src="https://pokemoncard.co.kr/v3/img/icon/icon_type11.png" alt=""></i>
+										</label>
+																</div>
+
+							</div>
+							<div class="col-lg-6 col-12">
+								<p class="text-white">기술에 필요한 에너지</p>
+								<div class="custom-check-wrp v2" id="listsnum6">
+									<label class="custom-checkicon" >
+										<input type="checkbox" name="TechErg" value="all" class="sr-only" onclick="selectall(this.checked,'listsnum6')">
+										<i class="entire">전체</i>
+									</label>
+
+
+																	<label class="custom-checkicon">
+											<input type="checkbox" name="TechErg" value="풀"  class="sr-only">
+											<i><img src="https://pokemoncard.co.kr/v3/img/icon/icon_type01.png" alt=""></i>
+										</label>
+																	<label class="custom-checkicon">
+											<input type="checkbox" name="TechErg" value="불꽃"  class="sr-only">
+											<i><img src="https://pokemoncard.co.kr/v3/img/icon/icon_type02.png" alt=""></i>
+										</label>
+																	<label class="custom-checkicon">
+											<input type="checkbox" name="TechErg" value="물"  class="sr-only">
+											<i><img src="https://pokemoncard.co.kr/v3/img/icon/icon_type03.png" alt=""></i>
+										</label>
+																	<label class="custom-checkicon">
+											<input type="checkbox" name="TechErg" value="번개"  class="sr-only">
+											<i><img src="https://pokemoncard.co.kr/v3/img/icon/icon_type04.png" alt=""></i>
+										</label>
+																	<label class="custom-checkicon">
+											<input type="checkbox" name="TechErg" value="초"  class="sr-only">
+											<i><img src="https://pokemoncard.co.kr/v3/img/icon/icon_type05.png" alt=""></i>
+										</label>
+																	<label class="custom-checkicon">
+											<input type="checkbox" name="TechErg" value="격투"  class="sr-only">
+											<i><img src="https://pokemoncard.co.kr/v3/img/icon/icon_type06.png" alt=""></i>
+										</label>
+																	<label class="custom-checkicon">
+											<input type="checkbox" name="TechErg" value="악"  class="sr-only">
+											<i><img src="https://pokemoncard.co.kr/v3/img/icon/icon_type07.png" alt=""></i>
+										</label>
+																	<label class="custom-checkicon">
+											<input type="checkbox" name="TechErg" value="강철"  class="sr-only">
+											<i><img src="https://pokemoncard.co.kr/v3/img/icon/icon_type08.png" alt=""></i>
+										</label>
+																	<label class="custom-checkicon">
+											<input type="checkbox" name="TechErg" value="페어리"  class="sr-only">
+											<i><img src="https://pokemoncard.co.kr/v3/img/icon/icon_type09.png" alt=""></i>
+										</label>
+																	<label class="custom-checkicon">
+											<input type="checkbox" name="TechErg" value="드래곤"  class="sr-only">
+											<i><img src="https://pokemoncard.co.kr/v3/img/icon/icon_type10.png" alt=""></i>
+										</label>
+																	<label class="custom-checkicon">
+											<input type="checkbox" name="TechErg" value="무색"  class="sr-only">
+											<i><img src="https://pokemoncard.co.kr/v3/img/icon/icon_type11.png" alt=""></i>
+										</label>
+																</div>
+
+
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-lg-6 col-12">
+							<p class="text-white">HP</p>
+							<div class="custom-slider">
+								<input type="text" class="slider01" name="hp" value=""/>
+							</div>
+						</div>
+						<div class="col-lg-6 col-12">
+							<p class="text-white">후퇴</p>
+							<div class="custom-slider slider-grid">
+								<input type="text" class="slider02" name="retreat"  value=""/>
+							</div>
+						</div>
+					</div>
+
+				</div>
+				<div class="searchnavcont" style="display:none;">
+					<div class="form-wrp">
+						<div class="row">
+							<div class="col-lg-6 col-12">
+								<p class="text-white">카드종류</p>
+								<div class="custom-check-wrp" id="listsnum7">
+									<label class="custom-checkbox-dark">
+										<input type="checkbox" name="CardType2" value="all" class="sr-only" onclick="selectall(this.checked,'listsnum7')">
+										<i></i> <span>모두 선택</span>
+									</label>
+ 
+																<label class="custom-checkbox-dark">
+										<input type="checkbox" name="CardType" value="아이템"  class="sr-only">
+										<i></i> <span>아이템</span>
+									</label>
+																<label class="custom-checkbox-dark">
+										<input type="checkbox" name="CardType" value="포켓몬의 도구"  class="sr-only">
+										<i></i> <span>포켓몬의 도구</span>
+									</label>
+																<label class="custom-checkbox-dark">
+										<input type="checkbox" name="CardType" value="서포트"  class="sr-only">
+										<i></i> <span>서포트</span>
+									</label>
+																<label class="custom-checkbox-dark">
+										<input type="checkbox" name="CardType" value="스타디움"  class="sr-only">
+										<i></i> <span>스타디움</span>
+									</label>
+							
+			<!--  개발확인										<label class="custom-checkbox-dark">
+										<input type="checkbox" name="CardType" value="아이템"  class="sr-only">
+										<i></i> <span>아이템</span>
+									</label>
+																<label class="custom-checkbox-dark">
+										<input type="checkbox" name="CardType" value="포켓몬의 도구"  class="sr-only">
+										<i></i> <span>포켓몬의 도구</span>
+									</label>
+																<label class="custom-checkbox-dark">
+										<input type="checkbox" name="CardType" value="서포트"  class="sr-only">
+										<i></i> <span>서포트</span>
+									</label>
+																<label class="custom-checkbox-dark">
+										<input type="checkbox" name="CardType" value="스타디움"  class="sr-only">
+										<i></i> <span>스타디움</span>
+									</label>
+							 -->
+ 
+								</div>
+							</div>
+ 
+						</div>
+					</div>
+				</div>
+				<div class="searchnavcont" style="display:none;">
+					<div class="form-wrp">
+						<div class="row">
+							<div class="col-lg-6 col-12">
+								<p class="text-white">카드종류</p>
+								<div class="custom-check-wrp" id="listsnum8">
+									<label class="custom-checkbox-dark">
+										<input type="checkbox" name="CardType3" value="all" class="sr-only" onclick="selectall(this.checked,'listsnum8')">
+										<i></i> <span>모두 선택</span>
+									</label>
+ 
+																<label class="custom-checkbox-dark">
+										<input type="checkbox" name="CardType" value="기본 에너지"  class="sr-only">
+										<i></i> <span>기본 에너지</span>
+									</label>
+																<label class="custom-checkbox-dark">
+										<input type="checkbox" name="CardType" value="특수 에너지"  class="sr-only">
+										<i></i> <span>특수 에너지</span>
+									</label>
+							 
+								</div>
+							</div>
+ 
+						</div>
+					</div>
+				</div>
+				</form>
+ 					<div class="col-12 btn-wrap">
+						<!-- 20200902 수정되었음 btn-primary, btn-dark 등 색상표시 class 뒤에 -re 추가 -->
+						<a href="javascript:;" onclick="searchdetail()" class="btn-card btn-sm3 btn-skew btn-primary-re"><p>조건검색</p></a>
+						<a href="javascript:;" onclick="searchformreset()" class="btn-card btn-sm3 btn-skew btn-dark-re"><p>초기화</p></a>
+						<!-- // 20200902 수정되었음 -->
+					</div>
+
+			</div>
+		</div>
+		<button class="no-style collapsed btn-detail" type="button" data-toggle="collapse" data-target="#detailed"><p>조건검색</p><p class="on">닫기</p></button>
+	</div>
+
+<script>
+$('#GoodsName').select2();
+$('#sort').select2();
+        var formData = new FormData();
+
+function searchdetail(ty){
+
+
+	if (ty == "search") {
+		$("[name=limit]").val(0);
+	}
+
+ 	//var limit = $("[name=limit]").val();
+ 	var limit = 0;
+	var CardType1 = [];
+	 
+		tbl = document.getElementById("listsnum");
+		input = tbl.getElementsByTagName("INPUT");
+		inputCount = input.length;
+		for(i=0;i<inputCount;i++){
+			if(input[i].checked){
+					CardType1.push(input[i].value);
+			}
+		}
+	var CardType2 = [];
+
+		tbl = document.getElementById("listsnum7");
+		input = tbl.getElementsByTagName("INPUT");
+		inputCount = input.length;
+		for(i=0;i<inputCount;i++){
+			if(input[i].checked){
+					CardType2.push(input[i].value);
+			}
+		}
+	var CardType3 = [];
+
+
+		tbl = document.getElementById("listsnum8");
+		input = tbl.getElementsByTagName("INPUT");
+		inputCount = input.length;
+		for(i=0;i<inputCount;i++){
+			if(input[i].checked){
+					CardType3.push(input[i].value);
+			}
+		}
+	var CardMonType = [];
+
+
+		tbl = document.getElementById("listsnum3");
+		input = tbl.getElementsByTagName("INPUT");
+		inputCount = input.length;
+		for(i=0;i<inputCount;i++){
+			if(input[i].checked){
+					CardMonType.push(input[i].value);
+			}
+		}
+
+
+	var Weakness = [];
+
+
+		tbl = document.getElementById("listsnum4");
+		input = tbl.getElementsByTagName("INPUT");
+		inputCount = input.length;
+		for(i=0;i<inputCount;i++){
+			if(input[i].checked){
+					Weakness.push(input[i].value);
+			}
+		}
+
+
+	 var Resistance = [];
+
+
+
+		tbl = document.getElementById("listsnum5");
+		input = tbl.getElementsByTagName("INPUT");
+		inputCount = input.length;
+		for(i=0;i<inputCount;i++){
+			if(input[i].checked){
+					Resistance.push(input[i].value);
+			}
+		}
+
+	var TechErg = [];
+		tbl = document.getElementById("listsnum6");
+		input = tbl.getElementsByTagName("INPUT");
+		inputCount = input.length;
+		for(i=0;i<inputCount;i++){
+			if(input[i].checked){
+					TechErg.push(input[i].value);
+			}
+		}
+
+
+	var ability_label1 = [];
+		tbl = document.getElementById("listsnum2");
+		input = tbl.getElementsByTagName("INPUT");
+		inputCount = input.length;
+		for(i=0;i<inputCount;i++){
+			if(input[i].checked){
+					ability_label1.push(input[i].value);
+			}
+		}
+
+	var order = $("[name=sort]").find(':selected').data('order');
+	var orderby = $("[name=sort]").find(':selected').data('orderby');
+
+	var hp = $("[name=hp]").val();
+	hp = hp.replace(";",",");
+	var retreat = $("[name=hp]").val();
+	retreat = retreat.replace(";",",");
+	console.log("order ==> "+order);
+	console.log("orderby ==> "+orderby);
+	console.log("CardType2 ==> "+CardType2);
+	console.log("CardType3 ==> "+CardType3);
+
+	console.log("CardMonType ==> "+CardMonType);
+	console.log("Weakness ==> "+Weakness);
+	console.log("Resistance ==> "+Resistance);
+	console.log("TechErg ==> "+TechErg);
+	console.log("ability_label1 ==> "+ability_label1);
+	console.log("hp ==> "+hp);
+	console.log("retreat ==> "+retreat);
+
+
+	formData.append("action", "get_more_cards");
+	formData.append("limit", limit);
+	formData.append("GoodsName", $("[name=GoodsName]").val());
+	formData.append("CardTypeNum", CardTypeNum);
+	if (CardTypeNum == 1) {
+		formData.append("CardType", CardType1);
+		formData.append("CardMonType", CardMonType);
+		formData.append("Weakness", Weakness);
+		formData.append("Resistance", Resistance);
+		formData.append("TechErg", TechErg);
+		formData.append("ability_label1", ability_label1);
+		formData.append("hp", hp);
+		formData.append("retreat", retreat);
+	} else if (CardTypeNum == 2) {
+		formData.append("CardType", CardType2);
+	} else if (CardTypeNum == 3) {
+		formData.append("CardType", CardType3);
+	}
+	formData.append("order", order);
+	formData.append("orderby", orderby);
+
+
+
+	var object = {};
+	formData.forEach(function (value,key){
+		object[key] = value;
+	});
+
+	var json = JSON.stringify(object);
+
+	console.log(json);
+
+	$("#form_data").val(json);
+	$("#detail_search_form").submit();
+
+
+
+}
+
+ 
+</script>
+
+	<section class="sect-rank grid bg-light">
+		<div class="container">
+
+							<div class="row flex-lg-row-reverse">
+				<div class="col-lg-8 col-12 row-right">
+					<div class="wrp-mov">
+						<div class="mov-wrp">
+							<iframe class="mov" width="775" height="430" src="https://www.youtube.com/embed/BY-J_H1WDQY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						</div>
+						<h4>스칼렛&바이올렛 확장팩 「변환의 가면」 대발매!</h4>
+					</div>
+				</div>
+				<div class="col-lg-4 col-12">
+					<ul class="list-banner">
+											<li style="background:#fee682">
+							<a class="row no-gutters" href="https://pokemonkorea.co.kr/card_vending_machine">
+								<div class="col-lg-auto col-12 txt">
+									<p class="d-lg-block d-none">포켓몬 카드 게임</p>
+									<h3>자판기</h3>
+								</div>
+								<div class="col-lg-auto col-12 img">
+									<img src="https://data1.pokemonkorea.co.kr/2020/10/2020-10-22_11-58-53-64964-1603335533.png" style="max-height:130px;;" alt="">
+								</div>
+							</a>
+						</li>
+											<li style="background:#ffcb05">
+							<a class="row no-gutters" href="https://pokemonkorea.co.kr/pokemonschool2023">
+								<div class="col-lg-auto col-12 txt">
+									<p class="d-lg-block d-none">포켓몬 카드 게임</p>
+									<h3>포켓몬스쿨</h3>
+								</div>
+								<div class="col-lg-auto col-12 img">
+									<img src="https://data1.pokemonkorea.co.kr/2024/04/2024-04-15_19-19-20-28818-1713176360.jpg" style="max-height:130px;;" alt="">
+								</div>
+							</a>
+						</li>
+											<li style="background:#dbdcdc">
+							<a class="row no-gutters" href="https://pokemonkorea.co.kr/pokemon_cardshop">
+								<div class="col-lg-auto col-12 txt">
+									<p class="d-lg-block d-none">포켓몬 카드 게임</p>
+									<h3>포켓몬 카드샵</h3>
+								</div>
+								<div class="col-lg-auto col-12 img">
+									<img src="https://data1.pokemonkorea.co.kr/2022/08/2022-08-01_18-48-02-31883-1659347282.png" style="max-height:130px;;" alt="">
+								</div>
+							</a>
+						</li>
+					 
+
+					</ul>
+				</div>
+			</div>
+ 
+						</div>
+	</section>
+
+
+    <section class="sect-news bg-light grid pt-0">
+        <div class="container">
+            <h2 class="h2 sub-title">새로운 소식</h2>
+            <ul class="list-card-line v2 hover-shadow row">
+
+				<li class="col-lg-3 col-6 ">
+										<a href="https://pokemonkorea.co.kr/SV6_tournament" target="_blank">
+					 
+						<div>
+							<div class="tumb-wrp">
+								<img src="https://data1.pokemonkorea.co.kr/newdata/2024/06/2024-06-14_18-50-46-32845-1718358646.png" alt="" class="img-fluid">
+							</div>
+							<span class="img-badge-new"><p class="sr-only">NEW</p></span>						</div>
+						<div class="bx-txt">
+							<h3> 확장팩 「변환의 가면」발매 기념 토너먼트 개최!</h3>
+							<ul class="list-split">
+ 								<li>2024년 06월 14일</li>
+							</ul>
+							<i class="round-go" style="background-color:#0080FF"></i>
+							<i class="btm-line" style="background-color:#0080FF"></i>
+
+
+						</div>
+					</a>
+				</li>
+
+ 
+
+
+				<li class="col-lg-3 col-6 ">
+										<a href="https://pokemon-reservation.co.kr/home/detailReserv.do?idx=0000000001186&tabIdx=99" target="_blank">
+					 
+						<div>
+							<div class="tumb-wrp">
+								<img src="https://data1.pokemonkorea.co.kr/newdata/2024/06/2024-06-12_12-02-34-76998-1718161354.jpg" alt="" class="img-fluid">
+							</div>
+							<span class="img-badge-new"><p class="sr-only">NEW</p></span>						</div>
+						<div class="bx-txt">
+							<h3> 2024 포켓몬 카드샵 대항전 대표 선수 결원 보충 선발 안내 2024.6.14 갱신</h3>
+							<ul class="list-split">
+ 								<li>2024년 06월 14일</li>
+							</ul>
+							<i class="round-go" style="background-color:#0080FF"></i>
+							<i class="btm-line" style="background-color:#0080FF"></i>
+
+
+						</div>
+					</a>
+				</li>
+
+ 
+
+
+				<li class="col-lg-3 col-6 ">
+										<a href="https://pokemoncard.co.kr/card/642" target="_blank">
+					 
+						<div>
+							<div class="tumb-wrp">
+								<img src="https://data1.pokemonkorea.co.kr/newdata/2024/06/2024-06-05_18-39-06-96776-1717580346.png" alt="" class="img-fluid">
+							</div>
+													</div>
+						<div class="bx-txt">
+							<h3> 스칼렛&바이올렛 확장팩 「변환의 가면」6월 대발매!</h3>
+							<ul class="list-split">
+ 								<li>2024년 06월 05일</li>
+							</ul>
+							<i class="round-go" style="background-color:#0080FF"></i>
+							<i class="btm-line" style="background-color:#0080FF"></i>
+
+
+						</div>
+					</a>
+				</li>
+
+ 
+
+
+				<li class="col-lg-3 col-6 ">
+										<a href="https://pokemoncard.co.kr/news?id=14526"  >
+					 
+						<div>
+							<div class="tumb-wrp">
+								<img src="https://data1.pokemonkorea.co.kr/newdata/2024/05/2024-05-16_17-15-50-98992-1715847350.jpg" alt="" class="img-fluid">
+							</div>
+													</div>
+						<div class="bx-txt">
+							<h3> 2024 코리안리그 파이널 시즌 참가 경품 발송 안내 </h3>
+							<ul class="list-split">
+ 								<li>2024년 05월 21일</li>
+							</ul>
+							<i class="round-go" style="background-color:#0080FF"></i>
+							<i class="btm-line" style="background-color:#0080FF"></i>
+
+
+						</div>
+					</a>
+				</li>
+
+ 
+
+
+				<li class="col-lg-3 col-6 ">
+										<a href="https://pokemonkorea.co.kr/PCG_Sealed_battle_SV5a" target="_blank">
+					 
+						<div>
+							<div class="tumb-wrp">
+								<img src="https://data1.pokemonkorea.co.kr/newdata/2024/05/2024-05-16_18-29-42-65463-1715851782.png" alt="" class="img-fluid">
+							</div>
+													</div>
+						<div class="bx-txt">
+							<h3> 강화 확장팩 「크림슨헤이즈」 발매 기념 실드전 개최!</h3>
+							<ul class="list-split">
+ 								<li>2024년 05월 16일</li>
+							</ul>
+							<i class="round-go" style="background-color:#0080FF"></i>
+							<i class="btm-line" style="background-color:#0080FF"></i>
+
+
+						</div>
+					</a>
+				</li>
+
+ 
+
+
+				<li class="col-lg-3 col-6 ">
+										<a href="https://pokemoncard.co.kr/card/636" target="_blank">
+					 
+						<div>
+							<div class="tumb-wrp">
+								<img src="https://data1.pokemonkorea.co.kr/newdata/2024/05/2024-05-10_18-51-30-55784-1715334690.png" alt="" class="img-fluid">
+							</div>
+													</div>
+						<div class="bx-txt">
+							<h3> 스칼렛&바이올렛 강화 확장팩 「크림슨헤이즈」대발매!</h3>
+							<ul class="list-split">
+ 								<li>2024년 05월 10일</li>
+							</ul>
+							<i class="round-go" style="background-color:#0080FF"></i>
+							<i class="btm-line" style="background-color:#0080FF"></i>
+
+
+						</div>
+					</a>
+				</li>
+
+ 
+
+
+				<li class="col-lg-3 col-6 ">
+										<a href="https://pokemonkorea.co.kr/koreanleague_2024/menu466" target="_blank">
+					 
+						<div>
+							<div class="tumb-wrp">
+								<img src="https://data1.pokemonkorea.co.kr/newdata/2024/05/2024-05-10_18-40-04-41880-1715334004.jpg" alt="" class="img-fluid">
+							</div>
+													</div>
+						<div class="bx-txt">
+							<h3> 2024 코리안리그 파이널 시즌 후기 공개!	</h3>
+							<ul class="list-split">
+ 								<li>2024년 05월 10일</li>
+							</ul>
+							<i class="round-go" style="background-color:#0080FF"></i>
+							<i class="btm-line" style="background-color:#0080FF"></i>
+
+
+						</div>
+					</a>
+				</li>
+
+ 
+
+
+				<li class="col-lg-3 col-6 ">
+										<a href="https://pokemoncard.co.kr/news?id=14491"  >
+					 
+						<div>
+							<div class="tumb-wrp">
+								<img src="https://data1.pokemonkorea.co.kr/newdata/2024/05/2024-05-03_16-02-12-25593-1714719732.jpg" alt="" class="img-fluid">
+							</div>
+													</div>
+						<div class="bx-txt">
+							<h3> 2024 코리안리그 파이널 시즌 대회 참가 안내</h3>
+							<ul class="list-split">
+ 								<li>2024년 05월 03일</li>
+							</ul>
+							<i class="round-go" style="background-color:#0080FF"></i>
+							<i class="btm-line" style="background-color:#0080FF"></i>
+
+
+						</div>
+					</a>
+				</li>
+
+ 
+
+
+
+
+ 
+            </ul>
+            <div class="text-center">
+				<!-- 20200902 수정되었음 -->
+                <a href="https://pokemoncard.co.kr/news"   class="btn-card btn-skew btn-dark-re btn-details"><p>더보기</p></a>
+				<!-- // 20200902 수정되었음 -->
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <section class="sect-mov-swiper bg-pattern-dark">
+        <h2 class="h2 text-wh sub-title">포켓몬 카드 게임 유튜브</h2>
+        <div class="swiper-container swiper-center">
+            <div class="container">
+					<div class="swiper-wrapper">
+ 
+						<div class="swiper-slide">
+							<div class="active">
+								<iframe width="763" height="435" src="https://www.youtube.com/embed//BY-J_H1WDQY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+							</div>
+							<!--a href=""><h3>[공식] 포켓몬 카드 게임 확장팩 「변환의 가면」 광고 ｜ Pokémon Card Game</h3></a-->
+						</div>
+ 
+						<div class="swiper-slide">
+							<div class="active">
+								<iframe width="763" height="435" src="https://www.youtube.com/embed//KLFrOIc_oq8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+							</div>
+							<!--a href=""><h3>[공식] 온 세상을 더 신나게!? 포켓몬 카드 게임 브랜드 필름 | Pokémon Card Game</h3></a-->
+						</div>
+ 
+						<div class="swiper-slide">
+							<div class="active">
+								<iframe width="763" height="435" src="https://www.youtube.com/embed//vJoCo_2UeNI?feature=shared" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+							</div>
+							<!--a href=""><h3>[공식] 포켓몬 카드 게임  스칼렛&바이올렛 확장팩 「와일드포스」「사이버저지」 TV광고｜포켓몬 카드 게임 Pokémon Card Game</h3></a-->
+						</div>
+ 
+						<div class="swiper-slide">
+							<div class="active">
+								<iframe width="763" height="435" src="https://www.youtube.com/embed/pPnv_kPMpvc?feature=shared" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+							</div>
+							<!--a href=""><h3>[공식] 포켓몬 카드 게임 강화 확장팩 「레이징서프」, 확장팩 「고대의 포효」, 「미래의 일섬」 TV광고｜포켓몬 카드 게임 Pokémon Card Game</h3></a-->
+						</div>
+ 
+						<div class="swiper-slide">
+							<div class="active">
+								<iframe width="763" height="435" src="https://www.youtube.com/embed//sAilovtGuvY?feature=shared" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+							</div>
+							<!--a href=""><h3>포켓몬 카드 게임 룰송 : BATTLE START! - 래원(Layone)│Graphic ver.│</h3></a-->
+						</div>
+ 
+						<div class="swiper-slide">
+							<div class="active">
+								<iframe width="763" height="435" src="https://www.youtube.com/embed//xCcgsbg1lVo?feature=shared" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+							</div>
+							<!--a href=""><h3>포켓몬 카드 게임 룰송 : BATTLE START! - 래원(Layone)│Studio ver.│ </h3></a-->
+						</div>
+
+                </div>
+										<div class="d-lg-block d-none">
+						<div class="swiper-button-next"></div>
+						<div class="swiper-button-prev"></div>
+					</div>
+					<div class="d-lg-none">
+						<div class="swiper-pagination"></div>
+					</div>
+					            </div>
+        </div>
+        <div class="text-center mt-5 d-lg-block d-none">
+			<!-- 20200902 수정되었음 -->
+            <!-- <a href="https://new.pokemonkorea.co.kr/movie" target="_blank" class="btn-card btn-skew btn-wh-re btn-details"><p>더보기</p></a> -->
+            <a href="https://www.pokemonkorea.co.kr/movie" target="_blank" class="btn-card btn-skew btn-wh-re btn-details"><p>더보기</p></a>
+			<!-- // 20200902 수정되었음 -->
+        </div>
+    </section>
+
+	<section class="sect-info">
+		<h2 class="h2 text-wh sub-title">카드정보</h2>
+		<div class="swiper-container swiper-dark">
+			<div class="swiper-wrapper">
+
+                				<div class="swiper-slide">
+					<a href="https://pokemoncard.co.kr/cards/detail/BS2024008016">
+						<div class="img-card">
+							<img src="https://cards.image.pokemonkorea.co.kr/data/wmimages/SV/SV6/SV6_016.png?w=400" alt="">
+							<p>오거폰 벽록의 가면 ex</p>
+						</div>
+					</a>
+				</div>
+
+
+ 
+                				<div class="swiper-slide">
+					<a href="https://pokemoncard.co.kr/cards/detail/BS2024008022">
+						<div class="img-card">
+							<img src="https://cards.image.pokemonkorea.co.kr/data/wmimages/SV/SV6/SV6_022.png?w=400" alt="">
+							<p>오거폰 화덕의 가면 ex</p>
+						</div>
+					</a>
+				</div>
+
+
+ 
+                				<div class="swiper-slide">
+					<a href="https://pokemoncard.co.kr/cards/detail/BS2024008038">
+						<div class="img-card">
+							<img src="https://cards.image.pokemonkorea.co.kr/data/wmimages/SV/SV6/SV6_038.png?w=400" alt="">
+							<p>오거폰 우물의 가면 ex</p>
+						</div>
+					</a>
+				</div>
+
+
+ 
+                				<div class="swiper-slide">
+					<a href="https://pokemoncard.co.kr/cards/detail/BS2024008065">
+						<div class="img-card">
+							<img src="https://cards.image.pokemonkorea.co.kr/data/wmimages/SV/SV6/SV6_065.png?w=400" alt="">
+							<p>오거폰 주춧돌의 가면 ex</p>
+						</div>
+					</a>
+				</div>
+
+
+ 
+                				<div class="swiper-slide">
+					<a href="https://pokemoncard.co.kr/cards/detail/BS2024008033">
+						<div class="img-card">
+							<img src="https://cards.image.pokemonkorea.co.kr/data/wmimages/SV/SV6/SV6_033.png?w=400" alt="">
+							<p>눈여아</p>
+						</div>
+					</a>
+				</div>
+
+
+ 
+                				<div class="swiper-slide">
+					<a href="https://pokemoncard.co.kr/cards/detail/BS2024008101">
+						<div class="img-card">
+							<img src="https://cards.image.pokemonkorea.co.kr/data/wmimages/SV/SV6/SV6_101.png?w=400" alt="">
+							<p>레거시 에너지</p>
+						</div>
+					</a>
+				</div>
+
+
+ 
+                				<div class="swiper-slide">
+					<a href="https://pokemoncard.co.kr/cards/detail/BS2024008091">
+						<div class="img-card">
+							<img src="https://cards.image.pokemonkorea.co.kr/data/wmimages/SV/SV6/SV6_091.png?w=400" alt="">
+							<p>도깨비의 가면</p>
+						</div>
+					</a>
+				</div>
+
+
+ 
+                				<div class="swiper-slide">
+					<a href="https://pokemoncard.co.kr/cards/detail/BS2024008090">
+						<div class="img-card">
+							<img src="https://cards.image.pokemonkorea.co.kr/data/wmimages/SV/SV6/SV6_090.png?w=400" alt="">
+							<p>곤충채집세트</p>
+						</div>
+					</a>
+				</div>
+
+
+ 
+                				<div class="swiper-slide">
+					<a href="https://pokemoncard.co.kr/cards/detail/BS2024008096">
+						<div class="img-card">
+							<img src="https://cards.image.pokemonkorea.co.kr/data/wmimages/SV/SV6/SV6_096.png?w=400" alt="">
+							<p>시유</p>
+						</div>
+					</a>
+				</div>
+
+
+ 
+                				<div class="swiper-slide">
+					<a href="https://pokemoncard.co.kr/cards/detail/BS2024008064">
+						<div class="img-card">
+							<img src="https://cards.image.pokemonkorea.co.kr/data/wmimages/SV/SV6/SV6_064.png?w=400" alt="">
+							<p>조타구</p>
+						</div>
+					</a>
+				</div>
+
+
+ 
+                				<div class="swiper-slide">
+					<a href="https://pokemoncard.co.kr/cards/detail/BS2024008056">
+						<div class="img-card">
+							<img src="https://cards.image.pokemonkorea.co.kr/data/wmimages/SV/SV6/SV6_056.png?w=400" alt="">
+							<p>기로치</p>
+						</div>
+					</a>
+				</div>
+
+
+ 
+                				<div class="swiper-slide">
+					<a href="https://pokemoncard.co.kr/cards/detail/BS2024008055">
+						<div class="img-card">
+							<img src="https://cards.image.pokemonkorea.co.kr/data/wmimages/SV/SV6/SV6_055.png?w=400" alt="">
+							<p>이야후</p>
+						</div>
+					</a>
+				</div>
+
+
+ 
+                				<div class="swiper-slide">
+					<a href="https://pokemoncard.co.kr/cards/detail/BS2024008081">
+						<div class="img-card">
+							<img src="https://cards.image.pokemonkorea.co.kr/data/wmimages/SV/SV6/SV6_081.png?w=400" alt="">
+							<p>드래펄트 ex</p>
+						</div>
+					</a>
+				</div>
+
+
+ 
+                				<div class="swiper-slide">
+					<a href="https://pokemoncard.co.kr/cards/detail/BS2024008085">
+						<div class="img-card">
+							<img src="https://cards.image.pokemonkorea.co.kr/data/wmimages/SV/SV6/SV6_085.png?w=400" alt="">
+							<p>해피너스 ex</p>
+						</div>
+					</a>
+				</div>
+
+
+ 
+                
+
+ 
+			</div>
+			<div class="container">
+				<div class="swiper-button-next"></div>
+				<div class="swiper-button-prev"></div>
+			</div>
+		</div>
+	</section>
+</div>
+	</div>
+
+<div class="d-lg-none d-block">
+	<!-- ADN 메인패널 설치 start -->
+	<script type="text/javascript">
+	var adn_mobile_pinad_param = adn_mobile_pinad_param || [];
+	adn_mobile_pinad_param.push([{
+	ui:'108221',	
+	ci:'1082210001',
+	gi:'113529'
+	}]);
+	</script>
+	<script type="text/javascript" async src="https://fin.rainbownine.net/js/across_adn_mainpanel_mobile_ad_1.0.4.js"></script>
+	<!-- ADN 메인패널 설치 end -->
+</div>
+
+ 
+	</div>
+	
+	<footer id="ft" class="page-pokemon">
+		<div class="ft-top">
+			<div class="container flex-justify-space">
+				<a href="index.html" target="_blank"><img src="https://pokemoncard.co.kr/v3/img/ft_logo.png" alt="pokemon korea, inc."></a>
+				<ul class="list-split d-lg-block d-none">
+									<li><a href="https://www.pokemonkorea.co.kr/company" target="_blank">회사소개</a></li>
+									<li><a href="https://www.pokemonkorea.co.kr/business" target="_blank">사업내용</a></li>
+									<li><a href="https://www.pokemonkorea.co.kr/partner" target="_blank">제휴안내</a></li>
+									<li><a href="https://www.pokemonkorea.co.kr/terms" target="_blank">이용약관</a></li>
+									<li><a href="https://www.pokemonkorea.co.kr/privacy" target="_blank">개인정보처리방침</a></li>
+									<li><a href="https://www.pokemonkorea.co.kr/email" target="_blank">이메일무단수집거부</a></li>
+									<li><a href="https://www.pokemonkorea.co.kr/faq" target="_blank">고객센터</a></li>
+								</ul>
+			</div>
+			<a href="index.html.1.tmp.html" class="btn-top"><p class="sr-only">go top</p></a>
+		</div>
+		<div class="ft-mdl">
+			<div class="container flex-justify-space">
+				<div class="d-lg-block d-none">
+					<p>(주)포켓몬코리아&nbsp;&nbsp; 경기도 용인시 수지구 신수로 801, 4층 </p>
+					<ul class="list-split">
+						<li>대표이사:임재범</li>
+						<li>개인정보관리책임자:임재범</li>
+						<li>사업자등록번호:113-86-07676</li>
+					</ul>
+				</div>
+				<ul class="d-flex">
+					<li><a href="https://www.facebook.com/PokemonCoKr" target="_blank" class="icon-face">facebook</a></li>
+					<!-- <li><a href="https://story.kakao.com/ch/pokemonkorea" target="_blank" class="icon-kakao">kakakostory</a></li> -->
+					<li><a href="https://instagram.com/pokemon_korea_official?igshid=OGQ5ZDc2ODk2ZA==" target="_blank" class="icon-insta">instagram</a></li>
+					<li><a href="https://www.youtube.com/playlist?list=PLi-MwfPpkXIK9BlTTdsy_7NwbNkJT_GCY" target="_blank" class="icon-youtube">youtube</a></li>
+					<li><a href="index.html.1.tmp.1.html" target="_blank" class="icon-pokemon">pokemon</a></li>
+				</ul>
+			</div>
+		</div>
+
+
+		<div class="ft-btm">
+			<div class="container">
+				<ul class="list-mn d-lg-none d-block">
+									<li><a href="https://www.pokemonkorea.co.kr/company">회사소개</a></li>
+									<li><a href="https://www.pokemonkorea.co.kr/business">사업내용</a></li>
+									<li><a href="https://www.pokemonkorea.co.kr/partner">제휴안내</a></li>
+									<li><a href="https://www.pokemonkorea.co.kr/terms">이용약관</a></li>
+									<li><a href="https://www.pokemonkorea.co.kr/privacy">개인정보처리방침</a></li>
+									<li><a href="https://www.pokemonkorea.co.kr/email">이메일무단수집거부</a></li>
+									<li><a href="https://www.pokemonkorea.co.kr/faq">고객센터</a></li>
+								</ul>
+				<div class="row flex-lg-row-reverse flex-justify-space"> 
+									<div class="copylight">
+						<ul>
+							<li></li><li><font color="#ffffff"><br></font></li><li><span style="font-size: 14px;"><font color="#ffffff">©2024 Pokémon. ©1995-2024 Nintendo/Creatures Inc./GAME FREAK inc.</font></span></li><li><span style="font-size: 14px;"><font color="#ffffff">©Nintendo, Creatures, GAME FREAK, TV Tokyo, ShoPro, JR Kikaku. ©Pokémon. ©1998-2020 PIKACHU PROJECT.　&nbsp;&nbsp;</font></span></li><li><span style="font-size: 14px;"><font color="#ffffff">포켓몬스터, 포켓몬, Pokémon, 몬스터볼, Nintendo Switch, Nintendo 3DS, Nintendo DS는 Nintendo의 상표입니다.</font></span></li><span style="font-size: 14px;"><font color="#ffffff">
+						</font></span></ul><span style="font-size: 14px;"><font color="#ffffff">
+						</font></span><p><font face="Noto Sans KR" style="" color="#ffffff"><span style="font-size: 14px;">본 사이트의 콘텐츠에 대한 무단 복제 및 도용을 금하며 </span><br class="d-lg-none d-block"><span style="font-size: 14px;">이를 어길 시 법적 조치를 받을 수 있습니다.</span></font></p><span style="font-size: 14px;"><font color="#ffffff">
+					</font></span></div><span style="font-size: 14px;"><font color="#ffffff">
+					</font></span><div class="customer"><span style="font-size: 14px;"><font color="#ffffff">
+						</font></span><div class="d-flex"><span style="font-size: 14px;">
+							</span><p><font face="Noto Sans KR" style="" color="#ffffff"><span style="font-size: 14px;">고객센</span><span style="font-size: 14px;">터</span></font></p><span style="font-size: 14px;">
+							</span><ul class="d-lg-block d-none"><span style="font-size: 14px;"><font color="#ffffff">
+								</font></span><li><font face="Noto Sans KR" color="#ffffff"><span style="font-size: 14px;">운영시간 : 평일 15시 ~ 18시</span></font></li><span style="font-size: 14px;"><font color="#ffffff">
+								</font></span><li><font face="Noto Sans KR" color="#ffffff"><span style="font-size: 14px;">031-272-0108&nbsp;</span></font></li><li><font face="Noto Sans KR" color="#ffffff"><span style="font-size: 14px;"><br></span></font></li><span style="font-size: 14px;"><font color="#ffffff">
+								</font></span><li><font face="Noto Sans KR" color="#ffffff"><span style="font-size: 14px;">카드 게임 및 카드 게임 이벤트 : 1588-4273</span></font></li><li><font face="Noto Sans KR" color="#ffffff"><span style="font-size: 14px;"><br></span></font></li><span style="font-size: 14px;"><font color="#ffffff">
+								</font></span><li><font face="Noto Sans KR" color="#ffffff"><span style="font-size: 14px;">webmaster@pokemonkorea.co.kr</span></font></li><span style="font-size: 14px;"><font color="#ffffff">
+							</font></span></ul><span style="font-size: 14px;">
+							</span><ul class="d-lg-none d-block"><span style="font-size: 14px;">
+								</span><li><span style="font-size: 14px;">운영시간 : 평일 15시 ~ 18시<br>031-272-0108</span></li><span style="font-size: 14px;">
+								</span><li><span style="font-size: 14px;">카드 게임 및 카드 게임 이벤트 : 1588-4273</span></li><span style="font-size: 14px;">
+								</span><li><span style="font-size: 14px;">webmaster@pokemonkorea.co.kr</span></li><span style="font-size: 14px;">
+							</span></ul><span style="font-size: 14px;">
+						</span></div><span style="font-size: 14px;"><font color="#ffffff">
+						</font></span><p><font face="Noto Sans KR" color="#ffffff"><span style="font-size: 14px;">※당사에서는 Pokémon GO 관련 문의는 대응하지 않습니다.&nbsp;</span></font></p>
+					</div>				</div>
+			</div>
+		</div>
+	</footer>
+ 
+		</div>
+	</footer>
+	<div class="d-lg-block d-none">
+		<!-- ADN 클로징패널 PC 설치  start -->
+		<script type="text/javascript">
+		var adn_panel_param = adn_panel_param || [];
+		adn_panel_param.push([{
+		ui:'108221',	
+		ci:'1082210002',
+		gi:'113535'
+		}]);
+		</script>
+		<script type="text/javascript" async src="https://fin.rainbownine.net/js/across_adn_closed_pc_ad_1.0.4.js"></script>
+		<!-- ADN 클로징패널 PC 설치 end -->
+	</div>
+	<div class="d-lg-none d-block">
+		<!-- ADN 클로징패널 MO 설치  start -->
+		<script type="text/javascript">
+		var adn_mobile_panel_param = adn_mobile_panel_param || [];
+		adn_mobile_panel_param.push([{
+		ui:'108221',	
+		ci:'1082210001',
+		gi:'113536'
+		}]);
+		</script>
+		<script type="text/javascript" async src="https://fin.rainbownine.net/js/across_adn_closed_mobile_ad_1.0.4.js"></script>
+		<!-- ADN 클로징패널 MO 설치 end -->
+	</div>
+	
+<script>
+var swiperVisual = new Swiper('.sect-visual', {
+	loop: true,
+	centeredSlides: true,
+	slidesPerView: 1.4,
+	spaceBetween: 0,
+	loopedSlides: 7,
+	navigation: {
+		nextEl: '.sect-visual .swiper-button-next',
+		prevEl: '.sect-visual .swiper-button-prev',
+	},
+	breakpoints: {
+		991: {
+			slidesPerView: 1.2,
+		},
+	},
+});
+var swiperMov = new Swiper('.sect-mov-swiper .container', {
+	slidesPerView: 1.5,
+	spaceBetween: 150,
+	centeredSlides: true,
+	loop: true,
+	loopedSlides: 7,
+	navigation: {
+		nextEl: '.sect-mov-swiper .d-lg-block .swiper-button-next',
+		prevEl: '.sect-mov-swiper .d-lg-block .swiper-button-prev',
+	},
+	pagination: {
+        el: '.sect-mov-swiper .d-lg-none .swiper-pagination',
+      },
+	breakpoints: {
+		991: {
+			slidesPerView: 1,
+			spaceBetween: 0,
+		},
+	},
+});
+var sect1Menu = ['플레이어즈 랭킹', '코리안리그 랭킹']
+var swiperBanner = new Swiper('.sect-rank .swiper-container', {
+	slidesPerView:2,
+	breakpoints: {
+		991: {
+			slidesPerView: 1.1,
+			spaceBetween: 20,
+			pagination: {
+				el: '.sect-rank .swiper-pagination-name',
+				clickable: true,
+				renderBullet: function(index, className) {
+					return '<span class="' + className + '">' + '<span class="name">' + (sect1Menu[index]) + '</span>' + '</span>';
+				},
+			},
+		},
+	}
+});
+var swiper = new Swiper('.sect-info .swiper-container', {
+	slidesPerView:7,
+	spaceBetween: 10,
+	centeredSlides: true,
+	loopedSlides: 150,
+	loop: true,
+	navigation: {
+	nextEl: '.sect-info .swiper-button-next',
+	prevEl: '.sect-info .swiper-button-prev',
+	},
+	breakpoints: {
+		991: {
+			slidesPerView: 2.8,
+			spaceBetween: 15,
+		},
+	}
+});
+$(".slider01").ionRangeSlider({
+	type: "double",
+	min: 0,
+	max: 340,
+	from: 0,
+	to: 340,
+	});
+$(".slider02").ionRangeSlider({
+	type: "double",
+	grid: true,
+	grid_num: 5,
+	min: 0,
+	max: 5,
+	from: 0,
+	to: 5,
+	});
+$(document).ready(function(){
+	if($(window).width() < 991){
+		$('input.js-place01').attr('placeholder','카드 검색 (포켓몬 이름 혹은 텍스트)');
+	};
+});
+$(window).on('load',function(){
+   $('.btn-top').click(function(){
+      $('html, body').animate({'scrollTop': $('#ct').offset().top - $('#hd').outerHeight() }, 400);
+
+      return false;
+   });
+});
+
+</script>
+</div>
+</body>
+</html>
+
+ 

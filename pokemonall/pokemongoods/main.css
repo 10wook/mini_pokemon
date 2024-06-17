@@ -1,0 +1,158 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* 타이틀 */
+.kd-main-title { position: relative; margin: 0 auto 50px; line-height: 1; text-align: center; }
+.kd-main-title h2 { font-family: 'Poppins', sans-serif; font-size: 40px; color: #191919; letter-spacing: -1px; }
+.kd-main-title p { margin: 17px 0 0 14px; font-size: 18px; color: #666; }
+.kd-prd-list .kd-main-title { display: none; visibility: hidden; }
+
+/* 메인 슬라이드 배너 */
+.kd-bnmain-wrap { overflow: hidden; height: 520px; }
+.kd-bnmain-wrap .slick-slider { overflow: initial; }
+.kd-bnmain-wrap .slick-list { overflow: inherit; }
+.kd-bnmain-wrap .slick-slide { margin: 0 40px; }
+.kd-bnmain-wrap .slick-dots { bottom: 25px; font-size: 0; }
+.kd-bnmain-wrap .slick-dots > button { max-width: 25px; margin-left: 5px; vertical-align: -3px; }
+.kd-bnmain-wrap .slick-dots > button#sliderPlay { display: none; }
+.kd-bnmain-wrap .slick-dots li button { width: 10px; height: 10px; border: 1px solid #ddd; border-radius: 50%; box-sizing: border-box; background: #ccc !important; }
+.kd-bnmain-wrap .slick-dots li.slick-active button { border-color: #fff; background: 0 !important; }
+.kd-bnmain-wrap .slick-prev, .kd-bnmain-wrap .slick-next { width: 22px; height: 44px; background-size: 100%; }
+.kd-bnmain-wrap .slick-prev { left: 50%; margin-left: -670px; background-image: url("http://www.pokemonstore.co.kr/assets/img/btn/btn_main_bn_left.svg") !important; }
+.kd-bnmain-wrap .slick-next { right: 50%; margin-right: -670px; background-image: url("http://www.pokemonstore.co.kr/assets/img/btn/btn_main_bn_right.svg") !important; }
+    /* 페이지네이션 관리자설정 */
+    .kd-bnmain-wrap .indicator-border-round .slick-dots li button{border-radius:100%;}
+    .kd-bnmain-wrap .indicator-border-square .slick-dots li button{border-radius:0;}
+    .kd-bnmain-wrap .indicator-border-round_square .slick-dots li button{border-radius:20%;}
+
+/* 포켓몬 스토어 */
+.kd-store-wrap { overflow: hidden; margin: 100px auto; background: #FFFCE7; }
+.kd-store-wrap .kd-bn-track { height: 60px; background-repeat: repeat-x; background-size: auto 24px; background-position: 0 50%; animation: flow_bn 70s linear infinite; }
+.kd-store-wrap .kd-bn-track01 { background-color: #FFE100; background-image: url("http://www.pokemonstore.co.kr/assets/img/typo_b.png"); }
+.kd-store-wrap .kd-bn-track02 { background-color: #191919; background-image: url("http://www.pokemonstore.co.kr/assets/img/typo_w.png"); animation-direction: reverse; }
+.kd-store-wrap .kd-contents { padding: 80px 0; }
+.kd-store-wrap .kd-contents .kd-fleft { overflow: hidden; width: 35.173%; border-radius: 20px; }
+.kd-store-wrap .kd-contents .kd-fright { width: 61.380%; }
+.kd-store-wrap .kd-contents .kd-fright .kd-main-title { margin: 89px 0 100px; text-align: left; }
+.kd-store-wrap .kd-contents .kd-fright .kd-main-title h2 { line-height: 48px; }
+.kd-store-wrap .kd-contents .kd-fright .kd-main-title p { margin: 19px 0 0; line-height: 27px; }
+.kd-store-wrap .kd-contents .kd-fright .kd-prd-cont ul li { width: 22.472%; margin-right: 3.370%; }
+.kd-store-wrap .kd-contents .kd-fright .kd-prd-cont ul li:last-child { margin: 0; }
+.kd-store-wrap .kd-contents .kd-fright .kd-prd-cont ul li .item_photo_box a { padding: 0; border: 0; }
+.kd-store-wrap .kd-contents .kd-fright .kd-prd-cont ul li .item_info_cont { display: none; visibility: hidden; }
+@keyframes flow_bn {
+    0% { background-position-x: 0; }
+    100% { background-position-x: -100vw; }
+}
+
+/* 베스트 아이템 */
+.kd-best-wrap .kd-prd-list .kd-prd-cont ul { display: grid; grid-template-columns: 1fr 1fr 1fr 1fr; gap: 22px; }
+.kd-best-wrap .kd-prd-list .kd-prd-cont ul li { align-items: flex-start; margin: 0; }
+.kd-best-wrap .kd-prd-list .kd-prd-cont ul li:first-child { grid-column: 1 / 3; grid-row: 1 / 3; }
+.kd-best-wrap .kd-prd-list .kd-prd-cont ul li .item_photo_box { width: 100%; }
+.kd-best-wrap .kd-prd-list .kd-prd-cont ul li .item_photo_box a { background: #fff; }
+.kd-best-wrap .kd-prd-list .kd-prd-cont ul li .item_info_cont { position: absolute; bottom: 10px; left: 0; width: 100%; margin: 0; padding: 0 20px; box-sizing: border-box; opacity: 0; transition: .2s; }
+.kd-best-wrap .kd-prd-list .kd-prd-cont ul li .item_info_cont .item_info_list { padding: 0; }
+.kd-best-wrap .kd-prd-list .kd-prd-cont ul li .item_info_cont .item_info_list .item_name { overflow: hidden; display: -webkit-box !important; -webkit-line-clamp: 2; -webkit-box-orient: vertical; padding: 0; font-weight: 600; text-overflow: ellipsis; }
+.kd-best-wrap .kd-prd-list .kd-prd-cont ul li .item_info_cont .item_money_box { padding: 0; }
+.kd-best-wrap .kd-prd-list .kd-prd-cont ul li .item_btn_box { top: 20px; right: 20px; bottom: auto; }
+.kd-best-wrap .kd-prd-list .kd-prd-cont ul li:first-child .item_photo_box a { padding: 82px; }
+.kd-best-wrap .kd-prd-list .kd-prd-cont ul li:first-child .item_info_cont { padding: 0 40px; }
+.kd-best-wrap .kd-prd-list .kd-prd-cont ul li:first-child .item_info_cont .item_info_list .item_name { font-size: 24px; }
+.kd-best-wrap .kd-prd-list .kd-prd-cont ul li:first-child .item_info_cont .item_money_box .item_price,
+.kd-best-wrap .kd-prd-list .kd-prd-cont ul li:first-child .item_info_cont .item_money_box .item_price b { font-size: 32px; }
+.kd-best-wrap .kd-prd-list .kd-prd-cont ul li:first-child .item_btn_box { top: 40px; right: 40px; }
+.kd-best-wrap .kd-prd-list .kd-prd-cont ul li:first-child .item_btn_box button.btn_add_wish { width: 52px; height: 48px; }
+.kd-best-wrap .kd-prd-list .kd-prd-cont ul li::before { content: ''; position: absolute; top: 20px; left: 20px; z-index: 1; width: 60px; height: 60px; background-size: 100%; }
+.kd-best-wrap .kd-prd-list .kd-prd-cont ul li:nth-child(1)::before { top: 40px; left: 40px; width: 100px; height: 100px; background-image: url("http://www.pokemonstore.co.kr/assets/img/icon/goods_icon/best_01.png"); }
+.kd-best-wrap .kd-prd-list .kd-prd-cont ul li:nth-child(2)::before { background-image: url("http://www.pokemonstore.co.kr/assets/img/icon/goods_icon/best_02.png"); }
+.kd-best-wrap .kd-prd-list .kd-prd-cont ul li:nth-child(3)::before { background-image: url("http://www.pokemonstore.co.kr/assets/img/icon/goods_icon/best_03.png"); }
+.kd-best-wrap .kd-prd-list .kd-prd-cont ul li:nth-child(4)::before { background-image: url("http://www.pokemonstore.co.kr/assets/img/icon/goods_icon/best_04.png"); }
+.kd-best-wrap .kd-prd-list .kd-prd-cont ul li:nth-child(5)::before { background-image: url("http://www.pokemonstore.co.kr/assets/img/icon/goods_icon/best_05.png"); }
+.kd-best-wrap .kd-prd-list .kd-prd-cont ul li:hover .item_photo_box a { border-color: #fff; filter: contrast(0.9); }
+.kd-best-wrap .kd-prd-list .kd-prd-cont ul li:hover .item_info_cont { bottom: 20px; opacity: 1; }
+.kd-best-wrap .kd-prd-list .kd-prd-cont ul li:first-child:hover .item_info_cont { bottom: 40px; }
+
+/* 기획전 슬라이드 */
+.kd-exbibition-wrap .kd-bn-exhibition { width: 59.311%; padding: 0 0 50px; }
+.kd-exbibition-wrap .kd-bn-exhibition .slick-slide img { border-radius: 10px; }
+.kd-exbibition-wrap .kd-bn-exhibition .slick-dots { display: flex; bottom: 0; }
+.kd-exbibition-wrap .kd-bn-exhibition .slick-dots li { flex: 1; margin: 0; }
+.kd-exbibition-wrap .kd-bn-exhibition .slick-dots li button { width: 100%; height: 4px; background: #ddd; transition: .2s; }
+.kd-exbibition-wrap .kd-bn-exhibition .slick-dots li.slick-active button { background: #E60012; }
+.kd-exbibition-wrap .kd-prd-exhibition { width: 36.552%; }
+.kd-exbibition-wrap .kd-prd-exhibition .kd-prd-cont ul li { border: 1px solid #ddd; border-radius: 10px; transition: .2s; }
+.kd-exbibition-wrap .kd-prd-exhibition .kd-prd-cont ul li:hover { border-color: #999; }
+.kd-exbibition-wrap .kd-prd-exhibition .kd-prd-cont ul li .item_photo_box a { border: 0; }
+.kd-exbibition-wrap .kd-prd-exhibition .kd-prd-cont ul li .item_info_cont { padding-right: 30px; }
+
+/* 유튜브 슬라이드 */
+.kd-youtube-wrap { overflow: hidden; position: relative; padding: 172px 0 0; }
+.kd-youtube-wrap .kd-bg-youtube { position: absolute; top: 50px; right: 0; left: 0; z-index: -1; height: 500px; background: #FFE100; }
+.kd-youtube-wrap .kd-bg-youtube::before,
+.kd-youtube-wrap .kd-bg-youtube::after { content: ''; position: absolute; right: 0; left: 0; height: 54px; background-repeat: repeat-x; animation: bg_wave 20s linear infinite; }
+.kd-youtube-wrap .kd-bg-youtube::before { top: -50px; background-image: url("http://www.pokemonstore.co.kr/assets/img/banner/img_up.png");  }
+.kd-youtube-wrap .kd-bg-youtube::after { bottom: -50px; background-image: url("http://www.pokemonstore.co.kr/assets/img/banner/img_down.png");  }
+@keyframes bg_wave {
+    0% { background-position-x: 0; }
+    100% { background-position-x: 100vw; }
+}
+.kd-youtube-wrap .kd-main-title { margin-bottom: 25px; }
+.kd-youtube-wrap .kd-bn-youtube.slick-slider { overflow: initial; width: 760px; margin: auto; }
+.kd-youtube-wrap .kd-bn-youtube .slick-list { overflow: inherit; }
+.kd-youtube-wrap .kd-bn-youtube .slick-slide { margin: 15px 125px; padding: 70px 60px; border-radius: 50px; box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.1); background: #fff; filter: contrast(0.7); transition: filter .2s cubic-bezier(0.075, 0.82, 0.165, 1);}
+.kd-youtube-wrap .kd-bn-youtube .slick-slide img { width: 640px; border-radius: 20px; }
+.kd-youtube-wrap .kd-bn-youtube .slick-active { filter: none; }
+.kd-youtube-wrap .kd-bn-youtube .slick-prev,
+.kd-youtube-wrap .kd-bn-youtube .slick-next { width: 50px; height: 50px; }
+.kd-youtube-wrap .kd-bn-youtube .slick-prev { left: 50%; background: url("http://www.pokemonstore.co.kr/assets/img/btn/btn_left.svg") no-repeat center/100%; transform: translate(-405px, -50%); }
+.kd-youtube-wrap .kd-bn-youtube .slick-next { right: 50%; background: url("http://www.pokemonstore.co.kr/assets/img/btn/btn_right.svg") no-repeat center/100%; transform: translate(405px, -50%); }
+
+/* plus-review */
+.kd-review-wrap .kd-main-title { display: none; margin: 120px auto 50px; }
+.kd-review-wrap li { width: 23.296%; margin: 0 2.272% 60px 0; }
+.kd-review-wrap li:nth-child(4n) { margin-right: 0; }
+.kd-review-wrap li:nth-last-child(-n+4) { margin-bottom: 0; }
+.kd-review-wrap li .p-thumb { position: relative; width: 100%; }
+.kd-review-wrap li .p-thumb .img-frame--normal { position: relative; width: 100%; height: 100%; }
+.kd-review-wrap li .p-thumb .img-frame--normal img { position: absolute; top: 0; left: 0; }
+.kd-review-wrap li .p-thumb__desc .collapse-2 { height: 45px; }
+.kd-review-wrap li .p-thumb__desc .img-frame { width: 45px; height: 45px; }
+.plusReviewList {display: flex;flex-wrap: wrap; margin-bottom: 70px;}
+.plus-review_widget .widget-head {display: none; justify-content: space-between; margin-bottom: 30px;}
+.plus-review_widget .widget-tit {font-size: 22px;}
+.plus-review_widget .widget-btn {padding: 6px 15px;border: 1px solid #ddd;font-weight: bold;display: inline-block;}
+
+/* instagram */
+.kd-instagram-wrap .kd-main-title p { margin-top: 10px; color: #999; }
+.kd-instagram-wrap .kd-instagram-cont {display: flex; flex-flow: row wrap; justify-content: start; margin: -5px;}
+.kd-instagram-wrap .kd-instagram-cont li {box-sizing: border-box; width: 16.6666%; padding: 5px;}
+.kd-instagram-wrap .kd-instagram-cont li a {display: block; position: relative; padding-top: 100%;}
+.kd-instagram-wrap .kd-instagram-cont li a img {position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover;}
+
+/* 퀵메뉴 */
+.kd-quick-menu { position: fixed; z-index: 10; bottom: 50px; right: 30px; cursor: pointer; opacity: 0; pointer-events: none; transition: opacity .4s; }
+.kd-quick-menu li:not(:last-child) { margin-bottom: 10px; }
+.kd-quick-menu li a { display: block; } 
+.kd-quick-menu li a img { max-width: 46px; } 
+.scroll .kd-quick-menu { opacity: 1; pointer-events: initial; transition: opacity .4s; }
+
+
+/* 화면너비 1720px 까지만 반응형 */
+@media screen and (max-width: 1720px) {
+    .kd-prd-cont .item_slide_horizontal .slick-prev { left: -73px; }
+    .kd-prd-cont .item_slide_horizontal .slick-next { right: -73px; }
+}
+@media screen and (max-width: 1670px) {
+    .kd-prd-cont .item_slide_horizontal .slick-prev { left: -43px; }
+    .kd-prd-cont .item_slide_horizontal .slick-next { right: -43px; }
+}
+@media screen and (max-width: 1620px) {
+    .kd-prd-cont .item_slide_horizontal .slick-prev { left: -24px; }
+    .kd-prd-cont .item_slide_horizontal .slick-next { right: -24px; }
+}
+@media screen and (max-width: 1500px) {
+    .kd-prd-cont .item_slide_horizontal .slick-slider { overflow: hidden; }
+    .kd-prd-cont .item_slide_horizontal .slick-prev { left: 0; }
+    .kd-prd-cont .item_slide_horizontal .slick-next { right: 0; }
+}

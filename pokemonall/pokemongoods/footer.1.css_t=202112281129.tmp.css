@@ -1,0 +1,50 @@
+/* BASIC css start */
+#footerWrap .ft_info_wrap,.footer_menu{text-align:right}
+#footerWrap{border-top:2px solid #000;padding:30px 0 150px;margin-top:150px}
+#footerWrap .cut_lay{display:table}
+#footerWrap .div_box{display:table-cell;vertical-align:top}
+#footerWrap .ft_title,#footerWrap .ft_title>a{font-size:20px;color:#000;margin-bottom:10px;letter-spacing:-.3px;font-weight:700}
+#footerWrap .cs_wrap{width:680px}
+#footerWrap .cs_wrap p{font-size:12px;color:#888;line-height:20px}
+#footerWrap .cs_wrap .tell,#footerWrap .cs_wrap .tell>a{font-size:14px;font-weight:500;margin-bottom:25px}
+#footerWrap .cs_wrap .time{font-size:13px;color:#000;line-height:21px;margin-bottom:8px}
+#footerWrap .bank_wrap{width:220px}
+#footerWrap .bank_wrap p{color:#383838;font-size:13px;line-height:21px}
+#footerWrap .bank_wrap p.name{color:#000;margin-bottom:10px}
+#footerWrap .ft_info_wrap .footerMenu{margin-bottom:25px}
+#footerWrap .ft_info_wrap .footerMenu li{display:inline-block;vertical-align:top;font-size:14px;margin-left:20px}
+#footerWrap .ft_info_wrap .info_inner a,#footerWrap .ft_info_wrap .info_inner p{color:#888;font-size:13px;line-height:20px}
+#footerWrap .ft_info_wrap .info_inner p .line{width:1px;height:10px;background:#ddd;margin:0 12px;display:inline-block}
+#footerWrap .ft_info_wrap .info_inner p.copy_wrap{margin-top:54px}
+#footerWrap .ft_info_wrap .info_inner span.color{font-weight:700;color:#0b3d92}
+.footerMenu li a{font-size:14px}
+.info_inner p em{font-weight:700}
+#analyans-best100 .cont .analyans-best100-list .analyans-prds ul li a img{width:159px;height:159px!important}
+#analyans-best100 .cont .analyans-best100-list .analyans-prds ul li{float:left;width:159px;height:226px!important}
+.ft_store li a{cursor:pointer}
+#mask2{position:fixed;left:0;top:0;width:100%;height:100%;background:rgba(20,20,20,.3);z-index:9999;display:none}
+#footerWrap .cs_wrap p.footer_company{font-size:12px;font-weight:100;margin-bottom:10px;letter-spacing:.1px}
+#footerWrap .cs_wrap p.footer_company a { vertical-align:top }
+#footerWrap .cs_wrap p.footer_copy{font-size:13px;margin-bottom:10px}
+.footer_info_link a{color:#333;font-size:13px;margin-right:20px;font-weight:500}
+.footer_sns a{margin-left:17px}
+.footer_sns{margin-bottom:25px}
+.footer_menu{margin-bottom:55px}
+.footer_menu li{display:inline-block;vertical-align:top;margin-left:70px}
+.footer_menu li span{display:block;font-size:13px;color:#333;text-align:left}
+.footer_menu li span:first-child{font-size:14px;color:#000;font-weight:900;margin-bottom:15px}
+#fix_pagescroll{position:fixed;right:258px;bottom:-200px;-webkit-transition:all 1s;-moz-transition:all 1s;-o-transition:all 1s;transition:all 1s;z-index:999}
+#fix_pagescroll.active{right:258px;bottom:40px}
+.updown li{position:relative;display:block;height:46px;margin:2px 0}
+.updown li a{display:block;width:25px;height:25px;text-align:center;transition:all .3s ease;-webkit-transition:all .3s ease}
+.updown li a i{line-height:27px;filter:alpha(opacity=100);opacity:1;-webkit-opacity:1}
+
+.footer_fm { float:right; position:relative; width:155px; text-align:left }
+.footer_fm .fmToggleBtn { cursor:pointer }
+.footer_fm .fmToggleBtn img { width:155px }
+.footer_fm .fmToggleList { display:none; padding:8px 0; position:absolute; top:36px; left:0; width:155px; border:1px solid #000 }
+.footer_fm .fmToggleList li a { display:block; padding-left:18px; height:26px; color:#999 !important; line-height:26px !important; transition:all 0.3s ease; -webkit-transition:all 0.3s ease }
+.footer_fm .fmToggleList li a:hover { color:#000 !important }
+
+/* BASIC css end */
+
