@@ -17,6 +17,12 @@
         from product
         where product_id= #{product_id}
      </select>
+     
+     <delete id="remove" parameterType="Int">
+     delete product_id, product_kind, product_name, product_stock, product_price, product_image
+     from product
+     where product_id= #{product_id}
+     </delete>
 </mapper>
 
 
