@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.exam.mapper.CustomerMapper">
+
+<!-- Insert a new customer -->
+    <insert id="insertCustomer" parameterType="Customer">
+        INSERT INTO customer (userid, email, passwd, username, birth, address)
+        VALUES (#{userId}, #{email}, #{passwd}, #{username}, #{birth}, #{address})
+    </insert>
+
+    <!-- Update an existing customer -->
+    <update id="updateCustomer" parameterType="Customer">
+        UPDATE customer
+        SET email = #{email},
+            passwd = #{passwd},
+            username = #{username},
+            birth = #{birth},
+            address = #{address}
+        WHERE userid = #{userId}
+    </update>
+
+    <!-- Delete a customer by userId -->
+    <delete id="deleteCustomer" parameterType="string">
+        DELETE FROM customer WHERE userid = #{userId}
+    </delete>
+
+    <!-- Select a customer by userId -->
+    <select id="selectCustomerById" parameterType="string" resultType="Customer">
+        SELECT userid, email, passwd, username, birth, address
+        FROM customer
+        WHERE userid = #{userId}
+    </select>
+
+    <!-- Select all customers -->
+    <select id="selectAllCustomers" resultType="Customer">
+        SELECT userid, email, passwd, username, birth, address
+        FROM custome
+    </select>
+
+</mapper>
