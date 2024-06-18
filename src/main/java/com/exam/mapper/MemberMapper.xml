@@ -5,16 +5,17 @@
   
 <mapper namespace="com.exam.mapper.MemberMapper">
  
+ <!-- goodsmappper로 바꿀예정 -->
  
      <insert id="save" parameterType="product">
         insert into product (product_id, product_kind, product_name, product_stock, product_price, product_image)
         values (#{product_id}, #{product_kind}, #{product_name}, #{product_stock}, #{product_price}, #{product_image})
      </insert>
    
-     <select id="findById" parameterType="string" resultType="Member">
-        select userid, passwd, username
-        from member
-        where userid= #{userid}
+     <select id="findById" parameterType="Int" resultType="product">
+        select product_id, product_kind, product_name, product_stock, product_price, product_image
+        from product
+        where product_id= #{product_id}
      </select>
 </mapper>
 
